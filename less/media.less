@@ -1,0 +1,509 @@
+@red : #ED1A3B;
+
+@gray : #808076;
+
+@media screen 
+	and (min-width: 960px) 
+	and (max-width: 1400px) { 
+	
+	// .hidden-lg {
+	// 	display: none;
+	// }
+}    
+
+@media screen 
+	and (min-width: 1201px) 
+	and (max-width: 1920px) { 
+	.hidden-lg {
+		display: none;
+	}
+}
+
+
+
+/*==========  Desktop First Method  ========== */
+/* Large Devices, Wide Screens */
+@media screen 
+	and (min-width: 768px) 
+	and (max-width: 1200px) {
+	.hidden-md {
+		display: none !important;
+	}
+
+	.container {
+		width: 1020px;
+	}
+
+	.header {
+		height: 120px;
+		&__top {
+			margin-top: 24px;
+			&:after {
+				float: left;
+				width: 761px;
+			}
+		}
+		&__toggle-menu {
+			float: right;
+			margin-right: 27px;
+		}
+		&__order-status-link {
+			float: left;
+		}
+		&__profile-link {
+			float: left;
+		}
+		&__lang-switcher {
+			float: right;
+			text-transform: uppercase;
+			font-size: 13px;
+			margin-right: 40px;
+			a {
+				color: @red;
+				margin-left: 5px;
+				&:hover {
+					text-decoration: none;
+				}
+				&.active {
+					color: @gray;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	.products {
+		&__box {
+			width: 280px;
+		}
+	}
+
+	.solutions {
+		&__box {
+			width: 240px;
+			margin-right: 20px;
+		}
+		.solutions-carousel {
+			width: 100%;
+			float: left;
+		}
+	}
+
+	.news {
+		text-align: center;
+		&__box {
+			display: inline-block;
+			float: none;
+			text-align: left;
+			// width: 200px;
+		}
+	}
+
+	.footer {
+		&__left {
+			width: 887px;
+		}
+		&__address {
+			margin-right: 81px;
+		}
+		&__address2 {
+			width: 310px;
+		}
+		&__right {
+			width: 133px;
+		}
+	}
+}
+
+/* Medium Devices, Desktops */
+@media screen 
+	and (min-width: 768px)
+	and (max-width: 960px) {
+
+	.hidden-sm {
+		display: none;
+	}
+
+	.container {
+		background: orange;
+		width: 768px;
+		position: relative;
+	}
+
+
+	.header {
+		height: 130px;
+		&__top {
+			&:after {
+				width: 500px;
+				margin-top: 10px;
+			}
+		}
+		&__toggle-menu {
+			cursor: pointer;
+			position: absolute;
+			right: 0px;
+			// background: red;
+			margin-right: 15px;
+		}
+		&__submit-button {
+			float: right;
+			//margin-top: 0px;
+			margin-right: 0;
+		}
+	}
+
+	.front-page-slider {
+		// background: red;
+		height: 200px;
+		img {
+			height: 200px;
+		}
+	}
+
+	.products {
+		&__headliner {
+			margin-top: 50px;
+			margin-bottom: 30px;
+		}
+		&__box {
+			width: 200px;
+			// background: green;
+			padding-bottom: 10px;
+		}
+		&__image {
+			img {
+				width: 200px;
+			}
+		}
+		&__box-headliner {
+			font-size: 22px;
+		}
+		&__button {
+			width: 200px;
+		}
+	}
+
+	.solutions {
+		text-align: center;
+		padding-bottom: 50px;
+		&__headliner {
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+		&__box {
+			display: inline-block;
+			float: none;
+			vertical-align: top;
+			margin: 0;
+			margin: 0 5px;
+			margin-bottom: 10px;
+		}
+	}
+	
+	.news {
+		padding-bottom: 50px;
+		&__headliner {
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+		&__box {
+			width: 200px;
+			margin: 0 10px;
+			display: inline-block;
+		}
+		&__image {
+			img {
+				width: 200px;
+			}
+		}
+	}
+
+	.footer {
+		&__left {
+			width: 768px;
+			float: left;
+			// background: red;
+		}
+		&__copyright {
+			margin-right: 65px;
+		}
+		&__designedby {
+			width: 232px;
+		}
+	}
+}
+
+/* Small Devices, Tablets */
+@media screen 
+	and (min-width: 320px)
+	and (max-width: 768px) {
+
+	.hidden-xs {
+		display: none;
+	}
+
+	.container {
+		width: 320px;
+		position: relative;
+	}
+
+	.header {
+		height: 250px;
+		&__top {
+			&:after {
+				margin-top: 10px;
+				width: 320px;
+			}
+		}
+		&__toggle-menu {
+			position: absolute;
+			top: 35px;
+			right: 10px;
+		}
+		&__logo {
+			width: 100%;
+			float: left;
+			margin: 0;
+		}
+		&__profile-link {
+			float: right;
+			margin-right: 40px;
+		}
+		&__order-status-link {
+			float: right;
+			margin-right: 3px;
+		}
+		&__phone {
+			margin: 0;
+			margin-top: 10px;
+			width: 100%;
+			text-align: left;
+			span {
+				margin-left: 70px;
+			}
+		}
+		&__submit-button {
+			margin: 0 auto;
+			float: none;
+		}
+		&__lang-switcher {
+			width: 100%;
+			float: left;
+			text-align: center;
+			margin-top: 10px;
+			a {
+				color: @red;
+				margin-left: 5px;
+				&:hover {
+					text-decoration: none;
+				}
+				&.active {
+					color: @gray;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	.front-page-slider {
+		height: 280px;
+		img {
+			height: 280px;
+		}
+		&__head {
+			font-size: 32px;
+			line-height: 35px;
+			margin-bottom: 20px;
+		}
+		&__text {
+			font-size: 12px;
+			line-height: 18px;
+		}
+		.owl-dots {
+			margin-top: -40px;
+			position: relative;
+		}
+		.owl-dot span {
+			width: 8px !important;
+			height: 8px !important;
+			background: #fff !important;
+			border: 2px solid #fff;
+			border-radius: 50% !important;
+			margin: 2px 4px !important;
+		}
+		.owl-dot.active span {
+			background: none !important;
+		}
+	}
+
+	.products {
+		&__headliner {
+			font-size: 42px;
+			text-align: left;
+		}
+		&__box {
+			width: 100%;
+			float: left;
+			margin: 0;
+			min-height: 0;
+		}
+		&__box-headliner {
+			font-size: 28px;
+			text-decoration: underline;
+			a {
+				color: inherit;
+			}
+		}
+		&__text {
+			display: none;
+		}
+		&__button {
+			display: none;
+		}
+		&__image {
+			display: none;
+		}
+	}
+
+	.solutions {
+		padding-bottom: 50px;
+		&__headliner {
+			width: 100%;
+			float: left;
+			text-align: left;
+			font-size: 42px;
+			margin-top: 40px;
+			margin-bottom: 30px;
+		}
+		&__box {
+			display: inline-block;
+			float: none;
+		}
+		&__carousel {
+			display: block;
+			width: 100%;
+			float: left;
+		}
+		.owl-dot span {
+			width: 8px !important;
+			height: 8px !important;
+			background: #ED1A3B !important;
+			border: 1px solid #ED1A3B;
+			border-radius: 50% !important;
+			margin: 2px 4px !important;
+		}
+		.owl-dot.active span {
+			background: none !important;
+		}
+	}
+
+	.news {
+		text-align: center;
+		padding-bottom: 50px;
+		&__headliner {
+			width: 100%;
+			float: left;
+			text-align: left;
+			font-size: 42px;
+			margin-top: 40px;
+			margin-bottom: 30px;
+		}
+		&__box {
+			display: inline-block;
+			float: none;
+			margin-bottom: 20px;
+			text-align: left;
+		}
+		&__carousel {
+			display: block;
+			width: 100%;
+			float: left;
+		}
+		.owl-dot span {
+			width: 8px !important;
+			height: 8px !important;
+			background: #ED1A3B !important;
+			border: 1px solid #ED1A3B;
+			border-radius: 50% !important;
+			margin: 2px 4px !important;
+		}
+		.owl-dot.active span {
+			background: none !important;
+		}
+	}
+
+	.clients {
+		&__headliner {
+			width: 100%;
+			float: left;
+			text-align: left;
+			font-size: 42px;
+			margin-top: 40px;
+			margin-bottom: 30px;
+		}
+	}
+
+	.footer {
+		background-size: cover;
+		height: 626px;
+		&__headliner {
+			width: 100%;
+			float: left;
+			font-size: 24px;
+			text-align: left;
+			margin-top: 30px;
+			&:after {
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+		}
+		&__left {
+			width: 100%;
+			float: left;
+		}
+		&__copyright {
+			margin-bottom: 20px;
+		}
+		&__address {
+			margin-bottom: 20px;
+		}
+		&__designedby {
+			margin-bottom: 20px;
+		}
+		&__order {
+			float: left;
+			margin-top: 30px;
+		}
+	}
+ 
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+	
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+	/* */
+}
+/*==========  Mobile First Method  ========== */
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+	/* */
+}
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+	/* */
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+	/* */
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+	/* */
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+	/* */
+}

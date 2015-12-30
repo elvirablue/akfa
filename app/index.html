@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="libs/owl/owl.carousel.css">
 	<link rel="stylesheet" href="libs/owl/owl.theme.default.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -21,34 +22,45 @@
 			<div class="header__top">
 				<div class="header__logo">
 					<img src="img/layout/logo.png" alt="">
+					<a href="#" class="header__profile-link hidden-lg hidden-md"></a>
+					<a href="#" class="header__order-status-link hidden-lg hidden-md"></a>
 				</div>
-				<div class="header__tagline">
+				<div class="header__tagline hidden-xs">
 					Больше<br>
 					чем логистика
 				</div>
 				<div class="header__phone">
 					<span>8 800</span> 2000 158
 				</div>
-				<div class="header__phone-text">
+				<div class="header__phone-text hidden-xs">
 					Бесплатно<br>
 					по всей России
 				</div>
-				<a href="#" class="header__order-status-link">
+				<a href="#" class="header__order-status-link hidden-md hidden-xs">
 					Отслеживание заказа
 				</a>
-				<a href="#" class="header__profile-link">
+				<a href="#" class="header__profile-link hidden-md hidden-xs">
 					Личный кабинет
 				</a>
-				
-			</div>
-			<div class="header__bottom">
-				<div class="header__menu-link">
+				<div class="header__toggle-menu hidden-lg">
 					<img src="img/layout/menu-gray.png" alt="">
 				</div>
-				<div class="header__search">
+			</div>
+			<div class="header__bottom">
+				<div class="header__menu-link hidden-md hidden-xs">
+					<img src="img/layout/menu-gray.png" alt="">
+				</div>
+				<div class="header__search hidden-md hidden-xs">
 					<img src="img/layout/header-search.png" alt="">
 				</div>
-				<ul class="header__menu">
+				<a href="#" class="header__profile-link hidden-lg hidden-xs">
+					Личный кабинет
+				</a>
+				<a href="#" class="header__order-status-link hidden-lg hidden-xs">
+					Отслеживание заказа
+				</a>
+				
+				<ul class="header__menu hidden-md hidden-xs">
 					<li><a href="#">
 						Наши продукты
 					</a></li>
@@ -74,6 +86,11 @@
 				<a href="#" class="header__submit-button">
 					Оставить заявку
 				</a>
+				<div class="header__lang-switcher hidden-lg">
+					<a href="#" class="active">ru</a>
+					<a href="#">en</a>
+					<a href="#">ch</a>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -207,21 +224,19 @@
 
 	<!-- Solutions -->
 
-	<div class="solutions">
+	<div class="solutions hidden-xs">
 		<div class="container">
 			<div class="solutions__headliner">
 				<span>О</span>траслевые решения
 			</div>
-			<div class="solutions__box">
-				<img src="img/sol1.jpg" alt="">
+			<div class="solutions__box" style="background: url(img/sol1.jpg) no-repeat center center;">
 				<div class="solutions__label" style="background: rgba(196,32,49,0.7);">
 					<div class="vertical">
 						Обувные ММкомпании
 					</div>
 				</div>
 			</div>
-			<div class="solutions__box">
-				<img src="img/sol2.jpg" alt="">
+			<div class="solutions__box" style="background: url(img/sol2.jpg) no-repeat center center;">
 				<div class="solutions__label" style="background: rgba(250,167,27,0.7);">
 					<div class="vertical">
 						Дом, саД, <br>
@@ -229,8 +244,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="solutions__box">
-				<img src="img/sol3.jpg" alt="">
+			<div class="solutions__box" style="background: url(img/sol3.jpg) no-repeat center center;">
 				<div class="solutions__label" style="background: rgba(54,138,202,0.7);">
 					<div class="vertical">
 						Для транспортных<br>
@@ -238,23 +252,67 @@
 					</div>	
 				</div>
 			</div>
-			<div class="solutions__box">
-				<img src="img/sol4.jpg" alt="">
+			<div class="solutions__box" style="background: url(img/sol4.jpg) no-repeat center center;">
 				<div class="solutions__label" style="background: rgba(62,178,73,0.7);">
 					<div class="vertical">
 						Автозапчасти, <br>
 						шины, диски
 					</div>
 				</div>
-			</div>
+			</div>		
 		</div>
 	</div>
 
 	<!-- Solutions end -->
 
+	<!-- Solutions mobile -->
+
+	<div class="solutions hidden-lg hidden-md">
+		<div class="container">
+			<div class="solutions__headliner">
+				<span>О</span>траслевые решения
+			</div>
+			<div class="solutions__carousel">
+				<div class="solutions__box" style="background: url(img/sol1.jpg) no-repeat center center;">
+					<div class="solutions__label" style="background: rgba(196,32,49,0.7);">
+						<div class="vertical">
+							Обувные ММкомпании
+						</div>
+					</div>
+				</div>
+				<div class="solutions__box" style="background: url(img/sol2.jpg) no-repeat center center;">
+					<div class="solutions__label" style="background: rgba(250,167,27,0.7);">
+						<div class="vertical">
+							Дом, саД, <br>
+							строительство, ремонт
+						</div>
+					</div>
+				</div>
+				<div class="solutions__box" style="background: url(img/sol3.jpg) no-repeat center center;">
+					<div class="solutions__label" style="background: rgba(54,138,202,0.7);">
+						<div class="vertical">
+							Для транспортных<br>
+	 						компаний
+						</div>	
+					</div>
+				</div>
+				<div class="solutions__box" style="background: url(img/sol4.jpg) no-repeat center center;">
+					<div class="solutions__label" style="background: rgba(62,178,73,0.7);">
+						<div class="vertical">
+							Автозапчасти, <br>
+							шины, диски
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</div>
+
+	<!-- Solutions mobile end -->
+
 	<!-- News -->
 
-	<div class="news">
+	<div class="news hidden-xs">
 		<div class="container">
 			<div class="news__headliner">
 				<span>Н</span>овости
@@ -310,7 +368,7 @@
 				</div>
 			</div>
 
-			<div class="news__box">
+			<div class="news__box hidden-md">
 				<div class="news__image">
 					<img src="img/news1.jpg" alt="">
 				</div>
@@ -330,6 +388,87 @@
 	</div>
 
 	<!-- News end -->
+
+	<!-- News mobile -->
+
+	<div class="news hidden-lg hidden-md">
+		<div class="container">
+			<div class="news__headliner">
+				<span>Н</span>овости
+			</div>
+			<div class="news__carousel">
+				<div class="news__box">
+					<div class="news__image">
+						<img src="img/news1.jpg" alt="">
+					</div>
+					<div class="news__date">
+						01.05.2015
+					</div>
+					<div class="news__head">
+						<a href="#">
+							Обновленный ПРАЙС-ЛИСТ на перевозку обуви/сумок сезона осень-зима 2015 г. от AKFA!
+						</a>
+					</div>
+					<div class="news__text">
+						Обращаем ваше внимание на то, что теперь расчет стоимости перевозки складывается из нескольких составляющих:
+					</div>
+				</div>
+
+				<div class="news__box">
+					<div class="news__image">
+						<img src="img/news1.jpg" alt="">
+					</div>
+					<div class="news__date">
+						01.05.2015
+					</div>
+					<div class="news__head">
+						<a href="#">
+							Обновленный ПРАЙС-ЛИСТ на перевозку обуви/сумок сезона осень-зима 2015 г. от AKFA!
+						</a>
+					</div>
+					<div class="news__text">
+						Обращаем ваше внимание на то, что теперь расчет стоимости перевозки складывается из нескольких составляющих:
+					</div>
+				</div>
+
+				<div class="news__box">
+					<div class="news__image">
+						<img src="img/news1.jpg" alt="">
+					</div>
+					<div class="news__date">
+						01.05.2015
+					</div>
+					<div class="news__head">
+						<a href="#">
+							Обновленный ПРАЙС-ЛИСТ на перевозку обуви/сумок сезона осень-зима 2015 г. от AKFA!
+						</a>
+					</div>
+					<div class="news__text">
+						Обращаем ваше внимание на то, что теперь расчет стоимости перевозки складывается из нескольких составляющих:
+					</div>
+				</div>
+
+				<div class="news__box">
+					<div class="news__image">
+						<img src="img/news1.jpg" alt="">
+					</div>
+					<div class="news__date">
+						01.05.2015
+					</div>
+					<div class="news__head">
+						<a href="#">
+							Обновленный ПРАЙС-ЛИСТ на перевозку обуви/сумок сезона осень-зима 2015 г. от AKFA!
+						</a>
+					</div>
+					<div class="news__text">
+						Обращаем ваше внимание на то, что теперь расчет стоимости перевозки складывается из нескольких составляющих:
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- News mobile end -->
 
 	<!-- Clients -->
 
@@ -378,16 +517,19 @@
 						680022, г. Хабаровск, ул. Нефтяная, д. 1 <br>
 						<a href="#">Посмотреть на карте</a>
 					</div>
-					<div class="footer__search">
+					<div class="footer__search hidden-md hidden-sm hidden-xs">
 						<form action="#">
 							<input type="text" placeholder="Поиск">
 							<input type="submit" value="">
 						</form>
 					</div>
+					<a href="#" class="footer__order hidden-lg hidden-md">
+						Оставить заявку
+					</a>
 				</div>
 				
 			</div>
-			<div class="footer__right">
+			<div class="footer__right hidden-sm hidden-xs">
 				<a href="#" class="footer__order">
 					Оставить заявку
 				</a>
