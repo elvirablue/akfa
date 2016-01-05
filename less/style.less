@@ -40,6 +40,11 @@ body {
 	margin: 0 auto;
 }
 
+.row {
+	width: 100%;
+	float: left;
+}
+
 input, textarea {
   -webkit-appearance: none;
   -webkit-border-radius: 0;
@@ -577,7 +582,7 @@ a[href^=tel]{
 		float: left;
 		font-size: 36px;
 		color: #808080;
-		margin-top: 50px;
+		margin-top: 30px;
 		margin-bottom: 30px;
 		span {
 			color: #E7463C;
@@ -594,6 +599,7 @@ a[href^=tel]{
 		letter-spacing: 0.7em;
 		line-height: 65px;
 		text-transform: uppercase;
+		margin-top: 20px;
 	}
 	&__block {
 		width: 100%;
@@ -679,7 +685,7 @@ a[href^=tel]{
 		padding-top: 70px;
 		padding-right: 30px;
 		padding-bottom: 30px;
-		margin-bottom: 30px;
+		margin-bottom: 60px;
 		border-bottom: 1px solid @red;
 	}
 	&__headliner {
@@ -773,7 +779,6 @@ a[href^=tel]{
 	&__sidebar {
 		width: 274px;
 		float: left;
-		
 	}
 }
 
@@ -829,6 +834,262 @@ a[href^=tel]{
 			background: #fff;
 			box-sizing: border-box;
 		}
+	}
+}
+
+// Calc 1
+
+.calc1-page {
+	width: 100%;
+	float: left;
+	text-align: center;
+	.container {
+		display: inline-block;
+		background: #fff;
+		text-align: left;
+		box-sizing: border-box;
+		padding: 60px 70px;
+		margin-bottom: 60px;
+		border-bottom: 1px solid @red;
+	}
+	&__left {
+		width: 265px;
+		float: left;
+	}
+	&__calc-type-title {
+		width: 100%;
+		float: left;
+		font-size: 10px;
+		text-transform: uppercase;
+		letter-spacing: 0.3em;
+		color: #808076;
+		&:after {
+			content: '';
+			width: 36px;
+			height: 1px;
+			background: #CBCBCB;
+			display: block;
+			margin-top: 10px;
+			margin-bottom: 12px;
+		}
+	}
+	&__menu {
+		margin: 0;
+		padding: 0;
+		float: left;
+		li {
+			list-style-type: none;
+			margin-bottom: 10px;
+			a {
+				font-size: 13px;
+				color: #E7463C;
+				text-decoration: none;
+				display: inline-block;
+			}
+			&:before {
+				content: '';
+				width: 14px;
+				height: 16px;
+				float: left;
+				margin-top: 4px;
+				background: url("../img/layout/calc.png");
+				display: block;
+				margin-right: 12px;
+			}
+		}
+		.active a {
+			color: #808080;
+		}
+	}
+	&__right {
+		float: left;
+		width: 770px;
+	}
+	&__headliner {
+		width: 100%;
+		float: left;
+		font-size: 32px;
+		color: #4D4D4D;
+		margin-bottom: 25px;
+		margin-top: -20px;
+		&:first-letter {
+			color: @red;
+		}
+	}
+	&__form {
+		width: 100%;
+		float: left;
+		.select-box {
+			float: left;
+			margin-right: 100px;
+		}
+		input[type="submit"] {
+			width: 215px;
+			height: 35px;
+			text-decoration: none;
+			text-align: center;
+			color: @gray;
+			line-height: 33px;
+			display: inline-block;
+			margin: 0 auto;
+			border: 1px solid @red;
+			border-radius: 5px;
+			margin-top: 15px;
+			text-transform: uppercase;
+			font-size: 12px;
+			letter-spacing: 0.1em;
+			background: #fff;
+			box-sizing: border-box;
+		}
+		select {
+			width: 215px;
+			height: 30px;
+			box-sizing: border-box;
+		}
+		input[type="text"] {
+			width: 215px;
+			height: 30px;
+			box-sizing: border-box;
+			border: 1px solid #A9A9A9;
+			border-radius: 2px;
+		}
+		.row {
+			margin-bottom: 10px;
+		}
+		.label {
+			font-size: 13px;
+			font-weight: 300;
+			color: #000;
+			margin-bottom: 5px;
+		}
+	}
+	&__cost {
+		width: 100%;
+		float: left;
+		height: 60px;
+		background: #F9F9F9;
+		border-top: 1px solid @red;
+		box-sizing: border-box;
+		line-height: 60px;
+		padding-left: 25px;
+		font-size: 16px;
+		font-weight: 600;
+		color: #808080;
+		margin-top: 30px;
+		.red {
+			color: @red;
+		}
+		.regular {
+			font-weight: normal;
+		}
+	}
+	&__cost-desc {
+		width: 100%;
+		float: left;
+		font-size: 13px;
+		font-weight: 300;
+		margin-top: 25px;
+	}
+	&__order-btn {
+		width: 215px;
+		height: 35px;
+		text-decoration: none;
+		text-align: center;
+		color: @gray;
+		line-height: 35px;
+		display: inline-block;
+		margin: 0 auto;
+		border: 1px solid @red;
+		border-radius: 5px;
+		margin-top: 15px;
+		text-transform: uppercase;
+		font-size: 12px;
+		letter-spacing: 0.1em;
+		background: #fff;
+		box-sizing: border-box;
+	}
+	&__desc {
+		border-top: 1px solid #CBCBCB;
+		padding-top: 40px;
+		margin-top: 60px;
+		font-size: 13px;
+		line-height: 24px;
+		color: #6F6F6E;
+		margin-bottom: 60px;
+	}
+	&__order {
+		border-top: 10px solid #E5E5E5;
+		border-bottom: 10px solid #E5E5E5;
+		width: 100%;
+		float: left;
+		padding: 35px 0;
+		h3 {
+			font-size: 20px;
+			color: #808080;
+		}
+		.text {
+			float: left;
+			width: 420px;
+			font-size: 13px;
+			line-height: 18px;
+		}
+	}
+	&__order-form {
+		float: right;
+		width: 300px;
+		text-align: right;
+		::-webkit-input-placeholder {color:#000;}
+		::-moz-placeholder          {color:#000;}/* Firefox 19+ */
+		:-moz-placeholder           {color:#000;}/* Firefox 18- */
+		:-ms-input-placeholder      {color:#000;}
+		input[type="text"] {
+			border: 0px;
+			width: 215px;
+			font-size: 13px;
+			border-bottom: 1px solid #CBCBCB;
+			color: #000;
+			outline: none;
+			padding-bottom: 10px;
+			margin-bottom: 10px;
+		}
+		input[type="submit"] {
+			width: 215px;
+			height: 35px;
+			text-decoration: none;
+			text-align: center;
+			color: @gray;
+			line-height: 33px;
+			display: inline-block;
+			margin: 0 auto;
+			border: 1px solid @red;
+			border-radius: 5px;
+			margin-top: 15px;
+			margin-bottom: 10px;
+			text-transform: uppercase;
+			font-size: 12px;
+			letter-spacing: 0.1em;
+			background: #fff;
+			box-sizing: border-box;
+		}
+	}
+	&__expirience {
+		width: 100%;
+		float: left;
+		font-size: 13px;
+		font-weight: 300;
+		line-height: 24px;
+		color: #6F6F6E;
+		margin-top: 70px;
+	}
+}
+
+// Contacts page
+
+.contacts-page {
+	width: 100%;
+	float: left;
+	.container {
+		
 	}
 }
 
