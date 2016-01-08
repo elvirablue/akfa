@@ -1,0 +1,154 @@
+@red : #ED1A3B;
+
+// Layout
+
+.page-vertical-menu {
+	height: 36px;
+	line-height: 25px;
+	list-style: none;
+	border-bottom: 1px solid #DDD;
+	background: #F9F9F9;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	float: left;
+	li {
+		float: left;
+		display: inline;
+		padding: 0 25px;
+		cursor: pointer;
+		position: relative;
+		height: 36px;
+		line-height: 36px;
+		a {
+			color: #777;
+			text-decoration: none; 
+		}
+		&:hover a {
+			color: #E7463C;
+		}
+	}
+	.active {
+		border-bottom: 1px solid #E7463C;
+		padding: 0 25px;
+		a {
+			color: #E7463C;
+		}
+	}
+}
+
+.button-aminate-red {
+	transition: 0.3s !important;
+	&:hover {
+		background: @red !important;
+		color: #fff !important;
+	}
+}
+
+
+// Tabs
+
+.tabs {
+	width: 100%;
+	margin: 0 0 30px;
+}
+.tabs__caption {
+	height: 36px;
+	line-height: 25px;
+	list-style: none;
+	border-bottom: 1px solid #DDD;
+	background: #F9F9F9;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+
+}
+.tabs__caption li {
+	float: left;
+	display: inline;
+	// margin: 0 1px -1px 0;
+	padding: 0 25px;
+	color: #777;
+	cursor: pointer;
+	// border-bottom: 1px solid #F9F9F9;
+	position: relative;
+	height: 36px;
+	line-height: 36px;
+}
+.tabs__caption li:hover,
+.vertical .tabs__caption li:hover {
+	color: #E7463C;
+}
+.tabs__caption .active {
+	color: #E7463C;
+	border-bottom: 1px solid #E7463C;
+	padding: 0 25px;
+}
+.tabs__content {
+	display: none;
+
+	margin-top: 30px;
+}
+.tabs__content.active {
+	display: block;
+}
+
+.tabs.vertical {
+	width: 440px;
+	border-left: 160px solid #FFF;
+}
+.vertical .tabs__caption {
+	width: 160px;
+	float: left;
+	display: inline;
+	margin: 0 0 0 -160px;
+}
+.vertical .tabs__caption li {
+	padding: 0 13px;
+	margin: 0 0 1px;
+	border: 1px solid #E4E4E4;
+	border-right: 1px solid #F9F9F9;
+	width: 132px;
+	height: 25px;
+}
+.vertical .tabs__caption li:hover {
+	width: 131px;
+}
+.vertical .tabs__caption .active {
+	width: 133px;
+	color: #444;
+	background: #EFEFEF;
+	border: 1px solid #D4D4D4;
+	border-right: 1px solid #EFEFEF;
+	margin-right: -1px;
+}
+.vertical .tabs__content {
+	border-width: 1px;
+}
+
+// Accordion 
+
+.accordion {
+	width: 100%;
+	float: left;
+	&__toggle {
+		width: 100%;
+		float: left;
+		border-bottom: 1px solid #E5E5E5;
+		height: 30px;
+		line-height: 30px;
+		font-size: 13px;
+		color: #E7463C;
+		text-transform: uppercase;
+		cursor: pointer;
+		margin-top: 10px;
+	}
+	&__inner {
+		width: 100%;
+		float: left;
+		display: none;
+		font-size: 13px;
+		line-height: 18px;
+		padding-top: 10px;
+	}
+}
