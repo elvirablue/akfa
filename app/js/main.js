@@ -64,3 +64,52 @@ $('.accordion__toggle').click(function(e) {
         $('.accordion__toggle').not(this).removeClass("active");
     }
 });
+
+// Form styler 
+
+(function($) {
+  $(function() {
+
+    $('input, select').styler();
+
+  });
+})(jQuery);
+
+// Supplies
+
+
+
+$('.supplies-page__posts .supplies-page__post').click(function(){
+    $(this).toggleClass('active');
+    $('.supplies-page__post').not(this).removeClass('active');
+});
+
+$('.supplies-page__posts .moscow').click(function(){
+    $('.supplies-page__svh .supplies-page__svh-box').removeClass("active");
+    $('.supplies-page__svh .moscow').addClass("active");
+    $('.supplies-page__comment .supplies-page__comment-body').removeClass("active");
+    $('.supplies-page__comment .moscow').addClass("active");
+});
+
+$('.supplies-page__posts .mozhaysk').click(function(){
+    $('.supplies-page__svh .supplies-page__svh-box').removeClass("active");
+    $('.supplies-page__svh .mozhaysk').addClass("active");
+    $('.supplies-page__comment .supplies-page__comment-body').removeClass("active");
+    $('.supplies-page__comment .mozhaysk').addClass("active");
+});
+
+$('.supplies-page__posts .khabarovsk').click(function(){
+    $('.supplies-page__svh .supplies-page__svh-box').removeClass("active");
+    $('.supplies-page__svh .khabarovsk').addClass("active");
+    $('.supplies-page__comment .supplies-page__comment-body').removeClass("active");
+    $('.supplies-page__comment .khabarovsk').addClass("active");
+});
+
+$('.supplies-page__posts .vladivostok').click(function(){
+    $('.supplies-page__svh .supplies-page__svh-box').removeClass("active");
+    $('.supplies-page__svh .vladivostok').addClass("active");
+    $('.supplies-page__comment .supplies-page__comment-body').removeClass("active");
+    $('.supplies-page__comment .vladivostok').addClass("active");
+});
+
+
