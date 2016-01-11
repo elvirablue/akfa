@@ -119,3 +119,26 @@ $('.order-page__full-form-button').click(function(){
     $('.order-page__full-form-button.hide').toggle();
     $('.order-page__full-form-button.show').toggle();
 });
+
+// Map switcher
+
+$('.map-switcher__nav-item').click(function(){
+    $(this).addClass('active');
+    $('.map-switcher__nav-item').not(this).removeClass('active');
+});
+
+$('.map-switcher__nav-item.china').click(function(){
+    $('.map-switcher__canvas img').not(this).removeClass('active');
+    $('.map-switcher__canvas .map1').addClass('active');
+    
+});
+
+$('.map-switcher__nav-item.container-shipping').click(function(){
+    $('.map-switcher__canvas img').not(this).removeClass('active');
+    $('.map-switcher__canvas .map2').addClass('active');
+});
+
+$('.map-switcher__nav-item.supplies').click(function(){
+    $('.map-switcher__canvas img').not(this).removeClass('active');
+    $('.map-switcher__canvas .map3').addClass('active');
+});

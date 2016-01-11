@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Оставить заявку | АКФА</title>
+	<title>Доставка сборных грузов | АКФА</title>
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="libs/animate.css">
@@ -100,9 +100,9 @@
 
 	<div class="page-top"></div>
 
-	<!-- Order page -->
+	<!-- Delivery page -->
 
-	<div class="order-page">
+	<div class="delivery-page">
 		<div class="container">
 			<div class="left-col">
 				<div class="page-menu">
@@ -130,11 +130,6 @@
 							</a>
 						</li>
 					</ul>
-
-					<div class="page-menu__small-text">
-						Хранение на складе<br>
-						Грузовые перевозки по России
-					</div>
 
 					<div class="page-menu__headliner">
 						Отраслевые <br>
@@ -179,7 +174,7 @@
 			</div>
 			<div class="content-col">
 				<div class="page-headliner">
-					Оставить заявку
+					Доставка сборных грузов
 				</div>
 
 				<ul class="page-vertical-menu">
@@ -205,84 +200,21 @@
 			    	</li>
 				</ul>
 
-				<form action="#" class="order-page__form">
-					<div class="order-page__selectbox">
-						<select>
-							<option value="Выбрать услугу">
-								Выбрать услугу
-							</option>
-							<option value="Услуга">Услуга</option>
-							<option value="Услуга">Услуга</option>
-						</select>
-					</div>
-					
-					<div class="order-page__left-col">
-						<input type="text" placeholder="Имя*">
-						<input type="text" placeholder="Телефон*">
-						<input type="text" placeholder="E-mail*">
-					</div>
-					<div class="order-page__right-col">
-						<input type="text" placeholder="Город отправления*">
-						<input type="text" placeholder="Город получения*">
-						<textarea placeholder="Примерный объем груза и дополнительная информация"></textarea><br>
-					</div>
-					<div class="row">
-						<div class="order-page__full-form-headliner">
-							Полная форма заявки
-						</div>
-						<input type="submit" value="Отправить заявку" class="order-page__submit-button">
-						<div class="order-page__full-form-button show">
-							Полная форма заявки
-						</div>
-						<div class="order-page__full-form-button hide">
-							Скрыть
-						</div>
-					</div>
+				<form action="#" class="delivery-page__order-form">
+					<input type="text" placeholder="Имя*">
+					<input type="text" placeholder="Город отправления*">
+					<input type="text" placeholder="Город получения*">
 
-					<div class="order-page__full-form">
-						<div class="row">
-							<textarea placeholder="Текст запроса"></textarea>
-
-							<textarea placeholder="Наименование товара с описанием"></textarea>
-						</div>
-
-						<div class="full-form">
-							<input type="text" placeholder="Город отправления">
-							<input type="text" placeholder=" Город получения">
-							<input type="text" placeholder="Код ТНВЭД">
-							<input type="text" placeholder="Количество шт/пар">
-							<input type="text" placeholder="Торговая марка">
-							<input type="text" placeholder="Материал">
-							<input type="text" placeholder="Вес заказа (кг)">
-							<input type="text" placeholder="Объем заказа (м3)">
-							<input type="text" placeholder="Фотография товара 1">
-							<input type="text" placeholder="Фотография товара 2">
-							<input class="full-form__big-input" type="text" placeholder="Название организации">
-							<input class="full-form__big-input" type="text" placeholder="Контактное лицо">
-							<input type="text" placeholder="Вес заказа (кг)">
-							<input type="text" placeholder="Объем заказа (м3)">
-							<input type="text" placeholder="Телефон (10 цифр)">
-							<input type="text" placeholder="E-mail">
-
-							<div class="row">
-								<select class="full-form__select">
-									<option value="Откуда узнали о нас">Откуда Вы узнали о нас?</option>
-									<option value="1">1</option>
-									<option value="2">2</option>
-								</select>
-							</div>
-
-							<textarea placeholder="Если Вы узнали о нашей компании из другого источника, пожалуйста укажите его"></textarea>
-
-							<input type="submit" value="Отправить заявку" class="page-button full-form__submit">
-						</div>
-					</div>
+					<input type="text" placeholder="Телефон*">
+					<textarea placeholder="Значение ТНВЭД"></textarea><br>
+					<input type="text" placeholder="E-mail*" class="last">
+					<input type="submit" value="Оставить заявку" class="page-button">
 				</form>
 			</div>
 		</div>
 	</div>
 
-	<!-- Order page end -->
+	<!-- Delivery page end -->
 
 	<!-- Footer -->
 

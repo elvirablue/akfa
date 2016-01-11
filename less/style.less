@@ -1222,7 +1222,7 @@ a[href^=tel]{
 					height: 20px;
 					float: left;
 					margin-right: 10px;
-					background: url("../img/layout/сontacts-menu.png");
+					background: url("../img/layout/contacts-menu.png");
 				}
 			}
 			.pretension {
@@ -1821,6 +1821,102 @@ a[href^=tel]{
 	}
 	&__submit {
 		line-height: 33px;
+	}
+}
+
+// About page
+
+.about-page {
+	width: 100%;
+	float: left;
+	text-align: center;
+	.container {
+		display: inline-block;
+		background: #fff;
+		text-align: left;
+		box-sizing: border-box;
+		padding: 60px 70px;
+		margin-bottom: 60px;
+		border-bottom: 1px solid @red;
+	}
+	&__text {
+		width: 100%;
+		float: left;
+		font-size: 13px;
+		line-height: 24px;
+		color: #6F6F6E;
+		margin-top: 50px;
+	}
+}	
+
+.map-switcher {
+	width: 100%;
+	float: left;
+	&__canvas {
+		width: 100%;
+		float: left;
+		img {
+			width: 770px;
+			display: none;
+			&.active {
+				display: block;
+			}
+		}
+	}
+	&__controls {
+		width: 100%;
+		float: left;
+		margin-top: -94px;
+	}
+	&__nav-item {
+		width: 104px;
+		height: 92px;
+		border: 1px solid #ED1A3B;
+		border-radius: 5px;
+		float: left;
+		margin-right: 10px;
+		text-align: center;
+		position: relative;
+		cursor: pointer;
+		color: #E7463C;
+		&.china {
+			img {
+				margin-top: 20px;
+			}
+			&.active {
+				border: 1px dashed #FD8B00;
+				color: #FD8B00;
+			}
+		}
+		&.container-shipping {
+			img {
+				margin-top: 6px;
+			}
+			&.active {
+				border: 1px dashed #8AB71F;
+				color: #8AB71F;
+			}
+		}
+		&.supplies {
+			img {
+				margin-top: 12px;
+			}
+			&.active {
+				border: 1px dashed #EC1A3B;
+				color: #EC1A3B;
+			}
+		}
+	}
+	&__nav-text {
+		width: 100%;
+		display: inline-block;
+		font-size: 9px;
+		box-sizing: border-box;
+		
+		position: absolute;
+		bottom: 10px;
+		left: 0;
+		text-align: center;
 	}
 }
 
