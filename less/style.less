@@ -86,7 +86,7 @@ a[href^=tel]{
 	line-height: 32px;
 	color: #808080;
 	margin-bottom: 25px;
-	margin-top: -20px;
+
 	&:first-letter {
 		color: @red;
 	}
@@ -1406,6 +1406,49 @@ a[href^=tel]{
 		input[type="submit"] {
 			line-height: 33px;
 			margin-top: -20px;
+		}
+	}
+	&__text {
+		width: 100%;
+		float: left;
+		font-size: 13px;
+		line-height: 24px;
+		color: #6F6F6E;
+	}
+}
+
+.price-table {
+	width: 100%;
+	float: left;
+	&__table {
+		width: 100%;
+		float: left;
+		font-size: 11px;
+		color: #808080;
+		margin-bottom: 35px;
+		tr {
+			&:nth-child(2n+1) {
+				background: #F9F9F9;
+			}
+		}
+		td {
+			padding: 10px;
+		}
+	}
+	&__head {
+		border-bottom: 1px solid #CBCBCB;
+		vertical-align: top;
+		font-size: 10px;
+		text-transform: uppercase;
+		color: #808080;
+	}
+	&__info {
+		margin-left: 100px;
+		letter-spacing: 0.15em;
+	}
+	&__small-table {
+		td {
+			width: 50%;
 		}
 	}
 }

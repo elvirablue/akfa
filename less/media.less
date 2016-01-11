@@ -238,12 +238,16 @@
 	and (min-width: 320px)
 	and (max-width: 768px) {
 
+	body {
+
+	}
+
 	.hidden-xs {
 		display: none;
 	}
 
 	.container {
-		width: 300px;
+		width: 320px;
 		position: relative;
 	}
 
@@ -477,6 +481,191 @@
 		&__order {
 			float: left;
 			margin-top: 30px;
+		}
+	}
+
+	.page-info {
+		.text {
+			width: 100%;
+			float: left;
+		}
+		&__form {
+			width: 100%;
+			float: left;
+			margin-top: 20px;
+			input[type="text"] {
+				width: 100%;
+			}
+			input[type="submit"] {
+				width: 100%;
+			}
+		}
+	}
+
+	.page-headliner {
+		margin-top: 20px;
+	}
+
+	.page-top {
+		display: none;
+	}
+
+	.order-page {
+		.container {
+			padding: 20px;
+		}
+		.page-vertical-menu {
+			display: none;
+		}
+		&__form {
+			text-align: center;
+			input[type="text"] {
+				width: 100%;
+				margin-right: 0px;
+			}
+			textarea {
+				width: 100%;
+			}
+		}
+		&__left-col {
+			width: 100%;
+			float: left;
+		}
+		&__right-col {
+			width: 100%;
+			float: left;
+		}
+		&__submit-button {
+			width: 100%;
+			margin: 0;
+			display: inline-block;
+			float: none;
+			margin-bottom: 20px;
+		}
+		&__full-form-button {
+			width: 100%;
+			margin: 0;
+			display: inline-block;
+			float: none;
+			margin-bottom: 5px;
+			&.hide {
+				width: 100%;
+				display: inline-block;
+				&.hidden {
+					display: none;
+				}
+			}
+			&.show {
+				width: 100%;
+				&.hidden {
+					display: none;
+				}
+			}
+
+		}
+		&__full-form-headliner {
+			display: inline-block;
+			width: 100%;
+			margin-bottom: 20px;
+			// float: left;
+			&.hidden {
+				display: none;
+			}
+		}
+	}
+
+	.left-col {
+		width: 100%;
+		float: left;
+		text-align: center;
+	}
+
+	.page-menu {
+		width: 100%;
+		display: inline-block;
+		position: relative;
+		height: 36px;
+		&__menu {
+			width: 260px;
+			padding: 6px 10px;
+			position:absolute;
+		    left:0;
+		    right:0;
+		    margin-left:auto;
+		    margin-right:auto;
+			border: solid 2px @red;
+			z-index: 9000;
+			background: #fff;
+			text-align: left;
+			box-sizing: border-box;
+			cursor: pointer;
+		}
+		&:hover {
+			li {
+				display: inline-block;
+				z-index: 900;
+				position: relative;
+				background: #fff;
+				text-align: left;
+				box-sizing: border-box;
+			}
+		}
+		&__headliner {
+			display: none;
+		}
+		li {
+			width: 100%;
+			display: none;
+			font-size: 13px;
+			color: #808080;
+			margin-bottom: 0px;
+			&:last-child {
+				margin-bottom: 0px;
+			}
+			a {
+				color: #808080;
+			}
+			&.current {
+				display: inline-block;
+			}
+		}
+		&__button {
+			display: none;
+		}
+		&__video-box {
+			display: none;
+		}
+	}
+
+	.right-col {
+		width: 100%;
+		float: left;
+	}
+
+	.content-col {
+		width: 100%;
+		float: left;
+	}
+
+	.full-form {
+		width: 100%;
+		float: left;
+		&__big-input {
+			width: 100% !important;
+		}
+		&__select {
+			margin-top: 15px;
+		}
+		&__submit {
+			margin-top: 5px;
+			margin-bottom: 10px;
+			width: 100%;
+		}
+	}
+
+	.delivery-page {
+		.container {
+			padding: 20px;
 		}
 	}
  

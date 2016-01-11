@@ -115,8 +115,8 @@ $('.supplies-page__posts .vladivostok').click(function(){
 $('.order-page__full-form-button').click(function(){
     $('.order-page__submit-button').toggle();
     $('.order-page__full-form').toggle();
-    $('.order-page__full-form-headliner').toggle();
-    $('.order-page__full-form-button.hide').toggle();
+    $('.order-page__full-form-headliner').toggleClass('hidden');
+    $('.order-page__full-form-button.hide').toggleClass('hidden');
     $('.order-page__full-form-button.show').toggle();
 });
 
