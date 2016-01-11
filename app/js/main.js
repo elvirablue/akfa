@@ -77,10 +77,8 @@ $('.accordion__toggle').click(function(e) {
 
 // Supplies
 
-
-
 $('.supplies-page__posts .supplies-page__post').click(function(){
-    $(this).toggleClass('active');
+    $(this).addClass('active');
     $('.supplies-page__post').not(this).removeClass('active');
 });
 
@@ -112,4 +110,12 @@ $('.supplies-page__posts .vladivostok').click(function(){
     $('.supplies-page__comment .vladivostok').addClass("active");
 });
 
+// Order form
 
+$('.order-page__full-form-button').click(function(){
+    $('.order-page__submit-button').toggle();
+    $('.order-page__full-form').toggle();
+    $('.order-page__full-form-headliner').toggle();
+    $('.order-page__full-form-button.hide').toggle();
+    $('.order-page__full-form-button.show').toggle();
+});

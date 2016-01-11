@@ -62,6 +62,11 @@ a[href^=tel]{
 	display: table-cell;
 }
 
+::-webkit-input-placeholder {color:#000;}
+::-moz-placeholder          {color:#000;}/* Firefox 19+ */
+:-moz-placeholder           {color:#000;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#000;}
+
 // Layout
 
 .left-col {
@@ -1364,6 +1369,45 @@ a[href^=tel]{
 	&__form {
 		margin-top: 30px;
 	}
+	&__order-form {
+		width: 100%;
+		float: left;
+		margin-top: 30px;
+		input[type="text"] {
+			border: 0;
+		    width: 156px;
+		    font-size: 13px;
+		    border-bottom: 1px solid #CBCBCB;
+		    color: #000;
+		    outline: 0;
+		    padding-bottom: 10px;
+		    margin-bottom: 20px;
+		    display: inline-block;
+		    margin-right: 40px;
+		    vertical-align: top;
+		    &.last {
+		    	margin-top: -75px;
+		    }
+		}
+		textarea {
+			width: 362px;
+			height: 72px;
+			background: url("../img/layout/textarea-line.png");
+		    font-size: 13px;
+		    line-height: 24px;
+		    margin-bottom: 40px;
+		    border: 0;
+		    outline: none;
+		    padding: 0;
+		    overflow: hidden;
+		    display: inline-block;
+		    margin-top: 5px;
+		}
+		input[type="submit"] {
+			line-height: 33px;
+			margin-top: -20px;
+		}
+	}
 }
 
 .delivery-desc {
@@ -1602,7 +1646,183 @@ a[href^=tel]{
 	.page-button {
 		margin-top: 20px;
 	}
-}	
+}
+
+// Order page
+
+.order-page {
+	width: 100%;
+	float: left;
+	text-align: center;
+	.container {
+		display: inline-block;
+		background: #fff;
+		text-align: left;
+		box-sizing: border-box;
+		padding: 60px 70px;
+		margin-bottom: 60px;
+		border-bottom: 1px solid @red;
+	}
+	&__form {
+		width: 100%;
+		float: left;
+		margin-top: 30px;
+		input[type="text"] {
+			border: 0;
+		    width: 156px;
+		    font-size: 13px;
+		    border-bottom: 1px solid #CBCBCB;
+		    color: #000;
+		    outline: 0;
+		    padding-bottom: 10px;
+		    margin-bottom: 20px;
+		    margin-right: 27px;
+		    vertical-align: top;
+		    float: left;
+		}
+		textarea {
+			width: 338px;
+			height: 72px;
+			background: url("../img/layout/textarea-line.png");
+		    font-size: 13px;
+		    line-height: 24px;
+		    margin-bottom: 40px;
+		    border: 0;
+		    outline: none;
+		    padding: 0;
+		    overflow: hidden;
+		    display: inline-block;
+		    margin-top: 5px;
+		}
+	}
+	&__selectbox {
+		width: 100%;
+		float: left;
+		margin-bottom: 30px;
+	}
+	&__left-col {
+		width: 250px;
+		float: left;
+	}
+	&__right-col {
+		width: 400px;
+		float: left;
+	}
+	&__submit-button {
+		width: 215px;
+		height: 35px;
+		text-decoration: none;
+		text-align: center;
+		color: @gray;
+		line-height: 33px;
+		display: block;
+		margin: 0 auto;
+		border: 1px solid @red;
+		border-radius: 5px;
+		text-transform: uppercase;
+		font-size: 12px;
+		letter-spacing: 0.1em;
+		box-sizing: border-box;
+		transition: 0.3s;
+		background: #fff;
+		float: left;
+		margin-right: 30px;
+		&:hover {
+			background: @red;
+			color: #fff;
+		}
+	}
+	&__full-form-button {
+		width: 253px;
+		height: 35px;
+		text-decoration: none;
+		text-align: center;
+		color: @gray;
+		line-height: 35px;
+		margin: 0 auto;
+		border: 1px solid #CBCBCB;
+		border-radius: 5px;
+		text-transform: uppercase;
+		font-size: 12px;
+		letter-spacing: 0.1em;
+		box-sizing: border-box;
+		transition: 0.3s;
+		background: #fff;
+		float: left;
+		cursor: pointer;
+		&.hide {
+			width: 210px;
+			display: none;
+		}
+		&:after {
+			content: '';
+			width: 12px;
+			height: 7px;
+			background: url("../img/layout/full-form-down.png");
+			display: none;
+		}
+		&:hover {
+			background: #CBCBCB;
+			color: #fff;
+		}
+	}
+	&__full-form-headliner {
+		font-size: 20px;
+		color: #808080;
+		font-weight: 500;
+		display: none;
+		float: left;
+		width: 245px
+	}
+	&__full-form {
+		width: 100%;
+		float: left;
+		margin-top: 10px;
+		display: none;
+		textarea {
+			width: 587px;
+			height: 72px;
+			background: url("../img/layout/textarea-line.png");
+		    font-size: 13px;
+		    line-height: 24px;
+		    margin-bottom: 40px;
+		    border: 0;
+		    outline: none;
+		    padding: 0;
+		    overflow: hidden;
+		    display: inline-block;
+		    margin-bottom: 20px;
+		}
+	}
+}
+
+.full-form {
+	width: 700px;
+	float: left;
+	input[type="text"] {
+		width: 278px;
+		margin-right: 31px;
+	}
+	&__left {
+		width: 227px;
+		float: left;
+		margin-right: 20px;
+	}
+	&__right {
+		width: 227px;
+		float: left;
+	}
+	&__big-input {
+		width: 587px !important;
+	}
+	&__select {
+		margin-top: 5px;
+		margin-bottom: 15px;
+	}
+	&__submit {
+		line-height: 33px;
+	}
+}
 
 // Footer
 

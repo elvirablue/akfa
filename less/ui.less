@@ -64,7 +64,7 @@ h5 {
 		}	
 	}
 	&__button {
-		margin-bottom: 20px;
+		margin-bottom: 20px !important;
 	}
 	&__video-box {
 		width: 215px;
@@ -78,6 +78,24 @@ h5 {
 			float: left;
 			border: 0;
 		}
+	}
+	&__small-text {
+		font-size: 10px;
+		font-weight: 300;
+		width: 100%;
+		float: left;
+		margin-bottom: 30px;
+		padding-left: 30px;
+		box-sizing: border-box;
+		&:before {
+			content: '';
+		    width: 18px;
+		    height: 1px;
+		    background: #CBCBCB;
+		    display: block;
+		    margin-top: 0px;
+		    margin-bottom: 10px;
+	    }
 	}
 }
 
@@ -97,6 +115,7 @@ h5 {
 	letter-spacing: 0.1em;
 	box-sizing: border-box;
 	transition: 0.3s;
+	background: #fff;
 	&:hover {
 		background: @red;
 		color: #fff;
