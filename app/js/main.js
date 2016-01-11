@@ -129,8 +129,7 @@ $('.map-switcher__nav-item').click(function(){
 
 $('.map-switcher__nav-item.china').click(function(){
     $('.map-switcher__canvas img').not(this).removeClass('active');
-    $('.map-switcher__canvas .map1').addClass('active');
-    
+    $('.map-switcher__canvas .map1').addClass('active'); 
 });
 
 $('.map-switcher__nav-item.container-shipping').click(function(){
@@ -142,3 +141,19 @@ $('.map-switcher__nav-item.supplies').click(function(){
     $('.map-switcher__canvas img').not(this).removeClass('active');
     $('.map-switcher__canvas .map3').addClass('active');
 });
+
+// Additional
+
+$('.page-menu__menu .current').click(function(){
+   return false;
+});
+
+
+// $('ul.tabs__caption li.active').click(function() {
+//     $('.tabs__caption li').not(this).addClass('visible');
+//     // $('.ul.tabs__caption li.active').not(this).removeClass('visible');
+// });
+
+// $('ul.tabs__caption li.visible').click(function() {
+//     $('ul.tabs__caption li').removeClass('visible');
+// });

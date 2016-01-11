@@ -59,6 +59,10 @@ h5 {
 				vertical-align: middle;
 				margin-right: 6px;
 				width: 17px;
+				&.calc- {
+					vertical-align: top;
+					width: 13px;
+				}
 			}
 			a {
 				font-size: 13px;
@@ -70,6 +74,9 @@ h5 {
 	}
 	&__button {
 		margin-bottom: 5px !important;
+	}
+	&__small-text {
+		display: none;
 	}
 	&__video-box {
 		width: 215px;
@@ -162,7 +169,7 @@ h5 {
 	}
 }
 
-.button-aminate-red {
+.button-animate-red {
 	transition: 0.3s !important;
 	&:hover {
 		background: @red !important;

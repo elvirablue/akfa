@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="libs/owl/owl.carousel.css">
 	<link rel="stylesheet" href="libs/owl/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/ui.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,8 +23,11 @@
 			<div class="header__top">
 				<div class="header__logo">
 					<img src="img/layout/logo.png" alt="">
+					<div class="header__search hidden-md hidden-lg">
+						<img src="img/layout/header-search.png" alt="">
+					</div>
 					<a href="#" class="header__profile-link hidden-lg hidden-md"></a>
-					<a href="#" class="header__order-status-link hidden-lg hidden-md"></a>
+					
 				</div>
 				<div class="header__tagline hidden-xs">
 					Больше<br>
@@ -31,6 +35,10 @@
 				</div>
 				<div class="header__phone">
 					<span>8 800</span> 2000 158
+				</div>
+				<div class="header__tagline hidden-md hidden-lg">
+					Больше<br>
+					чем логистика
 				</div>
 				<div class="header__phone-text hidden-xs">
 					Бесплатно<br>
@@ -43,7 +51,7 @@
 					Личный кабинет
 				</a>
 				<div class="header__toggle-menu hidden-lg">
-					<img src="img/layout/menu-gray.png" alt="">
+					<img src="img/layout/menu-red.png" alt="">
 				</div>
 			</div>
 			<div class="header__bottom">
@@ -86,11 +94,9 @@
 				<a href="#" class="header__submit-button">
 					Оставить заявку
 				</a>
-				<div class="header__lang-switcher hidden-lg">
-					<a href="#" class="active">ru</a>
-					<a href="#">en</a>
-					<a href="#">ch</a>
-				</div>
+				<a href="#" class="header__order-status-link hidden-lg hidden-md">
+					Отслеживание заказа
+				</a>
 			</div>
 		</div>
 	</header>
@@ -544,6 +550,7 @@
 
 	<script src="bower/jquery/dist/jquery.min.js"></script>
 	<script src="libs/owl/owl.carousel.min.js"></script>
+	<script src="libs/jquery.formstyler/jquery.formstyler.min.js"></script>
 	<script src="js/main.js"></script>
 
 	<!-- Scripts end -->

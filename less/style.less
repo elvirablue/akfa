@@ -922,9 +922,9 @@ a[href^=tel]{
 	}
 }
 
-// Calc 1
+// Calc 
 
-.calc1-page {
+.calc-page {
 	width: 100%;
 	float: left;
 	text-align: center;
@@ -1033,10 +1033,16 @@ a[href^=tel]{
 		}
 		input[type="text"] {
 			width: 215px;
-			height: 30px;
+			height: 36px;
 			box-sizing: border-box;
-			border: 1px solid #A9A9A9;
-			border-radius: 2px;
+			border: 1px solid #D4D4DF;
+			padding-left: 15px;
+			background: none;
+			border-radius: 0;
+			line-height: 34px;
+			color: #000;
+			font-size: 13px;
+			text-align: left;
 		}
 		.row {
 			margin-bottom: 10px;
@@ -1362,7 +1368,7 @@ a[href^=tel]{
 	.page-info {
 		margin-top: 50px;
 	}
-	.calc1-page__desc {
+	.calc-page__desc {
 		border-top: 0;
 		margin-top: 0px;
 	}
@@ -1420,6 +1426,7 @@ a[href^=tel]{
 .price-table {
 	width: 100%;
 	float: left;
+	margin-top: 30px;
 	&__table {
 		width: 100%;
 		float: left;
@@ -1469,7 +1476,19 @@ a[href^=tel]{
 .delivery-steps {
 	width: 100%;
 	float: left;
-	margin-top: 50px;
+	margin-top: 40px;
+	&__box-headliner {
+		width: 100%;
+		float: left;
+		font-size: 16px;
+		line-height: 24px;
+		margin-bottom: 20px;
+		font-weight: 500;
+		color: #808080;
+		&:first-letter {
+			color: @red;
+		}
+	}
 	&__step {
 		width: 125px;
 		height: 122px;

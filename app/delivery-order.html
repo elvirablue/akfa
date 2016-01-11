@@ -23,8 +23,11 @@
 			<div class="header__top">
 				<div class="header__logo">
 					<img src="img/layout/logo.png" alt="">
+					<div class="header__search hidden-md hidden-lg">
+						<img src="img/layout/header-search.png" alt="">
+					</div>
 					<a href="#" class="header__profile-link hidden-lg hidden-md"></a>
-					<a href="#" class="header__order-status-link hidden-lg hidden-md"></a>
+					
 				</div>
 				<div class="header__tagline hidden-xs">
 					Больше<br>
@@ -32,6 +35,10 @@
 				</div>
 				<div class="header__phone">
 					<span>8 800</span> 2000 158
+				</div>
+				<div class="header__tagline hidden-md hidden-lg">
+					Больше<br>
+					чем логистика
 				</div>
 				<div class="header__phone-text hidden-xs">
 					Бесплатно<br>
@@ -44,7 +51,7 @@
 					Личный кабинет
 				</a>
 				<div class="header__toggle-menu hidden-lg">
-					<img src="img/layout/menu-gray.png" alt="">
+					<img src="img/layout/menu-red.png" alt="">
 				</div>
 			</div>
 			<div class="header__bottom">
@@ -87,15 +94,13 @@
 				<a href="#" class="header__submit-button">
 					Оставить заявку
 				</a>
-				<div class="header__lang-switcher hidden-lg">
-					<a href="#" class="active">ru</a>
-					<a href="#">en</a>
-					<a href="#">ch</a>
-				</div>
+				<a href="#" class="header__order-status-link hidden-lg hidden-md">
+					Отслеживание заказа
+				</a>
 			</div>
 		</div>
 	</header>
-
+	
 	<!-- Header end -->
 
 	<div class="page-top"></div>
@@ -110,8 +115,12 @@
 						Услуги
 					</div>
 
+					<div class="page-menu__head hidden-lg hidden-md">
+						Услуги и отраслевые решения
+					</div>
+
 					<ul class="page-menu__menu">
-						<li>
+						<li class="current">
 							<img src="img/layout/page-menu-general-cargo.png" alt="">
 							<a href="#">
 								Доставка сборных грузов
@@ -129,14 +138,12 @@
 								Таможенное оформление
 							</a>
 						</li>
-					</ul>
 
-					<div class="page-menu__headliner">
-						Отраслевые <br>
-						решения
-					</div>
+						<div class="page-menu__headliner">
+							Отраслевые <br>
+							решения
+						</div>
 
-					<ul class="page-menu__menu">
 						<li>
 							<img src="img/layout/page-menu-shoes.png" alt="">
 							<a href="#">
@@ -200,16 +207,21 @@
 			    	</li>
 				</ul>
 
-				<form action="#" class="delivery-page__order-form">
-					<input type="text" placeholder="Имя*">
-					<input type="text" placeholder="Город отправления*">
-					<input type="text" placeholder="Город получения*">
-
-					<input type="text" placeholder="Телефон*">
-					<textarea placeholder="Значение ТНВЭД"></textarea><br>
-					<input type="text" placeholder="E-mail*" class="last">
-					<input type="submit" value="Оставить заявку" class="page-button">
-				</form>
+				<form action="#" class="order-page__form">
+					<div class="order-page__left-col">
+						<input type="text" placeholder="Имя*">
+						<input type="text" placeholder="Телефон*">
+						<input type="text" placeholder="E-mail*">
+					</div>
+					<div class="order-page__right-col">
+						<input type="text" placeholder="Город отправления*">
+						<input type="text" placeholder="Город получения*">
+						<textarea placeholder="Значение ТНВЭД"></textarea><br>
+					</div>
+					<div class="row">
+						<input type="submit" value="Отправить заявку" class="order-page__submit-button">
+					</div>
+				</form>	
 			</div>
 		</div>
 	</div>

@@ -23,8 +23,11 @@
 			<div class="header__top">
 				<div class="header__logo">
 					<img src="img/layout/logo.png" alt="">
+					<div class="header__search hidden-md hidden-lg">
+						<img src="img/layout/header-search.png" alt="">
+					</div>
 					<a href="#" class="header__profile-link hidden-lg hidden-md"></a>
-					<a href="#" class="header__order-status-link hidden-lg hidden-md"></a>
+					
 				</div>
 				<div class="header__tagline hidden-xs">
 					Больше<br>
@@ -32,6 +35,10 @@
 				</div>
 				<div class="header__phone">
 					<span>8 800</span> 2000 158
+				</div>
+				<div class="header__tagline hidden-md hidden-lg">
+					Больше<br>
+					чем логистика
 				</div>
 				<div class="header__phone-text hidden-xs">
 					Бесплатно<br>
@@ -44,7 +51,7 @@
 					Личный кабинет
 				</a>
 				<div class="header__toggle-menu hidden-lg">
-					<img src="img/layout/menu-gray.png" alt="">
+					<img src="img/layout/menu-red.png" alt="">
 				</div>
 			</div>
 			<div class="header__bottom">
@@ -87,11 +94,9 @@
 				<a href="#" class="header__submit-button">
 					Оставить заявку
 				</a>
-				<div class="header__lang-switcher hidden-lg">
-					<a href="#" class="active">ru</a>
-					<a href="#">en</a>
-					<a href="#">ch</a>
-				</div>
+				<a href="#" class="header__order-status-link hidden-lg hidden-md">
+					Отслеживание заказа
+				</a>
 			</div>
 		</div>
 	</header>
@@ -100,39 +105,43 @@
 
 	<div class="page-top"></div>
 
-	<!-- Calc 1 page -->
+	<!-- Calc page -->
 
-	<div class="calc1-page">
+	<div class="calc-page">
 		<div class="container">
-			<div class="calc1-page__left">
-				<div class="calc1-page__calc-type-title">
+			<div class="calc-page__left">
+				<div class="calc-page__calc-type-title hidden-xs">
 					Виды калькуляторов
 				</div>
-				<ul class="calc1-page__menu">
-					<li class="active">
-						<a href="#">
-							Калькулятор сборного груза
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Калькулятор доставки обуви <br>
-							и сумок
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Калькулятор контейнерной <br>
-							доставки
-						</a>
-					</li>
-				</ul>
+				<div class="page-menu">
+					<div class="page-menu__head hidden-lg hidden-md">
+						Виды калькуляторов
+					</div>
+					<ul class="page-menu__menu">
+						<li class="current">
+							<a href="#">
+								Калькулятор сборного груза
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Калькулятор доставки обуви <br>
+								и сумок
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Калькулятор контейнерной доставки
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-			<div class="calc1-page__right">
-				<div class="calc1-page__headliner">
+			<div class="calc-page__right">
+				<div class="calc-page__headliner">
 					Калькулятор доставки сборных грузов
 				</div>
-				<form action="#" class="calc1-page__form">
+				<form action="#" class="calc-page__form">
 					
 					<div class="row">
 						
@@ -159,7 +168,6 @@
 								<option value="Москва">Москва</option>
 							</select>
 						</div>
-
 					</div>
 
 					<div class="row">
@@ -185,30 +193,30 @@
 					</div>
 
 					<div class="row">
-						<input type="submit" value="рассчитать" class="button-aminate-red">
+						<input type="submit" value="рассчитать" class="button-animate-red">
 					</div>
 
 				</form>
 
-				<div class="calc1-page__cost">
-					Стоимость доставки: <span class="red">4,92$</span> <span class="regular">за килограмм</span>
+				<div class="calc-page__cost">
+					Стоимость доставки: <br class="hidden-lg hidden-md"><span class="red">4,92$</span> <span class="regular">за килограмм</span>
 				</div>
 
-				<div class="calc1-page__cost-desc">
+				<div class="calc-page__cost-desc">
 					Расчет осуществлён исходя из стоимости доставки наземным транспортом от склада отправления до склада назначения, включая таможенную очистку.
 				</div>
 
-				<a href="#" class="calc1-page__order-btn button-aminate-red">
+				<a href="#" class="calc-page__order-btn button-animate-red">
 					заказать доставку
 				</a>
 
-				<div class="calc1-page__desc">
+				<div class="calc-page__desc">
 					«HY Управление цепями поставок» - логистический холдинг мирового уровня с зарегистрированными официальными юридическими лицами и представительствами как на территории РФ, так и в шести регионах КНР, предлагающий логистические услуги самого высокого уровня. <br><br>
 
 					Значительный опыт работы в сфере логистики, собственные и арендованные складские помещения на территории КНР и России, особенностей менталитета и торговли, а также тонкостей законодательств обеих стран позволяют нам снизить стоимость доставки из Китая в Россию и решать любые вопросы, сопутствующие перевозкам грузов.
 				</div>
 
-				<div class="calc1-page__order">
+				<div class="calc-page__order">
 					<div class="text">
 						<h3>Внимание!</h3><br>
 
@@ -222,23 +230,23 @@
 					</div>
 					
 
-					<div class="calc1-page__order-form">
+					<div class="calc-page__order-form">
 						<input type="text" placeholder="Имя*">
 						<input type="text" placeholder="Телефон*">
 						<input type="text" placeholder="E-mail*">
-						<input type="submit" value="Отправить заявку" class="button-aminate-red">
+						<input type="submit" value="Отправить заявку" class="button-animate-red">
 					</div>
 
 				</div>
 
-				<div class="calc1-page__expirience">
+				<div class="calc-page__expirience">
 					Опыт. Мы работаем в сфере логистических услуг более 10 лет, поставляя грузы из Китая, имеем отработанные схемы сотрудничества, позволяющие снизить стоимость доставки грузов из Китая; Наличие представительств в Китае и России. Собственные складские помещения и офисы в КНР позволяют нашей компании взять на себя все заботы клиента, связанные с закупкой, оформлением, хранением и транспортировкой грузов. Опыт. Мы работаем в сфере логистических услуг более 10 лет, поставляя грузы из Китая, имеем отработанные схемы сотрудничества, позволяющие снизить стоимость доставки грузов из Китая; Наличие представительств в Китае и России. Собственные складские помещения и офисы в КНР позволяют нашей компании взять на себя все заботы клиента, связанные с закупкой, оформлением, хранением и транспортировкой грузов.
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<!-- Calc 1 page end end -->
+	<!-- Calc page end end -->
 
 	<!-- Footer -->
 
