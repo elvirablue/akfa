@@ -31,21 +31,46 @@
 	}
 
 	.container {
-		width: 1020px;
+		width: 960px;
 	}
 
 	.header {
-		height: 120px;
+		height: 130px;
+		.container {
+			position: relative;
+		}
 		&__top {
 			margin-top: 24px;
 			&:after {
 				float: left;
-				width: 761px;
+				width: 700px;
+				margin-top: 5px;
 			}
 		}
 		&__toggle-menu {
-			float: right;
-			margin-right: 27px;
+			position: absolute;
+			top: 26px;
+			right: 10px;
+			width: 25px;
+			height: 17px;
+			cursor: pointer;
+			margin-right: 15px;
+		}
+		&__menu {
+			display: none;
+			position: absolute;
+			width: 320px;
+			background: #fff;
+			top: 64px;
+			z-index: 999999;
+			padding: 10px 20px;
+			box-sizing: border-box;
+			right: 0;
+			li {
+				width: 100%;
+				text-align: right;
+				padding: 5px 0;
+			}
 		}
 		&__order-status-link {
 			float: left;
@@ -113,6 +138,170 @@
 			width: 133px;
 		}
 	}
+
+	.left-col {
+		width: 30%;
+		float: left;
+	}
+
+	.right-col {
+		width: 70%;
+		float: left;
+	}
+
+	.content-col {
+		width: 70%;
+		float: left;
+	}
+
+	.map-switcher {
+		&__canvas {
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	.calc-page {
+		.container {
+			padding: 60px;
+		}
+		&__left {
+			width: 30%;
+		}
+		&__right {
+			width: 70%;
+		}
+		&__form {
+			.select-box {
+				margin-right: 60px;
+			}
+		}
+	}
+
+	.contacts-page {
+		&__left {
+			width: 30%;
+		}
+		&__right {
+			width: 70%;
+		}
+		&__director {
+			margin-top: 20px;
+		}
+		&__map {
+			margin-top: 20px;
+		}
+	}
+
+	.tabs {
+		&__address {
+			width: 324px;
+		}
+	}
+
+	.container-shipping-map {
+		img {
+			width: 100%;
+		}
+	}
+
+	.delivery-steps {
+		&__step {
+			margin-right: 15px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.page-info {
+		.text {
+			width: 50%;
+		}
+		&__form {
+			width: 40%;
+		}
+	}
+
+	.calc-page {
+		&__order {
+			.text {
+				width: 50%;
+			}
+		}
+		&__order-form {
+			width: 40%;
+		}
+	}
+
+	.order-page {
+		&__right-col {
+			width: 300px;
+			textarea {
+				width: 300px;
+			}
+		}
+	}
+
+	.news-page {
+		.container {
+			padding: 60px;
+			box-sizing: border-box;
+		}
+		&__left {
+			display: none;
+		}
+		&__right {
+			width: 100%;
+		}
+		&__banner {
+			width: 100%;
+			margin-top: 0;
+		}
+		&__block {
+			&:after {
+				width: 100%;
+			}
+		}
+		&__date {
+			width: 400px;
+		}
+		&__head {
+			width: 600px;
+		}
+		&__text {
+			width: 600px;
+		}
+	}
+
+	.news-full {
+		.container {
+			padding: 60px;
+			box-sizing: border-box;
+		}
+		&__left {
+			display: none;
+		}
+		&__right {
+			width: 100%;
+		}
+	}
+
+	.supplies-page {
+		&__supplies-map {
+			img {
+				width: 100%;
+			}
+		}
+		&__post {
+			margin-bottom: 10px;
+		}
+		&__svh-box {
+			margin-bottom: 10px;
+		}
+	}
+
 }
 
 /* Medium Devices, Desktops */
@@ -138,17 +327,35 @@
 				margin-top: 10px;
 			}
 		}
-		&__toggle-menu {
-			cursor: pointer;
-			position: absolute;
-			right: 0px;
-			// background: red;
-			margin-right: 15px;
-		}
 		&__submit-button {
 			float: right;
 			//margin-top: 0px;
 			margin-right: 0;
+		}
+		&__toggle-menu {
+			position: absolute;
+			top: 26px;
+			right: 0px;
+			width: 25px;
+			height: 17px;
+			cursor: pointer;
+			margin-right: 15px;
+		}
+		&__menu {
+			display: none;
+			position: absolute;
+			width: 320px;
+			background: #fff;
+			top: 68px;
+			z-index: 999999;
+			padding: 10px 20px;
+			box-sizing: border-box;
+			right: 0;
+			li {
+				width: 100%;
+				text-align: right;
+				padding: 5px 0;
+			}
 		}
 	}
 
@@ -218,6 +425,27 @@
 		}
 	}
 
+	.default-page {
+		.container {
+			padding: 60px;
+		}
+		&__content {
+			width: 100%;
+		}
+		&__sidebar {
+			width: 100%;
+			padding-left: 0px;
+			border: 0;
+		}
+	}
+
+	.sidebar-form {
+		width: 300px;
+		padding-left: 0px;
+		border: 0;
+		margin-left: 0px;
+	}
+
 	.footer {
 		&__left {
 			width: 768px;
@@ -231,6 +459,7 @@
 			width: 232px;
 		}
 	}
+
 }
 
 /* Small Devices, Tablets */
@@ -264,6 +493,23 @@
 			position: absolute;
 			top: 35px;
 			right: 0px;
+			width: 25px;
+			height: 17px;
+		}
+		&__menu {
+			display: none;
+			position: absolute;
+			width: 320px;
+			background: #fff;
+			top: 70px;
+			z-index: 999999;
+			padding: 10px 20px;
+			box-sizing: border-box;
+			li {
+				width: 100%;
+				text-align: right;
+				padding: 5px 0;
+			}
 		}
 		&__logo {
 			width: 100%;
@@ -391,7 +637,8 @@
 			display: none;
 		}
 		&__image {
-			display: none;
+			margin-top: 20px;
+			text-align: left;
 		}
 	}
 
@@ -583,7 +830,6 @@
 					display: none;
 				}
 			}
-
 		}
 		&__full-form-headliner {
 			display: inline-block;

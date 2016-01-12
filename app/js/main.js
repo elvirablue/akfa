@@ -157,3 +157,12 @@ $('.page-menu__menu .current').click(function(){
 // $('ul.tabs__caption li.visible').click(function() {
 //     $('ul.tabs__caption li').removeClass('visible');
 // });
+
+
+// Toggle menu
+
+$(".header__toggle-menu").click(function() {
+  $('.header__toggle-menu #toggle').toggleClass("on");
+  $(".header__menu").slideToggle();
+});
+

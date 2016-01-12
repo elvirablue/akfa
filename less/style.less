@@ -325,7 +325,7 @@ a[href^=tel]{
 		color: @gray;
 		letter-spacing: 0.2em;
 		margin-right: 14px;
-		margin-top: -23px;
+		margin-top: -22px;
 		text-decoration: none;
 	}
 }
@@ -414,7 +414,7 @@ a[href^=tel]{
 		color: #4D4D4E;
 		margin-top: 74px;
 		margin-bottom: 60px;
-		span {
+		&:first-letter {
 			color: #E8463C;
 		}
 	}
@@ -446,7 +446,7 @@ a[href^=tel]{
 		text-align: left;
 		margin-top: 15px;
 		line-height: 32px;
-		span {
+		&:first-letter {
 			color: #E8463C;
 		}
 	}
@@ -479,7 +479,7 @@ a[href^=tel]{
 		height: 35px;
 		display: block;
 		box-sizing: border-box;
-		border: 2px solid @red;
+		border: 1px solid @red;
 		line-height: 33px;
 		text-align: center;
 		float: left;
@@ -502,7 +502,8 @@ a[href^=tel]{
 	float: left;
 	background: #F4F8F9;
 	text-align: center;
-	padding-bottom: 150px;
+	padding-bottom: 50px;
+	margin-top: 20px;
 	&__headliner {
 		width: 100%;
 		float: left;
@@ -511,7 +512,7 @@ a[href^=tel]{
 		color: #4D4D4E;
 		margin-top: 74px;
 		margin-bottom: 55px;
-		span {
+		&:first-letter {
 			color: #E8463C;
 		}
 	}
@@ -549,7 +550,7 @@ a[href^=tel]{
 .news {
 	width: 100%;
 	float: left;
-	padding-bottom: 121px;
+	padding-bottom: 50px;
 	&__headliner {
 		width: 100%;
 		float: left;
@@ -558,7 +559,7 @@ a[href^=tel]{
 		color: #4D4D4E;
 		margin-top: 84px;
 		margin-bottom: 60px;
-		span {
+		&:first-letter {
 			color: #E8463C;
 		}
 	}
@@ -620,7 +621,7 @@ a[href^=tel]{
 		color: #4D4D4E;
 		margin-top: 79px;
 		margin-bottom: 60px;
-		span {
+		&:first-letter {
 			color: #E8463C;
 		}
 	}
@@ -1812,10 +1813,10 @@ a[href^=tel]{
 		background: #fff;
 		float: left;
 		cursor: pointer;
-		&.hide {
-			width: 210px;
-			display: none;
-		}
+		// &.hide {
+		// 	width: 210px;
+		// 	display: none;
+		// }
 		&:after {
 			content: '';
 			width: 12px;
@@ -1827,14 +1828,34 @@ a[href^=tel]{
 			background: #CBCBCB;
 			color: #fff;
 		}
+		&.hidden {
+			width: 210px;
+			display: none;
+		}
+		&.hide {
+			width: 210px;
+			display: inline-block;
+			&.hidden {
+				display: none;
+			}
+		}
+		&.show {
+			width: 250px;
+			&.hidden {
+				display: none;
+			}
+		}
 	}
 	&__full-form-headliner {
 		font-size: 20px;
 		color: #808080;
 		font-weight: 500;
-		display: none;
+		display: inline-block;
 		float: left;
-		width: 245px
+		width: 245px;
+		&.hidden {
+			display: none;
+		}
 	}
 	&__full-form {
 		width: 100%;
