@@ -22,7 +22,7 @@
 		<div class="container">
 			<div class="header__top">
 				<div class="header__logo">
-					<img src="img/layout/logo.png" alt="">
+					<img src="img/layout/logo.png" class="logo" alt="">
 					<div class="header__search hidden-md hidden-lg">
 						<img src="img/layout/header-search.png" alt="">
 					</div>
@@ -94,12 +94,29 @@
 						Контакты
 					</a></li>
 				</ul>
-				<a href="#" class="header__submit-button">
-					Оставить заявку
-				</a>
-				<a href="#" class="header__order-status-link hidden-lg hidden-md">
-					Отслеживание заказа
-				</a>
+				<div class="header__submit-button">
+					<a href="#" class="button ribbon-outset border">
+						Оставить заявку
+					</a>
+				</div>
+				<div class="header__mobile-status hidden-lg hidden-md">
+					<a href="#" class="header__order-status-link hidden-lg hidden-md">
+						Отслеживание заказа
+					</a>
+				</div>
+
+				<div class="header-lang hidden-xs hidden-md hidden-sm">
+					<a href="#" class="header-lang__item active">
+						ru
+					</a>
+					<a href="#" class="header-lang__item">
+						en
+					</a>
+					<a href="#" class="header-lang__item">
+						ch
+					</a>
+				</div>
+				
 			</div>
 		</div>
 	</header>
@@ -113,7 +130,7 @@
 	<div class="contacts-page">
 		<div class="container">
 			<div class="contacts-page__left ">
-				<ul>
+				<ul class="">
 					<li class="contacts">
 						<a href="#">Контакты</a>
 					</li>
@@ -202,36 +219,6 @@
 							<a href="#">Посмотреть на большой карте</a>
 						</div>
 
-						<div class="accordion">
-							<div class="accordion__toggle">
-								Санкт-Петербург <img src="img/layout/down-arrow.png" alt="">
-							</div>
-							<div class="accordion__inner">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, pariatur!
-							</div>
-
-							<div class="accordion__toggle">
-								Пермь <img src="img/layout/down-arrow.png" alt="">
-							</div>
-							<div class="accordion__inner">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, odit?
-							</div>
-
-							<div class="accordion__toggle">
-								Уфа <img src="img/layout/down-arrow.png" alt="">
-							</div>
-							<div class="accordion__inner">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, blanditiis?
-							</div>
-
-							<div class="accordion__toggle">
-								Минск <img src="img/layout/down-arrow.png" alt="">
-							</div>
-							<div class="accordion__inner">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus alias a cupiditate veniam magni soluta minima facilis optio expedita obcaecati?
-							</div>
-						</div>
-
 					</div>
 
 					<div class="tabs__content">
@@ -282,7 +269,7 @@
 						</div>
 
 						<div class="contacts-page__map">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.8976929067057!2d37.64308691562159!3d55.72553010156294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b23d55ce2db%3A0x2b417bd5a6c1b229!2z0KHQktCv0KLQntCT0J7QoCwg0LzQtdC20LTRg9C90LDRgNC-0LTQvdGL0Lkg0LTQtdC70L7QstC-0Lkg0YbQtdC90YLRgA!5e0!3m2!1sru!2sru!4v1452016007648" ></iframe>
+							<iframe class="scrolloff" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.8976929067057!2d37.64308691562159!3d55.72553010156294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b23d55ce2db%3A0x2b417bd5a6c1b229!2z0KHQktCv0KLQntCT0J7QoCwg0LzQtdC20LTRg9C90LDRgNC-0LTQvdGL0Lkg0LTQtdC70L7QstC-0Lkg0YbQtdC90YLRgA!5e0!3m2!1sru!2sru!4v1452016007648" ></iframe>
 							<a href="#">Посмотреть на большой карте</a>
 						</div>
 
@@ -393,9 +380,36 @@
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.8976929067057!2d37.64308691562159!3d55.72553010156294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b23d55ce2db%3A0x2b417bd5a6c1b229!2z0KHQktCv0KLQntCT0J7QoCwg0LzQtdC20LTRg9C90LDRgNC-0LTQvdGL0Lkg0LTQtdC70L7QstC-0Lkg0YbQtdC90YLRgA!5e0!3m2!1sru!2sru!4v1452016007648" ></iframe>
 							<a href="#">Посмотреть на большой карте</a>
 						</div>
+					</div>
 
-						
+					<div class="accordion">
+						<div class="accordion__toggle">
+							Санкт-Петербург <img src="img/layout/down-arrow.png" alt="">
+						</div>
+						<div class="accordion__inner">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, pariatur!
+						</div>
 
+						<div class="accordion__toggle">
+							Пермь <img src="img/layout/down-arrow.png" alt="">
+						</div>
+						<div class="accordion__inner">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, odit?
+						</div>
+
+						<div class="accordion__toggle">
+							Уфа <img src="img/layout/down-arrow.png" alt="">
+						</div>
+						<div class="accordion__inner">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, blanditiis?
+						</div>
+
+						<div class="accordion__toggle">
+							Минск <img src="img/layout/down-arrow.png" alt="">
+						</div>
+						<div class="accordion__inner">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus alias a cupiditate veniam magni soluta minima facilis optio expedita obcaecati?
+						</div>
 					</div>
 				</div>
 
@@ -412,19 +426,60 @@
 			<div class="footer__headliner">
 				Больше чем логистика
 			</div>
+
+			<div class="footer__mobile hidden-sm hidden-lg hidden-md">
+				<div class="footer__phone">
+					<span class="thin">8 800</span> 921 39 90
+					<span class="phone-label">Бесплатно по всей России</span>
+				</div>
+
+				<a href="#" class="footer__order">
+					Оставить заявку
+				</a>
+
+				<div class="footer__copyright">
+					© 2010-2015, ООО “АКФА” <br>
+					<a href="mailto:">info@akfa.ru</a>
+				</div>
+				<div class="footer__address">
+					115114, г. Москва, ул. Летниковская, <br>
+					д.10, стр. 2, БЦ «Святогор-2» <br>
+					<a href="#">Посмотреть на карте</a>
+				</div>
+
+				<div class="footer__address2">
+					680022, г. Хабаровск, ул. Нефтяная, д. 1 <br>
+					<a href="#">Посмотреть на карте</a>
+				</div>
+
+				<div class="footer__search">
+					<form action="#">
+						<input type="text" placeholder="Поиск">
+						<input type="submit" value="">
+					</form>
+				</div>
+
+				<div class="footer__designedby">
+					Разработка сайта<br>
+					<a href="#">
+						<img src="img/layout/100up.png" alt="">
+					</a>
+				</div>
+			</div>
+
 			<div class="footer__left">
 				<div class="footer__row">
-					<div class="footer__copyright">
+					<div class="footer__copyright hidden-xs">
 						© 2010-2015, ООО “АКФА” <br>
 						<a href="mailto:">info@akfa.ru</a>
 					</div>
-					<div class="footer__address">
+					<div class="footer__address hidden-xs">
 						115114, г. Москва, ул. Летниковская, <br>
 						д.10, стр. 2, БЦ «Святогор-2» <br>
 						<a href="#">Посмотреть на карте</a>
 					</div>
 
-					<div class="footer__phone">
+					<div class="footer__phone hidden-xs">
 						<span class="thin">8 800</span> 921 39 90
 						<span class="phone-label">Бесплатно по всей России</span>
 					</div>
@@ -447,16 +502,19 @@
 							<input type="submit" value="">
 						</form>
 					</div>
-					<a href="#" class="footer__order hidden-lg hidden-md">
+
+					<a href="#" class="footer__order hidden-xs hidden-lg">
 						Оставить заявку
 					</a>
 				</div>
 				
 			</div>
-			<div class="footer__right hidden-sm hidden-xs">
-				<a href="#" class="footer__order">
+			<div class="footer__right hidden-sm hidden-xs hidden-md">
+
+				<a href="#" class="footer-button ribbon-outset border">
 					Оставить заявку
 				</a>
+
 			</div>
 		</div>
 	</footer>

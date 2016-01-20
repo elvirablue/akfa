@@ -22,7 +22,7 @@
 		<div class="container">
 			<div class="header__top">
 				<div class="header__logo">
-					<img src="img/layout/logo.png" alt="">
+					<img src="img/layout/logo.png" class="logo" alt="">
 					<div class="header__search hidden-md hidden-lg">
 						<img src="img/layout/header-search.png" alt="">
 					</div>
@@ -94,16 +94,32 @@
 						Контакты
 					</a></li>
 				</ul>
-				<a href="#" class="header__submit-button">
-					Оставить заявку
-				</a>
-				<a href="#" class="header__order-status-link hidden-lg hidden-md">
-					Отслеживание заказа
-				</a>
+				<div class="header__submit-button">
+					<a href="#" class="button ribbon-outset border">
+						Оставить заявку
+					</a>
+				</div>
+				<div class="header__mobile-status hidden-lg hidden-md">
+					<a href="#" class="header__order-status-link hidden-lg hidden-md">
+						Отслеживание заказа
+					</a>
+				</div>
+
+				<div class="header-lang hidden-xs hidden-md hidden-sm">
+					<a href="#" class="header-lang__item active">
+						ru
+					</a>
+					<a href="#" class="header-lang__item">
+						en
+					</a>
+					<a href="#" class="header-lang__item">
+						ch
+					</a>
+				</div>
+				
 			</div>
 		</div>
 	</header>
-
 	<!-- Header end -->
 
 	<div class="page-top"></div>
@@ -142,6 +158,11 @@
 							</a>
 						</li>
 
+						<div class="page-menu__small-text">
+							Хранение на складе<br>
+							Грузовые перевозки по России
+						</div>
+
 						<div class="page-menu__headliner">
 							Отраслевые <br>
 							решения
@@ -179,7 +200,12 @@
 
 					<div class="page-menu__headliner"></div>
 
-					<div class="page-menu__video-box"></div>
+					<a href="#" class="page-menu__video-box">
+						<div class="text">
+							<img src="img/layout/video.png" alt=""><br>
+							Ролик о компании
+						</div>
+					</a>
 				</div>
 			</div>
 			<div class="content-col">
@@ -220,7 +246,7 @@
 						Процес перевозки сборных грузов
 					</div>
 
-					<div class="delivery-steps__step active">
+					<div class="delivery-steps__step step1 active">
 						<div class="delivery-steps__headliner">
 							<img src="img/layout/delivery-icon1-active.png" alt="">
 							Этап 1
@@ -231,7 +257,7 @@
 							в Китае
 						</div>
 					</div>
-					<div class="delivery-steps__step">
+					<div class="delivery-steps__step step2">
 						<div class="delivery-steps__headliner">
 							<img src="img/layout/delivery-icon2.png" alt="">
 							Этап 2
@@ -242,7 +268,7 @@
 							в Россию
 						</div>
 					</div>
-					<div class="delivery-steps__step">
+					<div class="delivery-steps__step step3">
 						<div class="delivery-steps__headliner">
 							<img src="img/layout/delivery-icon3.png" alt="">
 							Этап 3
@@ -253,7 +279,7 @@
 							Низкие цены
 						</div>
 					</div>
-					<div class="delivery-steps__step">
+					<div class="delivery-steps__step step4">
 						<div class="delivery-steps__headliner">
 							<img src="img/layout/delivery-icon4.png" alt="">
 							Этап 4
@@ -265,18 +291,63 @@
 					</div>
 				</div>
 
-				<div class="delivery-steps-desc">
+				<div class="delivery-steps-desc step1 active">
 					<div class="delivery-steps-desc__box">
-						Получение предоплаты за товар, помощь с закупкой 
+						Прием груза с фабрик по упаковочным листам
 					</div>
 					<div class="delivery-steps-desc__box">
-						Доставка груза с фабрики на пункт приема 
+						Доставка груза с фабрики в порт
 					</div>
 					<div class="delivery-steps-desc__box">
-						Подготовка комплекта сопроводительных документов
+						Проверка количества, упаковка
 					</div>
 					<div class="delivery-steps-desc__box">
-						Подготовка груза к доставке в Россию 
+						Подготовка контейнера к отправке
+					</div>
+				</div>
+
+				<div class="delivery-steps-desc step2">
+					<div class="delivery-steps-desc__box">
+						Прием груза с фабрик по упаковочным листам 2
+					</div>
+					<div class="delivery-steps-desc__box">
+						Доставка груза с фабрики в порт 2
+					</div>
+					<div class="delivery-steps-desc__box">
+						Проверка количества, упаковка 2
+					</div>
+					<div class="delivery-steps-desc__box">
+						Подготовка контейнера к отправке 2
+					</div>
+				</div>
+
+				<div class="delivery-steps-desc step3">
+					<div class="delivery-steps-desc__box">
+						Прием груза с фабрик по упаковочным листам 3
+					</div>
+					<div class="delivery-steps-desc__box">
+						Доставка груза с фабрики в порт 3
+					</div>
+					<div class="delivery-steps-desc__box">
+						Проверка количества, упаковка 3
+					</div>
+					<div class="delivery-steps-desc__box">
+						Подготовка контейнера к отправке 3
+					</div>
+				</div>
+
+				<div class="delivery-steps-desc step4">
+					<div class="delivery-steps-desc__box">
+						Прием груза с фабрик по упаковочным листам 4
+					</div>
+					<div class="delivery-steps-desc__box">
+						Доставка груза с фабрики в порт 4
+					</div>
+					<div class="delivery-steps-desc__box">
+						Проверка количества, упаковка 4
+					</div>
+					<div class="delivery-steps-desc__box">
+						Подготовка контейнера к отправке 4
 					</div>
 				</div>
 
@@ -316,19 +387,60 @@
 			<div class="footer__headliner">
 				Больше чем логистика
 			</div>
+
+			<div class="footer__mobile hidden-sm hidden-lg hidden-md">
+				<div class="footer__phone">
+					<span class="thin">8 800</span> 921 39 90
+					<span class="phone-label">Бесплатно по всей России</span>
+				</div>
+
+				<a href="#" class="footer__order">
+					Оставить заявку
+				</a>
+
+				<div class="footer__copyright">
+					© 2010-2015, ООО “АКФА” <br>
+					<a href="mailto:">info@akfa.ru</a>
+				</div>
+				<div class="footer__address">
+					115114, г. Москва, ул. Летниковская, <br>
+					д.10, стр. 2, БЦ «Святогор-2» <br>
+					<a href="#">Посмотреть на карте</a>
+				</div>
+
+				<div class="footer__address2">
+					680022, г. Хабаровск, ул. Нефтяная, д. 1 <br>
+					<a href="#">Посмотреть на карте</a>
+				</div>
+
+				<div class="footer__search">
+					<form action="#">
+						<input type="text" placeholder="Поиск">
+						<input type="submit" value="">
+					</form>
+				</div>
+
+				<div class="footer__designedby">
+					Разработка сайта<br>
+					<a href="#">
+						<img src="img/layout/100up.png" alt="">
+					</a>
+				</div>
+			</div>
+
 			<div class="footer__left">
 				<div class="footer__row">
-					<div class="footer__copyright">
+					<div class="footer__copyright hidden-xs">
 						© 2010-2015, ООО “АКФА” <br>
 						<a href="mailto:">info@akfa.ru</a>
 					</div>
-					<div class="footer__address">
+					<div class="footer__address hidden-xs">
 						115114, г. Москва, ул. Летниковская, <br>
 						д.10, стр. 2, БЦ «Святогор-2» <br>
 						<a href="#">Посмотреть на карте</a>
 					</div>
 
-					<div class="footer__phone">
+					<div class="footer__phone hidden-xs">
 						<span class="thin">8 800</span> 921 39 90
 						<span class="phone-label">Бесплатно по всей России</span>
 					</div>
@@ -351,16 +463,19 @@
 							<input type="submit" value="">
 						</form>
 					</div>
-					<a href="#" class="footer__order hidden-lg hidden-md">
+
+					<a href="#" class="footer__order hidden-xs hidden-lg">
 						Оставить заявку
 					</a>
 				</div>
 				
 			</div>
-			<div class="footer__right hidden-sm hidden-xs">
-				<a href="#" class="footer__order">
+			<div class="footer__right hidden-sm hidden-xs hidden-md">
+
+				<a href="#" class="footer-button ribbon-outset border">
 					Оставить заявку
 				</a>
+
 			</div>
 		</div>
 	</footer>

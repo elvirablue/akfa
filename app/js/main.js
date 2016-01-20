@@ -11,16 +11,6 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $(".solutions__carousel").owlCarousel({
-  	items: 1,
-  	loop: true,
-  	autoplay: true,
-  	autoplayHoverPause: true,
-  	autoplaySpeed: '1000',
-  });
-});
-
-$(document).ready(function(){
   $(".news__carousel").owlCarousel({
   	items: 1,
   	loop: true,
@@ -43,6 +33,8 @@ $(function() {
 
 });
 })(jQuery);
+
+
 
 // Accordion
 
@@ -110,6 +102,38 @@ $('.supplies-page__posts .vladivostok').click(function(){
     $('.supplies-page__comment .vladivostok').addClass("active");
 });
 
+// Delivery steps 
+
+$('.delivery-steps__step').click(function(){
+  $('.delivery-steps .delivery-steps__step').removeClass("active");
+  $(this).addClass('active');
+});
+
+$('.delivery-steps__step.step1').click(function(){
+    $('.delivery-steps-desc').removeClass("active");
+    $('.delivery-steps-desc.step1').addClass("active");
+});
+
+
+$('.delivery-steps__step.step2').click(function(){
+    $('.delivery-steps-desc').removeClass("active");
+    $('.delivery-steps-desc.step2').addClass("active");
+    // $('.supplies-page__comment .supplies-page__comment-body').removeClass("active");
+    // $('.supplies-page__comment .moscow').addClass("active");
+});
+
+$('.delivery-steps__step.step3').click(function(){
+    $('.delivery-steps-desc').removeClass("active");
+    $('.delivery-steps-desc.step3').addClass("active");
+});
+
+
+$('.delivery-steps__step.step4').click(function(){
+    $('.delivery-steps-desc').removeClass("active");
+    $('.delivery-steps-desc.step4').addClass("active");
+});
+
+
 // Order form
 
 $('.order-page__full-form-button').click(function(){
@@ -166,3 +190,57 @@ $(".header__toggle-menu").click(function() {
   $(".header__menu").slideToggle();
 });
 
+
+// Owl carousel response
+
+$owl = $('body').find('.solutions__carousel');
+
+// set the owl-carousel otions
+var carousel_Settings = {
+  items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayHoverPause: true,
+        autoplaySpeed: '1000',
+};
+
+function initialize(){
+  var containerWidth = $(window).width();
+  if(containerWidth <= 767) {
+    // initialize owl-carousel if window screensize is less the 767px
+    $owl.owlCarousel( carousel_Settings );
+  } else {
+    // destroy owl-carousel and remove all depending classes if window screensize is bigger then 767px
+    $owl.trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded');
+    $owl.find('.owl-stage-outer').children().unwrap();
+  }
+}
+
+// initilize after window resize
+var id;
+$(window).resize( function() {
+  clearTimeout(id);
+  id = setTimeout(initialize, 0);
+});
+
+// initilize onload
+initialize();
+
+// Solutions 
+
+  $(window).scroll(function() {
+      if($(this).scrollTop() != 0) {
+      $('#tosolutions').fadeIn();
+    } else {
+      $('#tosolutions').fadeOut();
+    }
+   
+  });
+
+
+$('#tosolutions').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+    return false;
+});

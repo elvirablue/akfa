@@ -126,6 +126,9 @@ a[href^=tel]{
 			outline: none;
 			padding-bottom: 10px;
 			margin-bottom: 10px;
+			&:focus {
+				border-bottom: 1px solid @red;
+			}
 		}
 		input[type="submit"] {
 			width: 215px;
@@ -133,10 +136,10 @@ a[href^=tel]{
 			text-decoration: none;
 			text-align: center;
 			color: @gray;
-			line-height: 33px;
+			line-height: 31px;
 			display: inline-block;
 			margin: 0 auto;
-			border: 1px solid @red;
+			border: 2px solid @red;
 			border-radius: 5px;
 			margin-top: 15px;
 			margin-bottom: 10px;
@@ -149,6 +152,35 @@ a[href^=tel]{
 	}
 }
 
+.solutions-button {
+	width: 150px;
+	height: 150px;
+	border: 1px solid @red;
+	background: #fff;
+	border-radius: 15px;
+	position: fixed;
+	right: 20px;
+	top: 20px;
+	z-index: 9;
+	display: none;
+	text-align: center;
+	cursor: pointer;
+	text-decoration: none;
+	&__cover {
+		margin-top: 15px;
+		margin-bottom: 5px;
+	}
+	&__headliner {
+		display: inline-block;
+		width: 100%;
+		font-size: 15px;
+		text-transform: uppercase;
+		line-height: 18px;
+		color: #808076;
+		margin-bottom: 5px;
+	}
+}
+
 // Header
 
 .header {
@@ -158,9 +190,19 @@ a[href^=tel]{
 	//background: #F5F8FA url("../img/layout/header-bg.png") no-repeat left top 34px;
 	background: #F5F8FA;
 	height: 144px;
+	position: relative;
 	// border-bottom: 4px solid #8e8da3;
 	.container {
-		height: 100px;
+		position: relative;
+		&:before {
+			content: '';
+			width: 734px;
+			height: 26px;
+			background: url("../img/layout/header.png");
+			position: absolute;
+			left: -730px;
+			top: 35px;
+		}
 	}
 	&__top {
 		width: 100%;
@@ -173,13 +215,16 @@ a[href^=tel]{
 			background: @red;
 			display: block;
 			float: left;
-			margin-top: 3px;
+			margin-top: 4px;
 		}
 	}
 	&__logo {
 		float: left;
 		margin-left: 9px;
 		margin-top: 2px;
+		.logo {
+			float: left;
+		}
 	}
 	&__tagline {
 		float: left;
@@ -282,7 +327,7 @@ a[href^=tel]{
 	&__bottom {
 		width: 100%;
 		float: left;
-		margin-top: 20px;
+		margin-top: 16px;
 	}
 	&__menu-link {
 		float: left;
@@ -313,20 +358,41 @@ a[href^=tel]{
 		}
 	}
 	&__submit-button {
+		// display: block;
+		// width: 215px;
+		// height: 44px;
+		// background: url("../img/layout/submit-button.png");
+		// float: right;
+		// text-align: center;
+		// line-height: 44px;
+		// font-size: 12px;
+		// text-transform: uppercase;
+		// color: @gray;
+		// letter-spacing: 0.2em;
+		// margin-right: 14px;
+		margin-top: -20px;
+		// text-decoration: none;
 		display: block;
-		width: 215px;
-		height: 44px;
-		background: url("../img/layout/submit-button.png");
 		float: right;
-		text-align: center;
-		line-height: 44px;
-		font-size: 12px;
+		width: 215px;
+	}
+}
+
+.header-lang {
+	width: 30px;
+	position: absolute;
+	right: -45px;
+	top: 35px;
+	&__item {
+		font-size: 13px;
+		color: @red;
+		display: block;
+		margin-bottom: 10px;
 		text-transform: uppercase;
-		color: @gray;
-		letter-spacing: 0.2em;
-		margin-right: 14px;
-		margin-top: -22px;
 		text-decoration: none;
+		&.active {
+			color: @gray;
+		}
 	}
 }
 
@@ -464,12 +530,17 @@ a[href^=tel]{
 				//list-style-image: url("../img/layout/list-dot.png");
 				list-style-type: none;
 				margin-bottom: 10px;
+				float: left;
 				&:before {
 				content: "—";
 				float: left;
 				display: block;
 				height: 100%;
-				margin-right: 5px;
+				width: 20px;
+				}
+				p {
+					float: left;
+					width: 280px;
 				}
 			}
 		}
@@ -502,7 +573,7 @@ a[href^=tel]{
 	float: left;
 	background: #F4F8F9;
 	text-align: center;
-	padding-bottom: 50px;
+	padding-bottom: 150px;
 	margin-top: 20px;
 	&__headliner {
 		width: 100%;
@@ -529,6 +600,19 @@ a[href^=tel]{
 		img {
 			float: left;
 		}
+		&:before {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			background: rgba(0,0,0,0.3);
+			
+			transition: 0.3s;
+		}
+		&:hover:before {
+			background: rgba(0,0,0,0.1);
+		}
 	}
 	&__label {
 		width: 100%;
@@ -550,7 +634,8 @@ a[href^=tel]{
 .news {
 	width: 100%;
 	float: left;
-	padding-bottom: 50px;
+	padding-bottom: 150px;
+	background: #fff;
 	&__headliner {
 		width: 100%;
 		float: left;
@@ -624,6 +709,16 @@ a[href^=tel]{
 		&:first-letter {
 			color: #E8463C;
 		}
+	}
+	&__container {
+		width: 100%;
+		float: left;
+		text-align: center;
+	}
+	&__box {
+		display: inline-block;
+		margin: 10px 40px;
+		vertical-align: middle;
 	}
 }
 
@@ -900,6 +995,9 @@ a[href^=tel]{
 			outline: none;
 			padding-bottom: 10px;
 			margin-bottom: 10px;
+			&:focus {
+				border-bottom: 1px solid @red;
+			}
 		}
 		input[type="submit"] {
 			width: 215px;
@@ -907,10 +1005,10 @@ a[href^=tel]{
 			text-decoration: none;
 			text-align: center;
 			color: @gray;
-			line-height: 33px;
+			line-height: 31px;
 			display: inline-block;
 			margin: 0 auto;
-			border: 1px solid @red;
+			border: 2px solid @red;
 			border-radius: 5px;
 			margin-top: 15px;
 			margin-bottom: 10px;
@@ -949,20 +1047,22 @@ a[href^=tel]{
 		text-transform: uppercase;
 		letter-spacing: 0.3em;
 		color: #808076;
+		margin-top: 12px;
 		&:after {
 			content: '';
 			width: 36px;
 			height: 1px;
 			background: #CBCBCB;
 			display: block;
-			margin-top: 10px;
-			margin-bottom: 12px;
+			margin-top: 20px;
+			margin-bottom: 8px;
 		}
 	}
 	&__menu {
 		margin: 0;
 		padding: 0;
 		float: left;
+		margin-top: 20px;
 		li {
 			list-style-type: none;
 			margin-bottom: 10px;
@@ -997,7 +1097,7 @@ a[href^=tel]{
 		font-size: 32px;
 		color: #4D4D4D;
 		margin-bottom: 25px;
-		margin-top: -20px;
+		margin-top: -10px;
 		&:first-letter {
 			color: @red;
 		}
@@ -1015,10 +1115,10 @@ a[href^=tel]{
 			text-decoration: none;
 			text-align: center;
 			color: @gray;
-			line-height: 33px;
+			line-height: 31px;
 			display: inline-block;
 			margin: 0 auto;
-			border: 1px solid @red;
+			border: 2px solid @red;
 			border-radius: 5px;
 			margin-top: 15px;
 			text-transform: uppercase;
@@ -1036,7 +1136,8 @@ a[href^=tel]{
 			width: 215px;
 			height: 36px;
 			box-sizing: border-box;
-			border: 1px solid #D4D4DF;
+			border: 0;
+			border-top: 1px solid #D4D4DF;
 			padding-left: 15px;
 			background: none;
 			border-radius: 0;
@@ -1044,6 +1145,7 @@ a[href^=tel]{
 			color: #000;
 			font-size: 13px;
 			text-align: left;
+			outline: none;
 		}
 		.row {
 			margin-bottom: 10px;
@@ -1084,14 +1186,14 @@ a[href^=tel]{
 	}
 	&__order-btn {
 		width: 215px;
-		height: 35px;
+		height: 36px;
 		text-decoration: none;
 		text-align: center;
 		color: @gray;
-		line-height: 35px;
+		line-height: 33px;
 		display: inline-block;
 		margin: 0 auto;
-		border: 1px solid @red;
+		border: 2px solid @red;
 		border-radius: 5px;
 		margin-top: 15px;
 		text-transform: uppercase;
@@ -1143,6 +1245,10 @@ a[href^=tel]{
 			outline: none;
 			padding-bottom: 10px;
 			margin-bottom: 10px;
+			&:focus {
+				border-bottom: 1px solid @red;
+			}
+
 		}
 		input[type="submit"] {
 			width: 215px;
@@ -1150,10 +1256,10 @@ a[href^=tel]{
 			text-decoration: none;
 			text-align: center;
 			color: @gray;
-			line-height: 33px;
+			line-height: 31px;
 			display: inline-block;
 			margin: 0 auto;
-			border: 1px solid @red;
+			border: 2px solid @red;
 			border-radius: 5px;
 			margin-top: 15px;
 			margin-bottom: 10px;
@@ -1449,6 +1555,7 @@ a[href^=tel]{
 		font-size: 10px;
 		text-transform: uppercase;
 		color: #808080;
+		line-height: 24px;
 	}
 	&__info {
 		margin-left: 100px;
@@ -1501,6 +1608,7 @@ a[href^=tel]{
 		color: #808080;
 		margin-right: 25px;
 		position: relative;
+		cursor: pointer;
 		&.active {
 			background: #E7463C;
 			color: #fff;
@@ -1546,6 +1654,10 @@ a[href^=tel]{
 	width: 100%;
 	float: left;
 	margin-top: 30px;
+	display: none;
+	&.active {
+		display: block;
+	}
 	&__box {
 		width: 551px;
 		height: 28px;
@@ -1608,6 +1720,7 @@ a[href^=tel]{
 		span {
 			color: #E7463C;
 			border-bottom: 1px dashed #E7463C;
+			cursor: pointer;
 		}
 	}
 	&__supplies-map {
@@ -1708,6 +1821,8 @@ a[href^=tel]{
 	}
 	.page-button {
 		margin-top: 20px;
+		line-height: 33px !important;
+		border: 2px solid @red !important;
 	}
 }
 
@@ -1732,7 +1847,7 @@ a[href^=tel]{
 		margin-top: 30px;
 		input[type="text"] {
 			border: 0;
-		    width: 156px;
+		    width: 213px;
 		    font-size: 13px;
 		    border-bottom: 1px solid #CBCBCB;
 		    color: #000;
@@ -1742,6 +1857,9 @@ a[href^=tel]{
 		    margin-right: 27px;
 		    vertical-align: top;
 		    float: left;
+		    &:focus {
+		    	border-bottom: 1px solid @red;
+		    }
 		}
 		textarea {
 			width: 338px;
@@ -1768,8 +1886,11 @@ a[href^=tel]{
 		float: left;
 	}
 	&__right-col {
-		width: 400px;
+		width: 500px;
 		float: left;
+		input[type="text"] {
+			width: 155px;
+		}
 	}
 	&__submit-button {
 		width: 215px;
@@ -1777,10 +1898,10 @@ a[href^=tel]{
 		text-decoration: none;
 		text-align: center;
 		color: @gray;
-		line-height: 33px;
+		line-height: 31px;
 		display: block;
 		margin: 0 auto;
-		border: 1px solid @red;
+		border: 2px solid @red;
 		border-radius: 5px;
 		text-transform: uppercase;
 		font-size: 12px;
@@ -1801,9 +1922,9 @@ a[href^=tel]{
 		text-decoration: none;
 		text-align: center;
 		color: @gray;
-		line-height: 35px;
+		line-height: 33px;
 		margin: 0 auto;
-		border: 1px solid #CBCBCB;
+		border: 2px solid #CBCBCB;
 		border-radius: 5px;
 		text-transform: uppercase;
 		font-size: 12px;
@@ -1844,6 +1965,13 @@ a[href^=tel]{
 			&.hidden {
 				display: none;
 			}
+			&:after {
+				content: '';
+				width: 12px;
+				height: 7px;
+				background: url("../img/layout/full-form-down.png");
+				display: none;
+			}
 		}
 	}
 	&__full-form-headliner {
@@ -1876,6 +2004,12 @@ a[href^=tel]{
 		    display: inline-block;
 		    margin-bottom: 20px;
 		}
+		.jq-selectbox__select {
+			width: 278px;
+		}
+		.jq-selectbox__dropdown {
+			width: 278px !important;
+		}
 	}
 }
 
@@ -1903,7 +2037,8 @@ a[href^=tel]{
 		margin-bottom: 15px;
 	}
 	&__submit {
-		line-height: 33px;
+		line-height: 31px;
+		border: 2px solid @red;
 	}
 }
 
@@ -1993,11 +2128,11 @@ a[href^=tel]{
 	&__nav-text {
 		width: 100%;
 		display: inline-block;
-		font-size: 9px;
+		font-size: 11px;
 		box-sizing: border-box;
 		
 		position: absolute;
-		bottom: 10px;
+		bottom: 5px;
 		left: 0;
 		text-align: center;
 	}
@@ -2096,6 +2231,10 @@ a[href^=tel]{
 		float: left;
 		margin-left: 10px;
 		margin-top: 13px;
+		::-webkit-input-placeholder {color:#fff;}
+		::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+		:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+		:-ms-input-placeholder      {color:#fff;}
 		input[type="text"] {
 			width: 235px;
 			height: 36px;
@@ -2108,6 +2247,7 @@ a[href^=tel]{
 			float: left;
 			font-size: 14px;
 			padding-left: 15px;
+			color: #fff;
 		}
 		input[type="submit"] {
 			width: 36px;
@@ -2141,3 +2281,4 @@ a[href^=tel]{
 		margin-top: 11px;
 	}
 }
+

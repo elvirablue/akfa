@@ -39,7 +39,7 @@ h5 {
 		    height: 1px;
 		    background: #CBCBCB;
 		    display: block;
-		    margin-top: 10px;
+		    margin-top: 15px;
 		    margin-bottom: 15px;
 	    }
 	}
@@ -50,8 +50,14 @@ h5 {
 		margin-bottom: 20px;
 		li {
 			list-style-type: none;
-			margin-bottom: 10px;
+			margin-bottom: 15px;
 			line-height: 24px;
+			&.current a {
+				color: @gray;
+			}
+			&:hover a {
+				color: @gray;
+			}
 			&:last-child {
 				margin-bottom: 0px;
 			}
@@ -74,15 +80,21 @@ h5 {
 	}
 	&__button {
 		margin-bottom: 5px !important;
+		margin-top: 10px !important;
+		border: 2px solid @red !important;
+		line-height: 33px !important;
 	}
 	&__small-text {
-		display: none;
+		
 	}
 	&__video-box {
 		width: 215px;
 		height: 112px;
 		background: #e3e3e3;
 		margin-top: 10px;
+		display: inline-block;
+		line-height: 112px;
+		margin-top: 15px;
 		iframe {
 			width: 100%;
 			height: 100%;
@@ -90,15 +102,32 @@ h5 {
 			float: left;
 			border: 0;
 		}
+		img {
+			display: inline-block;
+			vertical-align: middle;
+			margin-bottom: 10px;
+		}
+		.text {
+			width: 100%;
+			display: inline-block;
+			vertical-align: middle;
+			line-height: normal;
+			text-align: center;
+			font-size: 12px;
+			text-transform: uppercase;
+			letter-spacing: 0.3em;
+			color: #808080
+		}
 	}
 	&__small-text {
 		font-size: 10px;
 		font-weight: 300;
 		width: 100%;
 		float: left;
-		margin-bottom: 30px;
+		margin-bottom: 20px;
 		padding-left: 30px;
 		box-sizing: border-box;
+		color: ##808076;
 		&:before {
 			content: '';
 		    width: 18px;
@@ -285,6 +314,25 @@ h5 {
 	}
 }
 
+// Feedback button
+
+.feedback-button {
+	width: 157px;
+	height: 35px;
+	border: 2px solid @red;
+	border-radius: 5px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: @gray;
+	display: block;
+	float: left;
+	text-decoration: none;
+	box-sizing: border-box;
+	line-height: 32px;
+	margin-top: 10px;
+}
+
 
 // Selectbox styles 
 
@@ -463,4 +511,139 @@ h5 {
 #toggle.on + #menu {
   opacity: 1;
   visibility: visible;
+}
+
+
+/* General Button Style */
+
+.triangle-button {
+	width: 100%;
+	float: left;
+	background: yellow;
+	position: relative;
+}
+
+.button {
+	display: inline-block;
+	position: relative;
+	background: transparent;
+	width: 205px;
+	height: 44px;
+	line-height: 42px;
+	text-align: center;
+	text-decoration: none;
+	color: #e04e5e;
+	// margin: 40px auto;
+	box-sizing: border-box;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: @gray;
+	letter-spacing: 0.2em;
+	z-index: 1;
+}
+.button:before,
+.button:after {
+  position: absolute;
+  content: '';
+  width: 200px;
+  left: 0px;
+  height: 19px;
+  z-index: -1;
+}
+
+.button:before {
+  transform: perspective(10px) rotateX(3deg);
+}
+.button:after {
+  top: 21px;
+  transform: perspective(10px) rotateX(-3deg);
+}
+
+/* Button Border Style */
+
+.button.border:before,
+.button.border:after {
+  border: 2px solid #e04e5e;
+}
+.button.border:before {
+  border-bottom: none; /* to prevent the border-line showing up in the middle of the shape */
+}
+.button.border:after {
+  border-top: none; /* to prevent the border-line showing up in the middle of the shape */
+}
+
+/* Button hover styles */
+
+.button.border:hover:before,
+.button.border:hover:after {
+  background: #e04e5e;
+}
+.button.border:hover {
+  color: #fff;
+}
+
+// Footer button 
+
+.footer-button {
+	display: inline-block;
+	position: relative;
+	background: transparent;
+	width: 205px;
+	height: 66px;
+	line-height: 66px;
+	text-align: center;
+	text-decoration: none;
+	// margin: 40px auto;
+	box-sizing: border-box;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #fff !important;
+	letter-spacing: 0.2em;
+	z-index: 1;
+	float: right;
+	margin-right: 10px;
+}
+.footer-button:before,
+.footer-button:after {
+  position: absolute;
+  content: '';
+  width: 200px;
+  left: 0px;
+  height: 30px;
+  z-index: -1;
+}
+
+.footer-button:before {
+  transform: perspective(10px) rotateX(3deg);
+}
+.footer-button:after {
+  top: 34px;
+  transform: perspective(10px) rotateX(-3deg);
+}
+
+/* footer-Button Border Style */
+
+.footer-button.border:before,
+.footer-button.border:after {
+  border: 2px solid #BC223C;
+}
+.footer-button.border:before {
+  border-bottom: none; /* to prevent the border-line showing up in the middle of the shape */
+}
+.footer-button.border:after {
+  border-top: none; /* to prevent the border-line showing up in the middle of the shape */
+}
+
+/* footer-Button hover styles */
+
+.footer-button.border:hover:before,
+.footer-button.border:hover:after {
+  background: #BC223C;
+}
+.footer-button.border:hover {
+  color: #fff;
+}
+
+.scrolloff {
+    pointer-events: none;
 }

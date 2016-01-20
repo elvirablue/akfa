@@ -11,9 +11,7 @@
 	// }
 }    
 
-@media screen 
-	and (min-width: 1201px) 
-	and (max-width: 1920px) { 
+@media only screen and (min-width: 1200px) {
 	.hidden-lg {
 		display: none;
 	}
@@ -100,6 +98,14 @@
 	.products {
 		&__box {
 			width: 280px;
+			margin-bottom: 30px;
+		}
+		&__text {
+			li {
+				p {
+					width: 250px !important;
+				}
+			}
 		}
 	}
 
@@ -126,7 +132,7 @@
 
 	.footer {
 		&__left {
-			width: 887px;
+			width: 100%;
 		}
 		&__address {
 			margin-right: 81px;
@@ -136,7 +142,19 @@
 		}
 		&__right {
 			width: 133px;
+			display: none;
 		}
+		&__phone {
+			float: right;
+		}
+		&__row {
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
+		&__order {
+			margin-top: 10px;
+		}
+
 	}
 
 	.left-col {
@@ -375,7 +393,7 @@
 		&__box {
 			width: 200px;
 			// background: green;
-			padding-bottom: 10px;
+			padding-bottom: 35px;
 		}
 		&__image {
 			img {
@@ -387,6 +405,11 @@
 		}
 		&__button {
 			width: 200px;
+		}
+		&__text {
+			p {
+				width: 180px !important;
+			}
 		}
 	}
 
@@ -472,12 +495,14 @@
 	}
 
 	.hidden-xs {
-		display: none;
+		display: none !important;
 	}
 
 	.container {
-		width: 320px;
+		width: 300px;
 		position: relative;
+		box-sizing: border-box;
+		padding: 0px 10px;
 	}
 
 	.header {
@@ -492,19 +517,20 @@
 		&__toggle-menu {
 			position: absolute;
 			top: 35px;
-			right: 0px;
+			right: 10px;
 			width: 25px;
 			height: 17px;
 		}
 		&__menu {
 			display: none;
 			position: absolute;
-			width: 320px;
+			width: 300px;
 			background: #fff;
 			top: 70px;
 			z-index: 999999;
 			padding: 10px 20px;
 			box-sizing: border-box;
+			right: 0;
 			li {
 				width: 100%;
 				text-align: right;
@@ -515,6 +541,10 @@
 			width: 100%;
 			float: left;
 			margin: 0;
+			.logo {
+				width: 143px;
+				margin-top: 3px;
+			}
 		}
 		&__profile-link {
 			float: right;
@@ -528,16 +558,21 @@
 			margin: 0;
 			margin-right: 35px;
 		}
-		&__order-status-link {
+		&__mobile-status {
+			width: 100%;
 			float: left;
+			text-align: center;
 			margin-top: 20px;
-			margin-left: 71px;
-
+		}
+		&__order-status-link {
+			float: none;
+			display: inline-block;
+			margin: 0;
 		}
 		&__phone {
 			margin: 0;
 			margin-top: 10px;
-			margin-left: 23px;
+			margin-left: 0px;
 			text-align: left;
 			float: left;
 			span {
@@ -547,7 +582,7 @@
 		&__tagline {
 			margin-left: 0px;
 			float: left;
-			width: 120px;
+			width: 112px;
 			margin-top: 20px;
 			&:before {
 				margin-left: 10px;
@@ -555,8 +590,10 @@
 			}
 		}
 		&__submit-button {
-			margin: 0 auto;
-			float: none;
+			margin-top: 0px;
+			float: left;
+			width: 100%;
+			text-align: center;
 		}
 		&__lang-switcher {
 			width: 100%;
@@ -595,17 +632,18 @@
 			margin-top: -45px;
 			position: relative;
 			text-align: center;
+			z-index: 999;
 		}
 		.owl-dot span {
 			width: 8px !important;
 			height: 8px !important;
-			background: #fff !important;
-			border: 2px solid #fff;
+			background: #D1D1D1 !important;
 			border-radius: 50% !important;
 			margin: 2px 4px !important;
+			border: 0;
 		}
 		.owl-dot.active span {
-			background: none !important;
+			background: @red !important;
 		}
 		.owl-dot span:before {
 		    display: none;
@@ -614,8 +652,10 @@
 
 	.products {
 		&__headliner {
+			margin-top: 40px;
 			font-size: 42px;
 			text-align: left;
+			margin-bottom: 30px;
 		}
 		&__box {
 			width: 100%;
@@ -664,13 +704,12 @@
 		.owl-dot span {
 			width: 8px !important;
 			height: 8px !important;
-			background: #ED1A3B !important;
-			border: 1px solid #ED1A3B;
+			background: #D1D1D1 !important;
 			border-radius: 50% !important;
 			margin: 2px 4px !important;
 		}
 		.owl-dot.active span {
-			background: none !important;
+			background: @red !important;
 		}
 	}
 
@@ -699,17 +738,17 @@
 		.owl-dot span {
 			width: 8px !important;
 			height: 8px !important;
-			background: #ED1A3B !important;
-			border: 1px solid #ED1A3B;
+			background: #D1D1D1 !important;
 			border-radius: 50% !important;
 			margin: 2px 4px !important;
 		}
 		.owl-dot.active span {
-			background: none !important;
+			background: @red !important;
 		}
 	}
 
 	.clients {
+		padding-bottom: 40px;
 		&__headliner {
 			width: 100%;
 			float: left;
@@ -722,7 +761,10 @@
 
 	.footer {
 		background-size: cover;
-		height: 626px;
+		height: 646px;
+		&__row {
+			display: none;
+		}
 		&__headliner {
 			width: 100%;
 			float: left;
@@ -740,16 +782,35 @@
 		}
 		&__copyright {
 			margin-bottom: 20px;
+			margin-top: 20px;
 		}
 		&__address {
 			margin-bottom: 20px;
 		}
 		&__designedby {
-			margin-bottom: 20px;
+			margin-bottom: 0px;
+			float: left;
+			margin-top: 20px;
 		}
 		&__order {
 			float: left;
 			margin-top: 30px;
+		}
+		&__mobile {
+			width: 100%;
+			float: left;
+		}
+		&__address2 {
+			width: 100%;
+			float: left;
+		}
+		&__search {
+			margin-left: 0;
+			margin-top: 20px;
+			margin-bottom: 0px;
+			input[type="text"] {
+				margin-left: 0;
+			}
 		}
 	}
 
@@ -912,6 +973,12 @@
 		&__video-box {
 			display: none;
 		}
+		&__small-text {
+			display: none;
+		}
+		.feedback-button {
+			display: none;
+		}
 	}
 
 	.right-col {
@@ -976,7 +1043,7 @@
 
 	.calc-page {
 		.container {
-			padding: 20px;
+			padding: 20px 10px;
 		}
 		&__left {
 			width: 100%;
@@ -1006,7 +1073,7 @@
 				margin-bottom: 0px;
 			}
 			.jq-selectbox__select {
-				width: 280px;
+				width: 260px;
 			}
 			input[type="text"] {
 				width: 100% !important;
@@ -1081,6 +1148,7 @@
 			}
 		}
 		&__director {
+			width: 280px;
 			margin-top: 30px;
 		}
 	}
@@ -1095,7 +1163,7 @@
 			min-height: 40px;
 		}
 		&__caption {
-			width: 280px;
+			width: 260px;
 			padding: 0px 10px;
 			box-sizing: border-box;
 			border: solid 2px #CBCBCB;
@@ -1172,6 +1240,7 @@
 	.delivery-steps {
 		&__step {
 			margin-bottom: 20px;
+			margin-right: 10px;
 			&:nth-child(2n+1) {
 				margin-right: 0px;
 			}
@@ -1200,7 +1269,7 @@
 	}
 
 	.page-vertical-menu {
-		width: 280px;
+		width: 260px;
 		padding: 0px 10px;
 		box-sizing: border-box;
 		border: solid 2px #CBCBCB;
@@ -1336,6 +1405,7 @@
 		}
 		&__cover {
 			margin-bottom: 20px;
+			width: 100%;
 		}
 		.sidebar-form {
 			padding: 0;
@@ -1379,6 +1449,378 @@
 	}
  
 }
+
+// Iphone landscape
+
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : landscape) {
+
+	
+
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : landscape) { 
+
+	.container {
+		width: 100%;
+	}
+
+	.header {
+		height: auto;
+		box-sizing: border-box;
+		padding: 0 20px 20px 20px;
+		&__phone-mobile {
+			width: 100%;
+			float: left;
+			text-align: center;
+		}
+		&__phone {
+			float: left;
+			display: inline-block;
+		}
+		&__tagline {
+			float: left;
+			text-align: left;
+			display: inline-block;
+		}
+		&__submit-button {
+			width: 215px;
+			float: right;
+		}
+		&__top {
+			float: left;
+		}
+		&__bottom {
+			width: 100%;
+			float: left;
+			margin-top: -40px;
+		}
+	}
+
+	.footer {
+		padding: 0 20px;
+		box-sizing: border-box;
+		height: 440px;
+		&__headliner {
+			text-align: center;
+			margin-bottom: 10px;
+		}
+		&__phone {
+			width: 50%;
+			float: left;
+		}
+		&__order {
+			float: right;
+			margin-top: 0;
+		}
+		&__copyright {
+			width: 50%;
+			float: left;
+			margin-top: 30px;
+		}
+		&__address {
+			width: 50%;
+			float: left;
+		}
+		&__address2 {
+			width: 50%;
+			float: left;
+		}
+		&__search {
+			width: 50%;
+			float: right;
+			margin-top: -150px;
+			form {
+				float: right;
+			}
+			input[type="text"] {
+				width: 210px;
+			}
+		}
+		&__designedby {
+			width: 50%;
+			float: right;
+			text-align: right;
+			margin-top: -90px;
+			img {
+				float: right;
+			}
+		}
+	}
+
+	.products {
+		&__headliner {
+			text-align: center;
+		}
+		.container {
+			box-sizing: border-box;
+			padding: 0 20px;
+		}
+	}
+
+	.solutions {
+		&__headliner {
+			text-align: center;
+		}
+		.container {
+			box-sizing: border-box;
+			padding: 0 20px;
+		}
+	}
+	
+	.news {
+		&__headliner {
+			text-align: center;
+		}
+		.container {
+			box-sizing: border-box;
+			padding: 0 20px;
+		}
+	}
+
+	.clients {
+		&__headliner {
+			text-align: center;
+		}
+		.container {
+			box-sizing: border-box;
+			padding: 0 20px;
+		}
+	}
+
+	.delivery-steps {
+		&__step {
+
+		}
+	}
+
+	.delivery-steps {
+		&__step {
+			margin-bottom: 20px;
+			margin-right: 20px;
+			&:nth-child(2n+1) {
+				margin-right: 20px;
+			}
+		}
+	}
+
+	.supplies-page {
+		.container {
+			padding: 20px;
+		}
+		&__supplies-map {
+			overflow: hidden;
+		}
+		&__post {
+			margin-right: 20px;
+			margin-bottom: 30px;
+			&:nth-child(2n+2) {
+				margin-right: 20px;
+			}
+		}
+		&__more-btn {
+			width: 100%;
+			float: left;
+		}
+		&__svh-box {
+			margin-right: 20px;
+			margin-bottom: 10px;
+			&:nth-child(2n+2) {
+				margin-right: 20px;
+			}
+		}
+	}
+
+
+}
+
+
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : landscape) {
+
+	.container {
+		width: 100%;
+	}
+
+	.header {
+		height: auto;
+		box-sizing: border-box;
+		padding: 0 20px 20px 20px;
+		&__phone-mobile {
+			width: 100%;
+			float: left;
+			text-align: center;
+		}
+		&__phone {
+			float: left;
+			display: inline-block;
+		}
+		&__tagline {
+			float: left;
+			text-align: left;
+			display: inline-block;
+		}
+		&__submit-button {
+			width: 215px;
+			float: right;
+		}
+		&__top {
+			float: left;
+		}
+		&__bottom {
+			width: 100%;
+			float: left;
+			margin-top: -40px;
+		}
+	}
+
+	.footer {
+		padding: 0 20px;
+		box-sizing: border-box;
+		height: 440px;
+		&__headliner {
+			text-align: center;
+			margin-bottom: 10px;
+		}
+		&__phone {
+			width: 50%;
+			float: left;
+		}
+		&__order {
+			float: right;
+			margin-top: 0;
+		}
+		&__copyright {
+			width: 50%;
+			float: left;
+			margin-top: 30px;
+		}
+		&__address {
+			width: 50%;
+			float: left;
+		}
+		&__address2 {
+			width: 50%;
+			float: left;
+		}
+		&__search {
+			width: 50%;
+			float: right;
+			margin-top: -150px;
+			form {
+				float: right;
+			}
+			input[type="text"] {
+				width: 210px;
+			}
+		}
+		&__designedby {
+			width: 50%;
+			float: right;
+			text-align: right;
+			margin-top: -90px;
+			img {
+				float: right;
+			}
+		}
+	}
+
+	.products {
+		&__headliner {
+			text-align: center;
+		}
+		.container {
+			box-sizing: border-box;
+			padding: 0 20px;
+		}
+	}
+
+	.solutions {
+		&__headliner {
+			text-align: center;
+		}
+		.container {
+			box-sizing: border-box;
+			padding: 0 20px;
+		}
+	}
+	
+	.news {
+		&__headliner {
+			text-align: center;
+		}
+		.container {
+			box-sizing: border-box;
+			padding: 0 20px;
+		}
+	}
+
+	.clients {
+		&__headliner {
+			text-align: center;
+		}
+		.container {
+			box-sizing: border-box;
+			padding: 0 20px;
+		}
+	}
+
+	.delivery-steps {
+		&__step {
+
+		}
+	}
+
+	.delivery-steps {
+		&__step {
+			margin-bottom: 20px;
+			margin-right: 20px;
+			&:nth-child(2n+1) {
+				margin-right: 20px;
+			}
+		}
+	}
+
+	.supplies-page {
+		.container {
+			padding: 20px;
+		}
+		&__supplies-map {
+			overflow: hidden;
+		}
+		&__post {
+			margin-right: 20px;
+			margin-bottom: 30px;
+			&:nth-child(2n+2) {
+				margin-right: 20px;
+			}
+		}
+		&__more-btn {
+			width: 100%;
+			float: left;
+		}
+		&__svh-box {
+			margin-right: 20px;
+			margin-bottom: 10px;
+			&:nth-child(2n+2) {
+				margin-right: 20px;
+			}
+		}
+	}
+
+
+
+}
+
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
 	

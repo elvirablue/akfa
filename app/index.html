@@ -16,13 +16,24 @@
 </head>
 <body>
 
+	<a href="#solutions" id="tosolutions" class="solutions-button hidden-xs hidden-sm hidden-md">
+		<div class="solutions-button__text">
+			<img class="solutions-button__cover" src="img/layout/solutions-button.png" alt="">
+			<div class="solutions-button__headliner">
+				Отраслевые <br>
+				решения
+			</div>
+			<img class="solutions-button__arrow" src="img/layout/solutions-arrow.png" alt="">
+		</div>
+	</a>
+
 	<!-- Header -->
 
 	<header class="header">
 		<div class="container">
 			<div class="header__top">
 				<div class="header__logo">
-					<img src="img/layout/logo.png" alt="">
+					<img src="img/layout/logo.png" class="logo" alt="">
 					<div class="header__search hidden-md hidden-lg">
 						<img src="img/layout/header-search.png" alt="">
 					</div>
@@ -33,12 +44,14 @@
 					Больше<br>
 					чем логистика
 				</div>
-				<div class="header__phone">
-					<span>8 800</span> 2000 158
-				</div>
-				<div class="header__tagline hidden-md hidden-lg">
-					Больше<br>
-					чем логистика
+				<div class="header__phone-mobile">
+					<div class="header__phone">
+						<span>8 800</span> 2000 158
+					</div>
+					<div class="header__tagline hidden-md hidden-lg">
+						Больше<br>
+						чем логистика
+					</div>
 				</div>
 				<div class="header__phone-text hidden-xs">
 					Бесплатно<br>
@@ -94,12 +107,29 @@
 						Контакты
 					</a></li>
 				</ul>
-				<a href="#" class="header__submit-button">
-					Оставить заявку
-				</a>
-				<a href="#" class="header__order-status-link hidden-lg hidden-md">
-					Отслеживание заказа
-				</a>
+				<div class="header__submit-button">
+					<a href="#" class="button ribbon-outset border">
+						Оставить заявку
+					</a>
+				</div>
+				<div class="header__mobile-status hidden-lg hidden-md">
+					<a href="#" class="header__order-status-link hidden-lg hidden-md">
+						Отслеживание заказа
+					</a>
+				</div>
+
+				<div class="header-lang hidden-xs hidden-md hidden-sm">
+					<a href="#" class="header-lang__item active">
+						ru
+					</a>
+					<a href="#" class="header-lang__item">
+						en
+					</a>
+					<a href="#" class="header-lang__item">
+						ch
+					</a>
+				</div>
+				
 			</div>
 		</div>
 	</header>
@@ -159,16 +189,28 @@
 				<div class="products__text">
 					<ul>
 						<li>
-							Пункты приема груза в четырех основных экономических зонах кита
+							<p>
+								Пункты приема груза в четырех основных экономических зонах кита
+							</p>
+							
 						</li>
 						<li>
-							Срок доставки 1 мес
+							<p>
+								Срок доставки 1 мес
+							</p>
+							
 						</li>
 						<li>
-							от 1 кг до целой машины
+							<p>
+								от 1 кг до целой машины
+							</p>
+							
 						</li>
 						<li>
-							Лицензия таможенного перевозчика,
+							<p>
+								Лицензия таможенного перевозчика,
+							</p>
+							
 						</li>
 					</ul>
 				</div>
@@ -187,13 +229,19 @@
 				<div class="products__text">
 					<ul>
 						<li>
-							Подача контейнеров по погрузку в КНР в течение 48
+							<p>
+								Подача контейнеров по погрузку в КНР в течение 48
+							</p>
 						</li>
 						<li>
-							Склады для консолидации грузов от разных отправителей в Пекине, Иу и Гуанчжоу
+							<p>
+								Склады для консолидации грузов от разных отправителей в Пекине, Иу и Гуанчжоу
+							</p>
 						</li>
 						<li>
-							Экспедирование в порту Владивосток и в порту Посточный
+							<p>
+								Экспедирование в порту Владивосток и в порту Посточный
+							</p>
 						</li>
 					</ul>
 				</div>
@@ -212,13 +260,22 @@
 				<div class="products__text">
 					<ul>
 						<li>
-							Опыт сопровождения таможенных операций - 20 лет
+							<p>
+								Опыт сопровождения таможенных <br>
+								операций - 20 лет
+							</p>
+							
 						</li>
 						<li>
-							Оформление в любом ЦЭД, а также на любых постах Владивостокской, Хабаровский и Находкинской таможни
+							<p>
+								Оформление в любом ЦЭД, а также на любых постах Владивостокской, Хабаровский и Находкинской таможни
+							</p>
+							
 						</li>
 						<li>
-							Лицензия таможенного представителя
+							<p>
+								Лицензия таможенного представителя
+							</p>
 						</li>
 					</ul>
 				</div>
@@ -233,42 +290,44 @@
 
 	<!-- Solutions -->
 
-	<div class="solutions hidden-xs">
+	<div class="solutions" id="solutions">
 		<div class="container">
 			<div class="solutions__headliner">
 				Отраслевые решения
 			</div>
-			<div class="solutions__box" style="background: url(img/sol1.jpg) no-repeat center center;">
-				<div class="solutions__label" style="background: rgba(196,32,49,0.7);">
-					<div class="vertical">
-						Обувные ММкомпании
+			<div class="solutions__carousel">
+				<a href="#" class="solutions__box" style="background: url(img/sol1.jpg) no-repeat center center;">
+					<div class="solutions__label" style="background: rgba(196,32,49,0.7);">
+						<div class="vertical">
+							Обувные ММкомпании
+						</div>
 					</div>
-				</div>
-			</div>
-			<div class="solutions__box" style="background: url(img/sol2.jpg) no-repeat center center;">
-				<div class="solutions__label" style="background: rgba(250,167,27,0.7);">
-					<div class="vertical">
-						Дом, саД, <br>
-						строительство, ремонт
+				</a>
+				<a href="#" class="solutions__box" style="background: url(img/sol2.jpg) no-repeat center center;">
+					<div class="solutions__label" style="background: rgba(250,167,27,0.7);">
+						<div class="vertical">
+							Дом, саД, <br>
+							строительство, ремонт
+						</div>
 					</div>
-				</div>
-			</div>
-			<div class="solutions__box" style="background: url(img/sol3.jpg) no-repeat center center;">
-				<div class="solutions__label" style="background: rgba(54,138,202,0.7);">
-					<div class="vertical">
-						Для транспортных<br>
- 						компаний
-					</div>	
-				</div>
-			</div>
-			<div class="solutions__box" style="background: url(img/sol4.jpg) no-repeat center center;">
-				<div class="solutions__label" style="background: rgba(62,178,73,0.7);">
-					<div class="vertical">
-						Автозапчасти, <br>
-						шины, диски
+				</a>
+				<a href="#" class="solutions__box" style="background: url(img/sol3.jpg) no-repeat center center;">
+					<div class="solutions__label" style="background: rgba(54,138,202,0.7);">
+						<div class="vertical">
+							Для транспортных<br>
+	 						компаний
+						</div>	
 					</div>
-				</div>
-			</div>		
+				</a>
+				<a href="#" class="solutions__box" style="background: url(img/sol4.jpg) no-repeat center center;">
+					<div class="solutions__label" style="background: rgba(62,178,73,0.7);">
+						<div class="vertical">
+							Автозапчасти, <br>
+							шины, диски
+						</div>
+					</div>
+				</a>
+			</div>	
 		</div>
 	</div>
 
@@ -276,7 +335,7 @@
 
 	<!-- Solutions mobile -->
 
-	<div class="solutions hidden-lg hidden-md">
+	<!-- <div class="solutions hidden-lg hidden-md">
 		<div class="container">
 			<div class="solutions__headliner">
 				Отраслевые решения
@@ -315,7 +374,7 @@
 				</div>
 			</div>			
 		</div>
-	</div>
+	</div> -->
 
 	<!-- Solutions mobile end -->
 
@@ -486,6 +545,32 @@
 			<div class="clients__headliner">
 				Наши клиенты
 			</div>
+
+			<div class="clients__container">
+				<div class="clients__box">
+					<a href="#">
+						<img src="img/clients/auchan.png" alt="">
+					</a>
+				</div>
+
+				<div class="clients__box">
+					<a href="#">
+						<img src="img/clients/fixprice.png" alt="">
+					</a>
+				</div>
+
+				<div class="clients__box">
+					<a href="#">
+						<img src="img/clients/magnit.png" alt="">
+					</a>
+				</div>
+
+				<div class="clients__box">
+					<a href="#">
+						<img src="img/clients/perekrestok.png" alt="">
+					</a>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -498,19 +583,60 @@
 			<div class="footer__headliner">
 				Больше чем логистика
 			</div>
+
+			<div class="footer__mobile hidden-sm hidden-lg hidden-md">
+				<div class="footer__phone">
+					<span class="thin">8 800</span> 921 39 90
+					<span class="phone-label">Бесплатно по всей России</span>
+				</div>
+
+				<a href="#" class="footer__order">
+					Оставить заявку
+				</a>
+
+				<div class="footer__copyright">
+					© 2010-2015, ООО “АКФА” <br>
+					<a href="mailto:">info@akfa.ru</a>
+				</div>
+				<div class="footer__address">
+					115114, г. Москва, ул. Летниковская, <br>
+					д.10, стр. 2, БЦ «Святогор-2» <br>
+					<a href="#">Посмотреть на карте</a>
+				</div>
+
+				<div class="footer__address2">
+					680022, г. Хабаровск, ул. Нефтяная, д. 1 <br>
+					<a href="#">Посмотреть на карте</a>
+				</div>
+
+				<div class="footer__search">
+					<form action="#">
+						<input type="text" placeholder="Поиск">
+						<input type="submit" value="">
+					</form>
+				</div>
+
+				<div class="footer__designedby">
+					Разработка сайта<br>
+					<a href="#">
+						<img src="img/layout/100up.png" alt="">
+					</a>
+				</div>
+			</div>
+
 			<div class="footer__left">
 				<div class="footer__row">
-					<div class="footer__copyright">
+					<div class="footer__copyright hidden-xs">
 						© 2010-2015, ООО “АКФА” <br>
 						<a href="mailto:">info@akfa.ru</a>
 					</div>
-					<div class="footer__address">
+					<div class="footer__address hidden-xs">
 						115114, г. Москва, ул. Летниковская, <br>
 						д.10, стр. 2, БЦ «Святогор-2» <br>
 						<a href="#">Посмотреть на карте</a>
 					</div>
 
-					<div class="footer__phone">
+					<div class="footer__phone hidden-xs">
 						<span class="thin">8 800</span> 921 39 90
 						<span class="phone-label">Бесплатно по всей России</span>
 					</div>
@@ -533,16 +659,19 @@
 							<input type="submit" value="">
 						</form>
 					</div>
-					<a href="#" class="footer__order hidden-lg hidden-md">
+
+					<a href="#" class="footer__order hidden-xs hidden-lg">
 						Оставить заявку
 					</a>
 				</div>
 				
 			</div>
-			<div class="footer__right hidden-sm hidden-xs">
-				<a href="#" class="footer__order">
+			<div class="footer__right hidden-sm hidden-xs hidden-md">
+
+				<a href="#" class="footer-button ribbon-outset border">
 					Оставить заявку
 				</a>
+
 			</div>
 		</div>
 	</footer>
