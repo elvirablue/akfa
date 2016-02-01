@@ -186,10 +186,47 @@ $('.page-menu__menu .current').click(function(){
 // Toggle menu
 
 $(".header__toggle-menu").click(function() {
-  $('.header__toggle-menu #toggle').toggleClass("on");
-  $(".header__menu").slideToggle();
+  $(".header__toggle-menu #toggle").toggleClass("on");
+  $(".big-menu").fadeToggle();
+  // Checking visibility
+  if ($('.search-box').is(":visible"))
+  {
+    $('.search-box').fadeOut();
+  }
 });
 
+$(".header__menu-link").click(function() {
+  $(".header__menu-link #toggle-big").toggleClass("on");
+  $(".big-menu").fadeToggle();
+  // Checking visibility
+  if ($('.search-box').is(":visible"))
+  {
+    $('.search-box').fadeOut();
+  }
+});
+
+$(document).mouseup(function (e)
+{
+    var container = $(".search-box");
+
+    if (!container.is(e.target) // if the target of the click isn't the container...
+        && container.has(e.target).length === 0) // ... nor a descendant of the container
+    {
+        container.fadeOut();
+    }
+});
+
+
+$(".header__search").click(function() {
+  $(".search-box").fadeToggle();
+  // Checking visibility
+  if ($('.big-menu').is(":visible"))
+  {
+    $('.big-menu').fadeToggle();
+    $(".header__menu-link #toggle-big").toggleClass("on");
+    $(".header__toggle-menu #toggle").toggleClass("on");
+  }
+});
 
 // Owl carousel response
 
@@ -209,11 +246,26 @@ function initialize(){
   if(containerWidth <= 767) {
     // initialize owl-carousel if window screensize is less the 767px
     $owl.owlCarousel( carousel_Settings );
+
+    // $(document).mouseup(function (e)
+    // {
+    //     var containerMenu = $(".page-menu li:not(.current)");
+
+    //     if (!containerMenu.is(e.target) // if the target of the click isn't the container...
+    //         && containerMenu.has(e.target).length === 0) // ... nor a descendant of the container
+    //     {
+    //         containerMenu.hide();
+    //     }
+    // });
+
+
   } else {
     // destroy owl-carousel and remove all depending classes if window screensize is bigger then 767px
     $owl.trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded');
     $owl.find('.owl-stage-outer').children().unwrap();
   }
+
+
 }
 
 // initilize after window resize
@@ -229,7 +281,7 @@ initialize();
 // Solutions 
 
   $(window).scroll(function() {
-      if($(this).scrollTop() != 0) {
+      if($(this).scrollTop() > 380) {
       $('#tosolutions').fadeIn();
     } else {
       $('#tosolutions').fadeOut();
@@ -244,3 +296,21 @@ $('#tosolutions').click(function(){
     }, 500);
     return false;
 });
+
+
+// Supplies hidden text
+
+$('.supplies-page__show-text').click(function(){
+  $('.supplies-page__hidden-text').slideToggle();
+});
+
+// Cutting news text on front page
+
+$('.news__text').each(function(index, element) {
+    $clamp(element, { clamp: 3, useNativeClamp: false });
+});
+
+// $('.page-menu li.current').click(function(){
+//   $('.page-menu li').show();
+// });
+

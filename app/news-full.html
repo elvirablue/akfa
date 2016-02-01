@@ -23,9 +23,9 @@
 		<div class="container">
 			<div class="header__top">
 				<div class="header__logo">
-					<img src="img/layout/logo.png" class="logo" alt="">
+					<img src="img/layout/logo.svg" class="logo" alt="">
 					<div class="header__search hidden-md hidden-lg">
-						<img src="img/layout/header-search.png" alt="">
+						<img src="img/layout/header-search.svg" alt="">
 					</div>
 					<a href="#" class="header__profile-link hidden-lg hidden-md"></a>
 					
@@ -47,6 +47,9 @@
 					Бесплатно<br>
 					по всей России
 				</div>
+				<div class="header__search hidden-xs hidden-lg">
+					<img src="img/layout/header-search.svg" alt="">
+				</div>
 				<a href="#" class="header__order-status-link hidden-md hidden-xs">
 					Отслеживание заказа
 				</a>
@@ -54,19 +57,46 @@
 					Личный кабинет
 				</a>
 				<div class="header__toggle-menu hidden-lg">
-					<!-- <img src="img/layout/menu-red.png" alt=""> -->
-					<div id="toggle">
+					<div id="toggle" class="toggle">
 						<span></span>
 					</div>
 				</div>
 			</div>
 			<div class="header__bottom">
 				<div class="header__menu-link hidden-md hidden-xs">
-					<img src="img/layout/menu-gray.png" alt="">
+					<div id="toggle-big" class="toggle">
+						<span></span>
+					</div>
 				</div>
 				<div class="header__search hidden-md hidden-xs">
-					<img src="img/layout/header-search.png" alt="">
+					<img src="img/layout/header-search.svg" alt="">
 				</div>
+
+				<!-- Search box -->
+
+				<div class="search-box">
+					<div class="search-box__input">
+						<input type="text" placeholder="Введите слово для поиска">
+						<input type="submit" value="">
+					</div>
+					<div class="search-box__result">
+						Результаты поиска
+					</div>
+					<div class="search-box__result">
+						Результаты поиска
+					</div>
+					<div class="search-box__result">
+						Результаты поиска
+					</div>
+					<div class="search-box__button-container">
+						<a href="#" class="search-box__button button-animate-red">
+							Все результаты поиска
+						</a>
+					</div>
+				</div>
+
+				<!-- Search box end -->
+
 				<a href="#" class="header__profile-link hidden-lg hidden-xs">
 					Личный кабинет
 				</a>
@@ -119,12 +149,181 @@
 						ch
 					</a>
 				</div>
-				
 			</div>
 		</div>
 	</header>
 
 	<!-- Header end -->
+
+	<!-- Main toggle menu -->
+
+	<div class="big-menu">
+		<div class="container">
+			<div class="big-menu__left">
+				<div class="big-menu__box">
+					<div class="big-menu__headliner">
+						Основные услуги
+					</div>
+
+					<ul class="big-menu__list">
+						<li>
+							<a href="#">
+								Сборные грузы
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Контейнерные перевозки
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Таможенное оформление
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="big-menu__box">
+					<div class="big-menu__headliner">
+						Отраслевые решения
+					</div>
+
+					<ul class="big-menu__list">
+						<li>
+							<a href="#">
+								Обувные компании
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Дом, сайт, строительство, ремонт
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Для транспортных компаний
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Автозапчасти, шины, диски
+							</a>
+						</li>
+					</ul>
+				</div>
+
+
+				<div class="big-menu__box">
+					<div class="big-menu__headliner">
+						Дополнительные усоуги
+					</div>
+
+					<ul class="big-menu__list">
+						<li>
+							<a href="#">
+								Обувные компании
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Дом, сайт, строительство, ремонт
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Для транспортных компаний
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Автозапчасти, шины, диски
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="big-menu__box">
+					<div class="big-menu__headliner">
+						Информация
+					</div>
+
+					<ul class="big-menu__list">
+						<li>
+							<a href="#">
+								О компании
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								История
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Наше представительство
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Наши награды
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Спонсорство
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Партнеры
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="big-menu__box last">
+					<ul class="big-menu__list">
+						<li>
+							<a href="#">
+								Новости
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Работа с претензиями
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Контакты
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="big-menu__right">
+				<div class="big-menu__headliner">
+					Ответим в течение 5 минут
+				</div>
+				<form action="" class="big-menu__form">
+					
+					<input type="text" placeholder="Имя*">
+					<input type="text" placeholder="Телефон*">
+					<input type="text" placeholder="Город отправления*">
+					<input type="text" placeholder="Город получения*">
+					<textarea placeholder="Примерный объем груза и дополнительная информация"></textarea><br>
+					<input class="button-animate-red" type="submit" value="Отправить заявку">
+
+				</form>
+
+			</div>
+			
+		</div>
+	</div>
+
+	<!-- Mein toggle menu end -->
 
 	<div class="page-top"></div>
 
@@ -258,9 +457,11 @@
 				
 			</div>
 			<div class="footer__right hidden-sm hidden-xs hidden-md">
-				<a href="#" class="footer__order">
+
+				<a href="#" class="footer-button ribbon-outset border">
 					Оставить заявку
 				</a>
+
 			</div>
 		</div>
 	</footer>
