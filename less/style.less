@@ -17,22 +17,20 @@
 }
 
 html, body {
-	// min-width: @main-width;
-	height: 100%;
 	margin: 0;
     padding: 0;
 }
 
 html {
 	position: relative;
-	min-height: 100%;
 }
 
 body {
 	position: relative;
-	min-height: 100%;
 	font-family: 'Roboto', sans-serif;
 	background: #F4F7F9;
+	width: 100%;
+  	height: 100%;
 }
 
 .container {
@@ -166,6 +164,7 @@ a[href^=tel]{
 	text-align: center;
 	cursor: pointer;
 	text-decoration: none;
+	z-index: 999999;
 	&__cover {
 		margin-top: 15px;
 		margin-bottom: 5px;
@@ -198,7 +197,7 @@ a[href^=tel]{
 			content: '';
 			width: 734px;
 			height: 26px;
-			background: url("../img/layout/header.png");
+			background: url("../img/layout/header.svg") no-repeat;
 			position: absolute;
 			left: -730px;
 			top: 35px;
@@ -292,7 +291,7 @@ a[href^=tel]{
 			content: '';
 			width: 21px;
 			height: 23px;
-			background: url("../img/layout/profile.png");
+			background: url("../img/layout/profile.svg") no-repeat;
 			display: block;
 			float: left;
 			margin-top: -2px;
@@ -314,7 +313,7 @@ a[href^=tel]{
 			content: '';
 			width: 21px;
 			height: 26px;
-			background: url("../img/layout/order-status.png");
+			background: url("../img/layout/order-status.svg") no-repeat;
 			display: block;
 			float: left;
 			margin-top: -3px;
@@ -331,25 +330,29 @@ a[href^=tel]{
 	}
 	&__menu-link {
 		float: left;
-		margin-right: 23px;
+		margin-right: 20px;
+		cursor: pointer;
 	}
 	&__search {
 		float: left;
 		margin-right: 22px;
+		position: relative;
+		cursor: pointer;
 	}
 	&__menu {
 		margin: 0;
 		padding: 0;
 		float: left;
+		margin-top: -1px;
 		li {
 			list-style-type: none;
 			float: left;
-			margin-right: 34px;
+			margin-right: 27px;
 			&:last-child {
 				margin-right: 0px;
 			}
 			a {
-				font-size: 13px;
+				font-size: 14px;
 				color: @gray;
 				&:hover {
 					text-decoration: none;
@@ -697,7 +700,7 @@ a[href^=tel]{
 	width: 100%;
 	float: left;
 	background: #F4F8F9;
-	padding-bottom: 151px;
+	padding-bottom: 100px;
 	&__headliner {
 		width: 100%;
 		float: left;
@@ -765,6 +768,8 @@ a[href^=tel]{
 		color: #808080;
 		margin-top: 30px;
 		margin-bottom: 30px;
+		box-sizing: border-box;
+		padding-left: 235px;
 		span {
 			color: #E7463C;
 		}
@@ -1137,8 +1142,8 @@ a[href^=tel]{
 			height: 36px;
 			box-sizing: border-box;
 			border: 0;
-			border-top: 1px solid #D4D4DF;
-			padding-left: 15px;
+			border-bottom: 1px solid #D4D4DF;
+			padding-left: 0px;
 			background: none;
 			border-radius: 0;
 			line-height: 34px;
@@ -1146,6 +1151,7 @@ a[href^=tel]{
 			font-size: 13px;
 			text-align: left;
 			outline: none;
+			margin-top: 24px;
 		}
 		.row {
 			margin-bottom: 10px;
@@ -1370,7 +1376,7 @@ a[href^=tel]{
 	&__text {
 		width: 100%;
 		float: left;
-		font-size: 13px;
+		font-size: 14px;
 		line-height: 24px;
 		font-weight: 300;
 		color: #6F6F6E;
@@ -1378,7 +1384,7 @@ a[href^=tel]{
 	&__director {
 		width: 300px;
 		float: left;
-		font-size: 13px;
+		font-size: 14px;
 		line-height: 18px;
 		color: #6F6F6E;
 		margin-top: 50px;
@@ -1403,6 +1409,7 @@ a[href^=tel]{
 			height: 160px;
 			border: 0;
 			float: left;
+			pointer-events: none;
 		}
 		a {
 			color: #E7463C;
@@ -1439,7 +1446,7 @@ a[href^=tel]{
 		margin-top: 10px;
 		width: 520px;
 		float: left;
-		font-size: 13px;
+		font-size: 14px;
 		line-height: 24px;
 		color: #6F6F6E;
 	}
@@ -1447,13 +1454,128 @@ a[href^=tel]{
 		margin-top: 10px;
 		width: 250px;
 		float: left;
-		font-size: 13px;
+		font-size: 14px;
 		line-height: 24px;
 		color: #6F6F6E;
 		.col {
 			width: 50%;
 			float: left;
 		}
+	}
+}
+
+// Solutions page
+
+.solutions-page {
+	width: 100%;
+	float: left;
+	text-align: center;
+	.container {
+		display: inline-block;
+		background: #fff;
+		text-align: left;
+		box-sizing: border-box;
+		padding: 60px 70px;
+		margin-bottom: 60px;
+		border-bottom: 1px solid @red;
+	}
+	.page-vertical-menu {
+		margin-bottom: 20px;
+	}
+	&__headliner {
+		width: 100%;
+		float: left;
+		font-size: 28px;
+		color: #4D4D4D;
+		margin-bottom: 20px;
+		img {
+			vertical-align: middle;
+			margin-right: 10px;
+		}
+		span {
+			vertical-align: middle;
+			display: inline-block;
+			&:first-letter {
+				color: #E7463C;
+			}
+		}
+	}
+	&__left {
+		width: 50%;
+		float: left;
+	}
+	&__right {
+		width: 50%;
+		float: left;
+	}
+	&__col-headliner {
+		width: 100%;
+		float: left;
+		font-size: 16px;
+		color: #808080;
+		font-weight: 500;
+		margin-bottom: 20px;
+		img {
+			margin-bottom: -5px;
+			margin-right: 5px;
+		}
+	}
+	&__col-text {
+		width: 100%;
+		float: left;
+		font-size: 13px;
+		color: #6F6F6E;
+		line-height: 24px;
+		box-sizing: border-box;
+		padding-right: 20px;
+		ul {
+			width: 100%;
+			float: left;
+			padding: 0;
+			padding-left: 20px;
+			font-size: 13px;
+			color: #FF675C;
+			li {
+				margin-bottom: 5px;
+				list-style-type: circle;
+				p {
+					color: #6F6F6E;
+				}
+			}
+		}
+	}
+	&__clients {
+		width: 100%;
+		float: left;
+		text-align: center;
+		border-top: 1px solid #CBCBCB;
+		border-bottom: 1px solid #CBCBCB;
+		padding: 15px 0;
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+
+	&__separator {
+		width: 100%;
+		float: left;
+		height: 1px;
+		background: #CBCBCB;
+		margin: 15px 0;
+	}
+
+	&__client-link {
+		display: inline-block;
+		margin: 0 10px;
+		img {
+			width: 120px;
+		}
+	}
+	&__image-cover {
+		width: 100%;
+		float: left;
+		margin-bottom: 40px;
+		height: 317px;
+		background: #CBCBCB;
 	}
 }
 
@@ -1626,6 +1748,19 @@ a[href^=tel]{
 		&:last-child:after {
 			display: none;
 		}
+		&.active:before {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 1px;
+			height: 23px;
+			background: #E7463C;
+			bottom: -23px;
+			left: 0;
+			right: 0;
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 	&__headliner {
 		height: 40px;
@@ -1655,6 +1790,47 @@ a[href^=tel]{
 	float: left;
 	margin-top: 30px;
 	display: none;
+	position: relative;
+	&.step1:before {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 62px;
+		height: 1px;
+		background: @red;
+		top: -9px;
+		left: 1px;
+	}
+	&.step2:before {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 212px;
+		height: 1px;
+		background: @red;
+		top: -9px;
+		left: 1px;
+	}
+	&.step3:before {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 362px;
+		height: 1px;
+		background: @red;
+		top: -9px;
+		left: 1px;
+	}
+	&.step4:before {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 512px;
+		height: 1px;
+		background: @red;
+		top: -9px;
+		left: 1px;
+	}
 	&.active {
 		display: block;
 	}
@@ -1717,11 +1893,21 @@ a[href^=tel]{
 		line-height: 24px;
 		color: #6F6F6E;
 		margin-bottom: 30px;
-		span {
-			color: #E7463C;
-			border-bottom: 1px dashed #E7463C;
-			cursor: pointer;
-		}
+	}
+	&__show-text {
+		color: #E7463C;
+		border-bottom: 1px dashed #E7463C;
+		cursor: pointer;
+	}
+	&__hidden-text {
+		display: block;
+		color: #6F6F6E;
+		border-bottom: 0;
+		cursor: auto;
+		margin: 10px 0;
+		display: none;
+		width: 100%;
+		float: left;
 	}
 	&__supplies-map {
 		width: 100%;
@@ -1781,6 +1967,7 @@ a[href^=tel]{
 		font-weight: 500;
 		line-height: 36px;
 		transition: 0.5s;
+		cursor: pointer;
 		&.active {
 			background: #E7463C;
 			color: #fff;
@@ -2130,7 +2317,6 @@ a[href^=tel]{
 		display: inline-block;
 		font-size: 11px;
 		box-sizing: border-box;
-		
 		position: absolute;
 		bottom: 5px;
 		left: 0;
@@ -2282,3 +2468,31 @@ a[href^=tel]{
 	}
 }
 
+.slideout-menu {
+  position: fixed;
+  top: 0;
+  left: auto;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 280px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+}
+
+.slideout-panel {
+  position:relative;
+  z-index: 1;
+  will-change: transform;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
+}

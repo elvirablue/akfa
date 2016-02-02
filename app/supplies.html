@@ -17,147 +17,9 @@
 </head>
 <body>
 
-	<!-- Header -->
-
-	<header class="header">
-		<div class="container">
-			<div class="header__top">
-				<div class="header__logo">
-					<img src="img/layout/logo.svg" class="logo" alt="">
-					<div class="header__search hidden-md hidden-lg">
-						<img src="img/layout/header-search.svg" alt="">
-					</div>
-					<a href="#" class="header__profile-link hidden-lg hidden-md"></a>
-					
-				</div>
-				<div class="header__tagline hidden-xs">
-					Больше<br>
-					чем логистика
-				</div>
-				<div class="header__phone-mobile">
-					<div class="header__phone">
-						<span>8 800</span> 2000 158
-					</div>
-					<div class="header__tagline hidden-md hidden-lg">
-						Больше<br>
-						чем логистика
-					</div>
-				</div>
-				<div class="header__phone-text hidden-xs">
-					Бесплатно<br>
-					по всей России
-				</div>
-				<div class="header__search hidden-xs hidden-lg">
-					<img src="img/layout/header-search.svg" alt="">
-				</div>
-				<a href="#" class="header__order-status-link hidden-md hidden-xs">
-					Отслеживание заказа
-				</a>
-				<a href="#" class="header__profile-link hidden-md hidden-xs">
-					Личный кабинет
-				</a>
-				<div class="header__toggle-menu hidden-lg">
-					<div id="toggle" class="toggle">
-						<span></span>
-					</div>
-				</div>
-			</div>
-			<div class="header__bottom">
-				<div class="header__menu-link hidden-md hidden-xs">
-					<div id="toggle-big" class="toggle">
-						<span></span>
-					</div>
-				</div>
-				<div class="header__search hidden-md hidden-xs">
-					<img src="img/layout/header-search.svg" alt="">
-				</div>
-
-				<!-- Search box -->
-
-				<div class="search-box">
-					<div class="search-box__input">
-						<input type="text" placeholder="Введите слово для поиска">
-						<input type="submit" value="">
-					</div>
-					<div class="search-box__result">
-						Результаты поиска
-					</div>
-					<div class="search-box__result">
-						Результаты поиска
-					</div>
-					<div class="search-box__result">
-						Результаты поиска
-					</div>
-					<div class="search-box__button-container">
-						<a href="#" class="search-box__button button-animate-red">
-							Все результаты поиска
-						</a>
-					</div>
-				</div>
-
-				<!-- Search box end -->
-
-				<a href="#" class="header__profile-link hidden-lg hidden-xs">
-					Личный кабинет
-				</a>
-				<a href="#" class="header__order-status-link hidden-lg hidden-xs">
-					Отслеживание заказа
-				</a>
-				
-				<ul class="header__menu">
-					<li><a href="#">
-						Наши продукты
-					</a></li>
-					<li><a href="#">
-						Все услуги
-					</a></li>
-					<li><a href="#">
-						Отраслевые решения
-					</a></li>
-					<li><a href="#">
-						Калькулятор
-					</a></li>
-					<li><a href="#">
-						О компании
-					</a></li>
-					<li><a href="#">
-						Вопросы и ответы
-					</a></li>
-					<li><a href="#">
-						Контакты
-					</a></li>
-				</ul>
-				<div class="header__submit-button">
-					<a href="#" class="button ribbon-outset border">
-						Оставить заявку
-					</a>
-				</div>
-				<div class="header__mobile-status hidden-lg hidden-md">
-					<a href="#" class="header__order-status-link hidden-lg hidden-md">
-						Отслеживание заказа
-					</a>
-				</div>
-
-				<div class="header-lang hidden-xs hidden-md hidden-sm">
-					<a href="#" class="header-lang__item active">
-						ru
-					</a>
-					<a href="#" class="header-lang__item">
-						en
-					</a>
-					<a href="#" class="header-lang__item">
-						ch
-					</a>
-				</div>
-			</div>
-		</div>
-	</header>
-
-	<!-- Header end -->
-
 	<!-- Main toggle menu -->
 
-	<div class="big-menu">
+	<div class="big-menu" id="menu">
 		<div class="container">
 			<div class="big-menu__left">
 				<div class="big-menu__box">
@@ -323,402 +185,533 @@
 		</div>
 	</div>
 
-	<!-- Mein toggle menu end -->
+	<!-- Main toggle menu end -->
 
-	<div class="page-top"></div>
+	<div id="panel">
 
-	<!-- Supplies page -->
+		<!-- Header -->
 
-	<div class="supplies-page">
-		<div class="container">
-			<div class="left-col">
-				<div class="page-menu">
+		<header class="header">
+			<div class="container">
+				<div class="header__top">
+					<div class="header__logo">
+						<img src="img/layout/logo.svg" class="logo" alt="">
+						<div class="header__search hidden-md hidden-lg">
+							<img src="img/layout/header-search.svg" alt="">
+						</div>
+						<a href="#" class="header__profile-link hidden-lg hidden-md"></a>
+						
+					</div>
+					<div class="header__tagline hidden-xs">
+						Больше<br>
+						чем логистика
+					</div>
+					<div class="header__phone-mobile">
+						<div class="header__phone">
+							<span>8 800</span> 2000 158
+						</div>
+						<div class="header__tagline hidden-md hidden-lg">
+							Больше<br>
+							чем логистика
+						</div>
+					</div>
+					<div class="header__phone-text hidden-xs">
+						Бесплатно<br>
+						по всей России
+					</div>
+					<div class="header__search hidden-xs hidden-lg">
+						<img src="img/layout/header-search.svg" alt="">
+					</div>
+					<a href="#" class="header__order-status-link hidden-md hidden-xs">
+						Отслеживание заказа
+					</a>
+					<a href="#" class="header__profile-link hidden-md hidden-xs">
+						Личный кабинет
+					</a>
+					<div class="header__toggle-menu hidden-lg">
+						<div id="toggle" class="toggle">
+							<span></span>
+						</div>
+					</div>
+				</div>
+				<div class="header__bottom">
+					<div class="header__menu-link hidden-md hidden-xs">
+						<div id="toggle-big" class="toggle">
+							<span></span>
+						</div>
+					</div>
+					<div class="header__search hidden-md hidden-xs">
+						<img src="img/layout/header-search.svg" alt="">
+					</div>
 
-					<ul class="page-menu__menu">
-						<li class="current">
-							<img src="img/layout/page-menu-about.png" alt="">
-							<a href="#">
-								О компании
+					<!-- Search box -->
+
+					<div class="search-box">
+						<div class="search-box__input">
+							<input type="text" placeholder="Введите слово для поиска">
+							<input type="submit" value="">
+						</div>
+						<div class="search-box__result">
+							Результаты поиска
+						</div>
+						<div class="search-box__result">
+							Результаты поиска
+						</div>
+						<div class="search-box__result">
+							Результаты поиска
+						</div>
+						<div class="search-box__button-container">
+							<a href="#" class="search-box__button button-animate-red">
+								Все результаты поиска
 							</a>
-						</li>
-						<li>
-							<img src="img/layout/page-menu-history.png" alt="">
-							<a href="#">
-								История
-							</a>
-						</li>
-						<li>
-							<img src="img/layout/page-menu-offices.png" alt="">
-							<a href="#">
-								Наши представительсва
-							</a>
-						</li>
-						<li>
-							<img src="img/layout/page-menu-awards.png" alt="">
-							<a href="#">
-								Наши награды
-							</a>
-						</li>
-						<li>
-							<img src="img/layout/page-menu-sponsorship.png" alt="">
-							<a href="#">
-								Спонсорство
-							</a>
-						</li>
-						<li>
-							<img src="img/layout/page-menu-partners.png" alt="">
-							<a href="#">
-								Партнеры
-							</a>
-						</li>
-						<li>
-							<img src="img/layout/page-menu-team.png" alt="">
-							<a href="#">
-								Наша команда
-							</a>
-						</li>
-						<li>
-							<img src="img/layout/page-menu-exhibition.png" alt="">
-							<a href="#">
-								Выставки
-							</a>
-						</li>
-						<a href="#" class="feedback-button button-animate-red">
-							Обратная связь
-						</a>
+						</div>
+					</div>
+
+					<!-- Search box end -->
+
+					<a href="#" class="header__profile-link hidden-lg hidden-xs">
+						Личный кабинет
+					</a>
+					<a href="#" class="header__order-status-link hidden-lg hidden-xs">
+						Отслеживание заказа
+					</a>
+					
+					<ul class="header__menu">
+						<li><a href="#">
+							Наши продукты
+						</a></li>
+						<li><a href="#">
+							Все услуги
+						</a></li>
+						<li><a href="#">
+							Отраслевые решения
+						</a></li>
+						<li><a href="#">
+							Калькулятор
+						</a></li>
+						<li><a href="#">
+							О компании
+						</a></li>
+						<li><a href="#">
+							Вопросы и ответы
+						</a></li>
+						<li><a href="#">
+							Контакты
+						</a></li>
 					</ul>
+					<div class="header__submit-button">
+						<a href="#" class="button ribbon-outset border">
+							Оставить заявку
+						</a>
+					</div>
+					<div class="header__mobile-status hidden-lg hidden-md">
+						<a href="#" class="header__order-status-link hidden-lg hidden-md">
+							Отслеживание заказа
+						</a>
+					</div>
+
+					<div class="header-lang hidden-xs hidden-md hidden-sm">
+						<a href="#" class="header-lang__item active">
+							ru
+						</a>
+						<a href="#" class="header-lang__item">
+							en
+						</a>
+						<a href="#" class="header-lang__item">
+							ch
+						</a>
+					</div>
 				</div>
 			</div>
-			<div class="content-col">
-				<div class="page-headliner">
-					Таможенное и финансовое сопровождение поставок
-				</div>
+		</header>
 
-				<p class="supplies-page__text">
-					1. <span class="supplies-page__show-text" title="">Финансирование внешнеторговых сделок</span><br>
-					<span class="supplies-page__hidden-text">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas laborum sapiente illum doloremque accusantium necessitatibus, beatae expedita velit reprehenderit, voluptates in rem vitae delectus atque, ducimus sequi unde. Deleniti, nihil quidem consequuntur necessitatibus itaque commodi quasi est, voluptatum minima voluptate numquam, architecto! Quia cupiditate commodi corporis soluta, delectus eligendi nam itaque totam maiores, fuga qui provident autem nobis ipsum dolorum.
-					</span>
-					2. Таможенное оформление<br>
-					3. Сертификация и получение других разрешительных документов<br>
-					4. Представление интересов участников ВЭД в таможенных органах<br>
-				</p>
+		<!-- Header end -->
 
-				<h2>
-					География работы
-				</h2>
+		<div class="page-top"></div>
 
-				<div class="supplies-page__supplies-map">
-					<img src="img/content/supplies-map.png" alt="">
-				</div>
+		<!-- Supplies page -->
 
-				<h2>
-					Таможенные посты
-				</h2>
+		<div class="supplies-page">
+			<div class="container">
+				<div class="left-col">
+					<div class="page-menu">
 
-				<div class="supplies-page__posts">
-					<div class="supplies-page__post moscow active">
-						Московский <br>
-						ЦЭД
-					</div>
-
-					<div class="supplies-page__post mozhaysk">
-						Можайский <br>
-						ЦЭД
-					</div>
-
-					<div class="supplies-page__post khabarovsk">
-						Приамурский <br>
-						ЦЭД
-					</div>
-
-					<div class="supplies-page__post vladivostok">
-						Владивосток<br>
-						ЦЭД
-					</div>
-				</div>
-
-				<h2>
-					СВХ
-				</h2>
-
-				<div class="supplies-page__svh">
-					<div class="row">
-						<div class="supplies-page__svh-box moscow mozhaysk active tooltip" title="Описание">
-							<div class="text">
-								Кунцево
-							</div>
-						</div>
-
-						<div class="supplies-page__svh-box moscow mozhaysk active">
-							<div class="text">
-								Силикатная
-							</div>
-						</div>
-
-						<div class="supplies-page__svh-box moscow mozhaysk active">
-							<div class="text">
-								Западные<br>
-								ворота
-							</div>
-						</div>
-
-						<div class="supplies-page__svh-box moscow mozhaysk khabarovsk active">
-							<div class="text">
-								Забайкальск
-							</div>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="supplies-page__svh-box moscow mozhaysk active">
-							<div class="text">
-								Хаврино
-							</div>
-						</div>
-
-						<div class="supplies-page__svh-box moscow mozhaysk active">
-							<div class="text">
-								Крымский ТЛТ
-							</div>
-						</div>
-
-						<div class="supplies-page__svh-box mozhaysk khabarovsk">
-							<div class="text">
-								Восточные<br>
-								рубежи
-							</div>
-						</div>
-
-						<div class="supplies-page__svh-box mozhaysk">
-							<div class="text">
-								Контранс
-							</div>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="supplies-page__svh-box khabarovsk">
-							<div class="text">
-								Таможенный мир
-							</div>
-						</div>
-
-						<div class="supplies-page__svh-box vladivostok">
-							<div class="text">
-								Восточный
-							</div>
-						</div>
-
-						<div class="supplies-page__svh-box khabarovsk">
-							<div class="text">
-								Хабаровск
-							</div>
-						</div>
-
-						<div class="supplies-page__svh-box vladivostok">
-							<div class="text">
-								МТП Владивосток
-							</div>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="supplies-page__svh-box vladivostok">
-							<div class="text">
-								Рыбный порт
-							</div>
-						</div>
-
-						<div class="supplies-page__svh-box vladivostok">
-							<div class="text">
-								Соллерс
-							</div>
-						</div>
-
-						<div class="supplies-page__svh-box vladivostok">
-							<div class="text">
-								Ростек Приморье
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="supplies-page__comment">
-					<div class="supplies-page__comment-headliner">
-						Комментарии
-					</div>
-					<div class="supplies-page__comment-body moscow active">
-						Текст для Москвы Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis atque fugiat earum, ut, deleniti eveniet hic repellendus dolor, molestias quasi et, placeat nobis obcaecati libero. Quia magnam, inventore quidem, ab cumque facilis corporis voluptates sed nulla delectus minima! Laboriosam totam facere velit fugit officia itaque qui similique, eos laborum veritatis!
-					</div>
-
-					<div class="supplies-page__comment-body mozhaysk">
-						Текст для Можайска Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet illum animi at labore sapiente a quidem mollitia sunt odio nulla.
-					</div>
-
-					<div class="supplies-page__comment-body khabarovsk">
-						Текст для Хабаровска Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam maxime tempora sint assumenda? Aut, pariatur?
-					</div>
-
-					<div class="supplies-page__comment-body vladivostok">
-						Текст для Владивостока Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem eum quam impedit, id amet consectetur dolorem, sequi dolore iusto, enim atque optio rem, perferendis. Sed cum doloremque magni voluptatibus labore, dolorem atque assumenda delectus molestiae, quod, quasi laboriosam pariatur velit.
-					</div>
-				</div>
-
-				<h5>
-					Эти грузы – наша специализация:
-				</h5>
-
-				<div class="page-menu">
-					<ul class="page-menu__menu">
-						<li class="current">
-							<img src="img/layout/page-menu-shoes.png" alt="">
-							<a href="#">
-								Обувь и кожгалантерея
+						<ul class="page-menu__menu">
+							<li class="current">
+								<img src="img/layout/page-menu-about.png" alt="">
+								<a href="#">
+									О компании
+								</a>
+							</li>
+							<li>
+								<img src="img/layout/page-menu-history.png" alt="">
+								<a href="#">
+									История
+								</a>
+							</li>
+							<li>
+								<img src="img/layout/page-menu-offices.png" alt="">
+								<a href="#">
+									Наши представительсва
+								</a>
+							</li>
+							<li>
+								<img src="img/layout/page-menu-awards.png" alt="">
+								<a href="#">
+									Наши награды
+								</a>
+							</li>
+							<li>
+								<img src="img/layout/page-menu-sponsorship.png" alt="">
+								<a href="#">
+									Спонсорство
+								</a>
+							</li>
+							<li>
+								<img src="img/layout/page-menu-partners.png" alt="">
+								<a href="#">
+									Партнеры
+								</a>
+							</li>
+							<li>
+								<img src="img/layout/page-menu-team.png" alt="">
+								<a href="#">
+									Наша команда
+								</a>
+							</li>
+							<li>
+								<img src="img/layout/page-menu-exhibition.png" alt="">
+								<a href="#">
+									Выставки
+								</a>
+							</li>
+							<a href="#" class="feedback-button button-animate-red">
+								Обратная связь
 							</a>
-						</li>
-						<li>
-							<img src="img/layout/page-menu-clothes.png" alt="">
-							<a href="#">
-								Одежда
-							</a>
-						</li>
-						<li>
-							<img src="img/layout/page-menu-home.png" alt="">
-							<a href="#">
-								Отделочные материалы: ламинат, пленка ПВХ, керамогранит и т.д. 
-							</a>
-						</li>
-						<li>
-							<img src="img/layout/page-menu-garden.png" alt="">
-							<a href="#">
-								Товары для сада и огорода
-							</a>
-						</li>
-						<li>
-							<img src="img/layout/page-menu-bathroom.png" alt="">
-							<a href="#">
-								Сантехника, оборудование для ванной и душа
-							</a>
-						</li>
-					</ul>
+						</ul>
+					</div>
 				</div>
-				
-				<h5>
-					На данные группы товаров действуют особые расценки!
-				</h5>
+				<div class="content-col">
+					<div class="page-headliner">
+						Таможенное и финансовое сопровождение поставок
+					</div>
 
-				<a href="#" class="page-button supplies-page__more-btn">
-					Заказать
-				</a>
+					<p class="supplies-page__text">
+						1. <span class="supplies-page__show-text" title="">Финансирование внешнеторговых сделок</span><br>
+						<span class="supplies-page__hidden-text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas laborum sapiente illum doloremque accusantium necessitatibus, beatae expedita velit reprehenderit, voluptates in rem vitae delectus atque, ducimus sequi unde. Deleniti, nihil quidem consequuntur necessitatibus itaque commodi quasi est, voluptatum minima voluptate numquam, architecto! Quia cupiditate commodi corporis soluta, delectus eligendi nam itaque totam maiores, fuga qui provident autem nobis ipsum dolorum.
+						</span>
+						2. Таможенное оформление<br>
+						3. Сертификация и получение других разрешительных документов<br>
+						4. Представление интересов участников ВЭД в таможенных органах<br>
+					</p>
 
-				
+					<h2>
+						География работы
+					</h2>
+
+					<div class="supplies-page__supplies-map">
+						<img src="img/content/supplies-map.png" alt="">
+					</div>
+
+					<h2>
+						Таможенные посты
+					</h2>
+
+					<div class="supplies-page__posts">
+						<div class="supplies-page__post moscow active" title="Текст для Москвы">
+							Московский <br>
+							ЦЭД
+						</div>
+
+						<div class="supplies-page__post mozhaysk" title="Текст для Можайска">
+							Можайский <br>
+							ЦЭД
+						</div>
+
+						<div class="supplies-page__post khabarovsk" title="Текст для Приамурска">
+							Приамурский <br>
+							ЦЭД
+						</div>
+
+						<div class="supplies-page__post vladivostok" title="Текст для владивостока">
+							Владивосток<br>
+							ЦЭД
+						</div>
+					</div>
+
+					<h2>
+						СВХ
+					</h2>
+
+					<div class="supplies-page__svh">
+						<div class="row">
+							<div class="supplies-page__svh-box moscow mozhaysk active" title="Кунцево описание">
+								<div class="text">
+									Кунцево
+								</div>
+							</div>
+
+							<div class="supplies-page__svh-box moscow mozhaysk active" title="Силикатная описание">
+								<div class="text">
+									Силикатная
+								</div>
+							</div>
+
+							<div class="supplies-page__svh-box moscow mozhaysk active" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sed numquam voluptatibus quis aliquid reiciendis saepe cupiditate impedit est possimus!">
+								<div class="text">
+									Западные<br>
+									ворота
+								</div>
+							</div>
+
+							<div class="supplies-page__svh-box moscow mozhaysk khabarovsk active" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, dicta!">
+								<div class="text">
+									Забайкальск
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="supplies-page__svh-box moscow mozhaysk active" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, blanditiis!">
+								<div class="text">
+									Хаврино
+								</div>
+							</div>
+
+							<div class="supplies-page__svh-box moscow mozhaysk active" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, aspernatur.">
+								<div class="text">
+									Крымский ТЛТ
+								</div>
+							</div>
+
+							<div class="supplies-page__svh-box mozhaysk khabarovsk" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, molestias.">
+								<div class="text">
+									Восточные<br>
+									рубежи
+								</div>
+							</div>
+
+							<div class="supplies-page__svh-box mozhaysk" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, dolor.">
+								<div class="text">
+									Контранс
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="supplies-page__svh-box khabarovsk" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, porro.">
+								<div class="text">
+									Таможенный мир
+								</div>
+							</div>
+
+							<div class="supplies-page__svh-box vladivostok" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, officiis.">
+								<div class="text">
+									Восточный
+								</div>
+							</div>
+
+							<div class="supplies-page__svh-box khabarovsk" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, incidunt.">
+								<div class="text">
+									Хабаровск
+								</div>
+							</div>
+
+							<div class="supplies-page__svh-box vladivostok" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, consequatur?">
+								<div class="text">
+									МТП Владивосток
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="supplies-page__svh-box vladivostok" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique officia voluptas veniam doloremque beatae quasi!">
+								<div class="text">
+									Рыбный порт
+								</div>
+							</div>
+
+							<div class="supplies-page__svh-box vladivostok" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, aliquam.">
+								<div class="text">
+									Соллерс
+								</div>
+							</div>
+
+							<div class="supplies-page__svh-box vladivostok" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, sit.">
+								<div class="text">
+									Ростек Приморье
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="supplies-page__comment">
+						<div class="supplies-page__comment-headliner">
+							Комментарии
+						</div>
+						<div class="supplies-page__comment-body moscow active">
+							Текст для Москвы
+						</div>
+					</div>
+
+					<h5>
+						Эти грузы – наша специализация:
+					</h5>
+
+					<div class="page-menu">
+						<ul class="page-menu__menu">
+							<li class="current">
+								<img src="img/layout/page-menu-shoes.png" alt="">
+								<a href="#">
+									Обувь и кожгалантерея
+								</a>
+							</li>
+							<li>
+								<img src="img/layout/page-menu-clothes.png" alt="">
+								<a href="#">
+									Одежда
+								</a>
+							</li>
+							<li>
+								<img src="img/layout/page-menu-home.png" alt="">
+								<a href="#">
+									Отделочные материалы: ламинат, пленка ПВХ, керамогранит и т.д. 
+								</a>
+							</li>
+							<li>
+								<img src="img/layout/page-menu-garden.png" alt="">
+								<a href="#">
+									Товары для сада и огорода
+								</a>
+							</li>
+							<li>
+								<img src="img/layout/page-menu-bathroom.png" alt="">
+								<a href="#">
+									Сантехника, оборудование для ванной и душа
+								</a>
+							</li>
+						</ul>
+					</div>
+					
+					<h5>
+						На данные группы товаров действуют особые расценки!
+					</h5>
+
+					<a href="#" class="page-button supplies-page__more-btn">
+						Заказать
+					</a>
+
+					
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<!-- Supplies page end -->
+		<!-- Supplies page end -->
 
-	<!-- Footer -->
+		<!-- Footer -->
 
-	<footer class="footer">
-		<div class="container">
-			<div class="footer__headliner">
-				Больше чем логистика
-			</div>
-
-			<div class="footer__mobile hidden-sm hidden-lg hidden-md">
-				<div class="footer__phone">
-					<span class="thin">8 800</span> 921 39 90
-					<span class="phone-label">Бесплатно по всей России</span>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__headliner">
+					Больше чем логистика
 				</div>
 
-				<a href="#" class="footer__order">
-					Оставить заявку
-				</a>
+				<div class="footer__mobile hidden-sm hidden-lg hidden-md">
+					<div class="footer__phone">
+						<span class="thin">8 800</span> 921 39 90
+						<span class="phone-label">Бесплатно по всей России</span>
+					</div>
 
-				<div class="footer__copyright">
-					© 2010-2015, ООО “АКФА” <br>
-					<a href="mailto:">info@akfa.ru</a>
-				</div>
-				<div class="footer__address">
-					115114, г. Москва, ул. Летниковская, <br>
-					д.10, стр. 2, БЦ «Святогор-2» <br>
-					<a href="#">Посмотреть на карте</a>
-				</div>
-
-				<div class="footer__address2">
-					680022, г. Хабаровск, ул. Нефтяная, д. 1 <br>
-					<a href="#">Посмотреть на карте</a>
-				</div>
-
-				<div class="footer__search">
-					<form action="#">
-						<input type="text" placeholder="Поиск">
-						<input type="submit" value="">
-					</form>
-				</div>
-
-				<div class="footer__designedby">
-					Разработка сайта<br>
-					<a href="#">
-						<img src="img/layout/100up.png" alt="">
+					<a href="#" class="footer__order">
+						Оставить заявку
 					</a>
-				</div>
-			</div>
 
-			<div class="footer__left">
-				<div class="footer__row">
-					<div class="footer__copyright hidden-xs">
+					<div class="footer__copyright">
 						© 2010-2015, ООО “АКФА” <br>
 						<a href="mailto:">info@akfa.ru</a>
 					</div>
-					<div class="footer__address hidden-xs">
+					<div class="footer__address">
 						115114, г. Москва, ул. Летниковская, <br>
 						д.10, стр. 2, БЦ «Святогор-2» <br>
 						<a href="#">Посмотреть на карте</a>
 					</div>
 
-					<div class="footer__phone hidden-xs">
-						<span class="thin">8 800</span> 921 39 90
-						<span class="phone-label">Бесплатно по всей России</span>
-					</div>
-				</div>
-				
-				<div class="footer__row">
-					<div class="footer__designedby">
-						Разработка сайта<br>
-						<a href="#">
-							<img src="img/layout/100up.png" alt="">
-						</a>
-					</div>
-					<div class="footer__address2 hidden-xs">
+					<div class="footer__address2">
 						680022, г. Хабаровск, ул. Нефтяная, д. 1 <br>
 						<a href="#">Посмотреть на карте</a>
 					</div>
-					<div class="footer__search hidden-md hidden-sm hidden-xs">
+
+					<div class="footer__search">
 						<form action="#">
 							<input type="text" placeholder="Поиск">
 							<input type="submit" value="">
 						</form>
 					</div>
 
-					<a href="#" class="footer__order hidden-xs hidden-lg">
+					<div class="footer__designedby">
+						Разработка сайта<br>
+						<a href="#">
+							<img src="img/layout/100up.png" alt="">
+						</a>
+					</div>
+				</div>
+
+				<div class="footer__left">
+					<div class="footer__row">
+						<div class="footer__copyright hidden-xs">
+							© 2010-2015, ООО “АКФА” <br>
+							<a href="mailto:">info@akfa.ru</a>
+						</div>
+						<div class="footer__address hidden-xs">
+							115114, г. Москва, ул. Летниковская, <br>
+							д.10, стр. 2, БЦ «Святогор-2» <br>
+							<a href="#">Посмотреть на карте</a>
+						</div>
+
+						<div class="footer__phone hidden-xs">
+							<span class="thin">8 800</span> 921 39 90
+							<span class="phone-label">Бесплатно по всей России</span>
+						</div>
+					</div>
+					
+					<div class="footer__row">
+						<div class="footer__designedby">
+							Разработка сайта<br>
+							<a href="#">
+								<img src="img/layout/100up.png" alt="">
+							</a>
+						</div>
+						<div class="footer__address2 hidden-xs">
+							680022, г. Хабаровск, ул. Нефтяная, д. 1 <br>
+							<a href="#">Посмотреть на карте</a>
+						</div>
+						<div class="footer__search hidden-md hidden-sm hidden-xs">
+							<form action="#">
+								<input type="text" placeholder="Поиск">
+								<input type="submit" value="">
+							</form>
+						</div>
+
+						<a href="#" class="footer__order hidden-xs hidden-lg">
+							Оставить заявку
+						</a>
+					</div>
+					
+				</div>
+				<div class="footer__right hidden-sm hidden-xs hidden-md">
+
+					<a href="#" class="footer-button ribbon-outset border">
 						Оставить заявку
 					</a>
+
 				</div>
-				
 			</div>
-			<div class="footer__right hidden-sm hidden-xs hidden-md">
+		</footer>
 
-				<a href="#" class="footer-button ribbon-outset border">
-					Оставить заявку
-				</a>
+		<!-- Footer end -->
 
-			</div>
-		</div>
-	</footer>
-	<!-- Footer end -->
+	</div>
 
 	<!-- Scripts -->
 
@@ -726,8 +719,12 @@
 	<script src="libs/owl/owl.carousel.min.js"></script>
 	<script src="libs/jquery.formstyler/jquery.formstyler.min.js"></script>
 	<script src="libs/tooltipster/jquery.tooltipster.min.js"></script>
+	<script src="libs/clamp.min.js"></script>
+	<script src="libs/enquire.min.js"></script>
+	<script src="libs/slideout.min.js"></script>
 	<script src="js/main.js"></script>
-
+	<script src="js/media.js"></script>
+	
 	<script>
        $(document).ready(function() {
 		    $('.tooltip').tooltipster({

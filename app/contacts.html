@@ -16,147 +16,9 @@
 </head>
 <body>
 
-	<!-- Header -->
-
-	<header class="header">
-		<div class="container">
-			<div class="header__top">
-				<div class="header__logo">
-					<img src="img/layout/logo.svg" class="logo" alt="">
-					<div class="header__search hidden-md hidden-lg">
-						<img src="img/layout/header-search.svg" alt="">
-					</div>
-					<a href="#" class="header__profile-link hidden-lg hidden-md"></a>
-					
-				</div>
-				<div class="header__tagline hidden-xs">
-					Больше<br>
-					чем логистика
-				</div>
-				<div class="header__phone-mobile">
-					<div class="header__phone">
-						<span>8 800</span> 2000 158
-					</div>
-					<div class="header__tagline hidden-md hidden-lg">
-						Больше<br>
-						чем логистика
-					</div>
-				</div>
-				<div class="header__phone-text hidden-xs">
-					Бесплатно<br>
-					по всей России
-				</div>
-				<div class="header__search hidden-xs hidden-lg">
-					<img src="img/layout/header-search.svg" alt="">
-				</div>
-				<a href="#" class="header__order-status-link hidden-md hidden-xs">
-					Отслеживание заказа
-				</a>
-				<a href="#" class="header__profile-link hidden-md hidden-xs">
-					Личный кабинет
-				</a>
-				<div class="header__toggle-menu hidden-lg">
-					<div id="toggle" class="toggle">
-						<span></span>
-					</div>
-				</div>
-			</div>
-			<div class="header__bottom">
-				<div class="header__menu-link hidden-md hidden-xs">
-					<div id="toggle-big" class="toggle">
-						<span></span>
-					</div>
-				</div>
-				<div class="header__search hidden-md hidden-xs">
-					<img src="img/layout/header-search.svg" alt="">
-				</div>
-
-				<!-- Search box -->
-
-				<div class="search-box">
-					<div class="search-box__input">
-						<input type="text" placeholder="Введите слово для поиска">
-						<input type="submit" value="">
-					</div>
-					<div class="search-box__result">
-						Результаты поиска
-					</div>
-					<div class="search-box__result">
-						Результаты поиска
-					</div>
-					<div class="search-box__result">
-						Результаты поиска
-					</div>
-					<div class="search-box__button-container">
-						<a href="#" class="search-box__button button-animate-red">
-							Все результаты поиска
-						</a>
-					</div>
-				</div>
-
-				<!-- Search box end -->
-
-				<a href="#" class="header__profile-link hidden-lg hidden-xs">
-					Личный кабинет
-				</a>
-				<a href="#" class="header__order-status-link hidden-lg hidden-xs">
-					Отслеживание заказа
-				</a>
-				
-				<ul class="header__menu">
-					<li><a href="#">
-						Наши продукты
-					</a></li>
-					<li><a href="#">
-						Все услуги
-					</a></li>
-					<li><a href="#">
-						Отраслевые решения
-					</a></li>
-					<li><a href="#">
-						Калькулятор
-					</a></li>
-					<li><a href="#">
-						О компании
-					</a></li>
-					<li><a href="#">
-						Вопросы и ответы
-					</a></li>
-					<li><a href="#">
-						Контакты
-					</a></li>
-				</ul>
-				<div class="header__submit-button">
-					<a href="#" class="button ribbon-outset border">
-						Оставить заявку
-					</a>
-				</div>
-				<div class="header__mobile-status hidden-lg hidden-md">
-					<a href="#" class="header__order-status-link hidden-lg hidden-md">
-						Отслеживание заказа
-					</a>
-				</div>
-
-				<div class="header-lang hidden-xs hidden-md hidden-sm">
-					<a href="#" class="header-lang__item active">
-						ru
-					</a>
-					<a href="#" class="header-lang__item">
-						en
-					</a>
-					<a href="#" class="header-lang__item">
-						ch
-					</a>
-				</div>
-			</div>
-		</div>
-	</header>
-
-	<!-- Header end -->
-
 	<!-- Main toggle menu -->
 
-	<div class="big-menu">
+	<div class="big-menu" id="menu">
 		<div class="container">
 			<div class="big-menu__left">
 				<div class="big-menu__box">
@@ -306,428 +168,569 @@
 				<div class="big-menu__headliner">
 					Ответим в течение 5 минут
 				</div>
-				<form action="" class="big-menu__form">
-					
+				<form action="" class="big-menu__form">	
 					<input type="text" placeholder="Имя*">
 					<input type="text" placeholder="Телефон*">
 					<input type="text" placeholder="Город отправления*">
 					<input type="text" placeholder="Город получения*">
 					<textarea placeholder="Примерный объем груза и дополнительная информация"></textarea><br>
 					<input class="button-animate-red" type="submit" value="Отправить заявку">
-
 				</form>
-
-			</div>
-			
-		</div>
-	</div>
-
-	<!-- Mein toggle menu end -->
-
-	<div class="page-top"></div>
-
-	<!-- Contacts page -->
-
-	<div class="contacts-page">
-		<div class="container">
-			<div class="contacts-page__left ">
-				<ul class="">
-					<li class="contacts">
-						<a href="#">Контакты</a>
-					</li>
-					<li class="pretension">
-						<a href="#" class="active-section">Работа с претензиями</a>
-						<ul>
-							<li><a href="#">Хабаровск</a></li>
-							<li><a href="#" class="active">Москва</a></li>
-							<li><a href="#">Минск</a></li>
-							<li><a href="#">Китай</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-			<div class="contacts-page__right">
-				<div class="contacts-page__headliner">
-					Контакты
-				</div>
-				<div class="contacts-page__text">
-					Клиентская служба: <br>
-					<b>8-800-2000-158</b> (звонок по России - бесплатно)
-					<br><br>
-					Адреса и контакты наших представителей в России:
-				</div>
-
-				<div class="tabs">
-
-					<div class="tabs_container">
-						<ul class="tabs__caption">
-					    	<li class="active">Хабаровск</li>
-					    	<li>Москва</li>
-					    	<li>Минск</li>
-					    	<li>Китай</li>
-						</ul>
-					</div>
-
-					<div class="tabs__content active">
-				    	<div class="tabs__city">
-				    		Хабаровск
-				    	</div>
-						<div class="tabs__address">
-				    		<b>Адрес</b><br>
-							111 <br>
-							<b>Склад</b><br>
-							111
-				    	</div>
-				    	<div class="tabs__phone">
-				    		<b>Телефоны 1</b>
-				    		<div class="row">
-				    			<div class="col">
-				    				8-800-2000-158
-				    			</div>
-				    			<div class="col">
-				    				+7 (985) 2442-158
-				    			</div>
-				    		</div>
-				    		<div class="row">
-				    			<div class="col">
-				    				+7 (499) 7590-158
-				    			</div>
-				    			<div class="col">
-				    				+7 (985) 3000-158
-				    			</div>
-				    		</div>
-				    		<div class="row">
-				    			<div class="col">
-				    				+7 (495) 7295-104
-				    			</div>
-				    			<div class="col">
-				    				+7 (916) 11-40-158
-				    			</div>
-				    		</div>
-				    	</div>
-
-				    	<div class="contacts-page__director">
-							<img src="img/layout/director.jpg" alt="">
-							<p>
-								<b>Чернышев Алексей Владимирович</b><br>
-								Директор111<br>
-								<span class="email">moscow@akfa.ru</span>
-							</p>
-						</div>
-
-						<div class="contacts-page__map">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.8976929067057!2d37.64308691562159!3d55.72553010156294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b23d55ce2db%3A0x2b417bd5a6c1b229!2z0KHQktCv0KLQntCT0J7QoCwg0LzQtdC20LTRg9C90LDRgNC-0LTQvdGL0Lkg0LTQtdC70L7QstC-0Lkg0YbQtdC90YLRgA!5e0!3m2!1sru!2sru!4v1452016007648" ></iframe>
-							<a href="#">Посмотреть на большой карте</a>
-						</div>
-
-					</div>
-
-					<div class="tabs__content">
-				   		<div class="tabs__city">
-				    		Москва
-				    	</div>
-				    	<div class="tabs__address">
-				    		<b>Адрес</b><br>
-							115114, г. Москва, БЦ «Святогор-2», ул. Летниковская, д.10, стр. 2; <br>
-							<b>Склад</b><br>
-							город Горки Ленинские, Зеленое шоссе 2, Лигер Логистик, склад 5
-				    	</div>
-				    	<div class="tabs__phone">
-				    		<b>Телефоны</b>
-				    		<div class="row">
-				    			<div class="col">
-				    				8-800-2000-158
-				    			</div>
-				    			<div class="col">
-				    				+7 (985) 2442-158
-				    			</div>
-				    		</div>
-				    		<div class="row">
-				    			<div class="col">
-				    				+7 (499) 7590-158
-				    			</div>
-				    			<div class="col">
-				    				+7 (985) 3000-158
-				    			</div>
-				    		</div>
-				    		<div class="row">
-				    			<div class="col">
-				    				+7 (495) 7295-104
-				    			</div>
-				    			<div class="col">
-				    				+7 (916) 11-40-158
-				    			</div>
-				    		</div>
-				    	</div>
-
-						<div class="contacts-page__director">
-							<img src="img/layout/director.jpg" alt="">
-							<p>
-								<b>Чернышев Алексей Владимирович</b><br>
-								Директор<br>
-								<span class="email">moscow@akfa.ru</span>
-							</p>
-						</div>
-
-						<div class="contacts-page__map">
-							<iframe class="scrolloff" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.8976929067057!2d37.64308691562159!3d55.72553010156294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b23d55ce2db%3A0x2b417bd5a6c1b229!2z0KHQktCv0KLQntCT0J7QoCwg0LzQtdC20LTRg9C90LDRgNC-0LTQvdGL0Lkg0LTQtdC70L7QstC-0Lkg0YbQtdC90YLRgA!5e0!3m2!1sru!2sru!4v1452016007648" ></iframe>
-							<a href="#">Посмотреть на большой карте</a>
-						</div>
-
-					</div>
-
-					<div class="tabs__content">
-				   		<div class="tabs__city">
-				    		Минск
-				    	</div>
-				    	<div class="tabs__address">
-				    		<b>Адрес</b><br>
-							222 <br>
-							<b>Склад</b><br>
-							222
-				    	</div>
-				    	<div class="tabs__phone">
-				    		<b>Телефоны 3</b>
-				    		<div class="row">
-				    			<div class="col">
-				    				8-800-2000-158
-				    			</div>
-				    			<div class="col">
-				    				+7 (985) 2442-158
-				    			</div>
-				    		</div>
-				    		<div class="row">
-				    			<div class="col">
-				    				+7 (499) 7590-158
-				    			</div>
-				    			<div class="col">
-				    				+7 (985) 3000-158
-				    			</div>
-				    		</div>
-				    		<div class="row">
-				    			<div class="col">
-				    				+7 (495) 7295-104
-				    			</div>
-				    			<div class="col">
-				    				+7 (916) 11-40-158
-				    			</div>
-				    		</div>
-				    	</div>
-
-				    	<div class="contacts-page__director">
-							<img src="img/layout/director.jpg" alt="">
-							<p>
-								<b>Чернышев Алексей Владимирович</b><br>
-								Директор111<br>
-								<span class="email">moscow@akfa.ru</span>
-							</p>
-						</div>
-
-						<div class="contacts-page__map">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.8976929067057!2d37.64308691562159!3d55.72553010156294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b23d55ce2db%3A0x2b417bd5a6c1b229!2z0KHQktCv0KLQntCT0J7QoCwg0LzQtdC20LTRg9C90LDRgNC-0LTQvdGL0Lkg0LTQtdC70L7QstC-0Lkg0YbQtdC90YLRgA!5e0!3m2!1sru!2sru!4v1452016007648" ></iframe>
-							<a href="#">Посмотреть на большой карте</a>
-						</div>
-
-					</div>
-
-					<div class="tabs__content">
-				   		<div class="tabs__city">
-				    		Китай
-				    	</div>
-				    	<div class="tabs__address">
-				    		<b>Адрес</b><br>
-							444 <br>
-							<b>Склад</b><br>
-							444
-				    	</div>
-				    	<div class="tabs__phone">
-				    		<b>Телефоны 4</b>
-				    		<div class="row">
-				    			<div class="col">
-				    				8-800-2000-158
-				    			</div>
-				    			<div class="col">
-				    				+7 (985) 2442-158
-				    			</div>
-				    		</div>
-				    		<div class="row">
-				    			<div class="col">
-				    				+7 (499) 7590-158
-				    			</div>
-				    			<div class="col">
-				    				+7 (985) 3000-158
-				    			</div>
-				    		</div>
-				    		<div class="row">
-				    			<div class="col">
-				    				+7 (495) 7295-104
-				    			</div>
-				    			<div class="col">
-				    				+7 (916) 11-40-158
-				    			</div>
-				    		</div>
-				    	</div>
-
-				    	<div class="contacts-page__director">
-							<img src="img/layout/director.jpg" alt="">
-							<p>
-								<b>Чернышев Алексей Владимирович</b><br>
-								Директор333<br>
-								<span class="email">moscow@akfa.ru</span>
-							</p>
-						</div>
-
-						<div class="contacts-page__map">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.8976929067057!2d37.64308691562159!3d55.72553010156294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b23d55ce2db%3A0x2b417bd5a6c1b229!2z0KHQktCv0KLQntCT0J7QoCwg0LzQtdC20LTRg9C90LDRgNC-0LTQvdGL0Lkg0LTQtdC70L7QstC-0Lkg0YbQtdC90YLRgA!5e0!3m2!1sru!2sru!4v1452016007648" ></iframe>
-							<a href="#">Посмотреть на большой карте</a>
-						</div>
-					</div>
-
-					<div class="accordion">
-						<div class="accordion__toggle">
-							Санкт-Петербург <img src="img/layout/down-arrow.png" alt="">
-						</div>
-						<div class="accordion__inner">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, pariatur!
-						</div>
-
-						<div class="accordion__toggle">
-							Пермь <img src="img/layout/down-arrow.png" alt="">
-						</div>
-						<div class="accordion__inner">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, odit?
-						</div>
-
-						<div class="accordion__toggle">
-							Уфа <img src="img/layout/down-arrow.png" alt="">
-						</div>
-						<div class="accordion__inner">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, blanditiis?
-						</div>
-
-						<div class="accordion__toggle">
-							Минск <img src="img/layout/down-arrow.png" alt="">
-						</div>
-						<div class="accordion__inner">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus alias a cupiditate veniam magni soluta minima facilis optio expedita obcaecati?
-						</div>
-					</div>
-				</div>
-
 			</div>
 		</div>
 	</div>
 
-	<!-- Contacts page end -->
+	<!-- Main toggle menu end -->
 
-	<!-- Footer -->
+	<div id="panel">
+		
+		<!-- Header -->
 
-	<footer class="footer">
-		<div class="container">
-			<div class="footer__headliner">
-				Больше чем логистика
-			</div>
-
-			<div class="footer__mobile hidden-sm hidden-lg hidden-md">
-				<div class="footer__phone">
-					<span class="thin">8 800</span> 921 39 90
-					<span class="phone-label">Бесплатно по всей России</span>
-				</div>
-
-				<a href="#" class="footer__order">
-					Оставить заявку
-				</a>
-
-				<div class="footer__copyright">
-					© 2010-2015, ООО “АКФА” <br>
-					<a href="mailto:">info@akfa.ru</a>
-				</div>
-				<div class="footer__address">
-					115114, г. Москва, ул. Летниковская, <br>
-					д.10, стр. 2, БЦ «Святогор-2» <br>
-					<a href="#">Посмотреть на карте</a>
-				</div>
-
-				<div class="footer__address2">
-					680022, г. Хабаровск, ул. Нефтяная, д. 1 <br>
-					<a href="#">Посмотреть на карте</a>
-				</div>
-
-				<div class="footer__search">
-					<form action="#">
-						<input type="text" placeholder="Поиск">
-						<input type="submit" value="">
-					</form>
-				</div>
-
-				<div class="footer__designedby">
-					Разработка сайта<br>
-					<a href="#">
-						<img src="img/layout/100up.png" alt="">
+		<header class="header">
+			<div class="container">
+				<div class="header__top">
+					<div class="header__logo">
+						<img src="img/layout/logo.svg" class="logo" alt="">
+						<div class="header__search hidden-md hidden-lg">
+							<img src="img/layout/header-search.svg" alt="">
+						</div>
+						<a href="#" class="header__profile-link hidden-lg hidden-md"></a>
+						
+					</div>
+					<div class="header__tagline hidden-xs">
+						Больше<br>
+						чем логистика
+					</div>
+					<div class="header__phone-mobile">
+						<div class="header__phone">
+							<span>8 800</span> 2000 158
+						</div>
+						<div class="header__tagline hidden-md hidden-lg">
+							Больше<br>
+							чем логистика
+						</div>
+					</div>
+					<div class="header__phone-text hidden-xs">
+						Бесплатно<br>
+						по всей России
+					</div>
+					<div class="header__search hidden-xs hidden-lg">
+						<img src="img/layout/header-search.svg" alt="">
+					</div>
+					<a href="#" class="header__order-status-link hidden-md hidden-xs">
+						Отслеживание заказа
 					</a>
+					<a href="#" class="header__profile-link hidden-md hidden-xs">
+						Личный кабинет
+					</a>
+					<div class="header__toggle-menu hidden-lg">
+						<div id="toggle" class="toggle">
+							<span></span>
+						</div>
+					</div>
+				</div>
+				<div class="header__bottom">
+					<div class="header__menu-link hidden-md hidden-xs">
+						<div id="toggle-big" class="toggle">
+							<span></span>
+						</div>
+					</div>
+					<div class="header__search hidden-md hidden-xs">
+						<img src="img/layout/header-search.svg" alt="">
+					</div>
+
+					<!-- Search box -->
+
+					<div class="search-box">
+						<div class="search-box__input">
+							<input type="text" placeholder="Введите слово для поиска">
+							<input type="submit" value="">
+						</div>
+						<div class="search-box__result">
+							Результаты поиска
+						</div>
+						<div class="search-box__result">
+							Результаты поиска
+						</div>
+						<div class="search-box__result">
+							Результаты поиска
+						</div>
+						<div class="search-box__button-container">
+							<a href="#" class="search-box__button button-animate-red">
+								Все результаты поиска
+							</a>
+						</div>
+					</div>
+
+					<!-- Search box end -->
+
+					<a href="#" class="header__profile-link hidden-lg hidden-xs">
+						Личный кабинет
+					</a>
+					<a href="#" class="header__order-status-link hidden-lg hidden-xs">
+						Отслеживание заказа
+					</a>
+					
+					<ul class="header__menu">
+						<li><a href="#">
+							Наши продукты
+						</a></li>
+						<li><a href="#">
+							Все услуги
+						</a></li>
+						<li><a href="#">
+							Отраслевые решения
+						</a></li>
+						<li><a href="#">
+							Калькулятор
+						</a></li>
+						<li><a href="#">
+							О компании
+						</a></li>
+						<li><a href="#">
+							Вопросы и ответы
+						</a></li>
+						<li><a href="#">
+							Контакты
+						</a></li>
+					</ul>
+					<div class="header__submit-button">
+						<a href="#" class="button ribbon-outset border">
+							Оставить заявку
+						</a>
+					</div>
+					<div class="header__mobile-status hidden-lg hidden-md">
+						<a href="#" class="header__order-status-link hidden-lg hidden-md">
+							Отслеживание заказа
+						</a>
+					</div>
+
+					<div class="header-lang hidden-xs hidden-md hidden-sm">
+						<a href="#" class="header-lang__item active">
+							ru
+						</a>
+						<a href="#" class="header-lang__item">
+							en
+						</a>
+						<a href="#" class="header-lang__item">
+							ch
+						</a>
+					</div>
 				</div>
 			</div>
+		</header>
 
-			<div class="footer__left">
-				<div class="footer__row">
-					<div class="footer__copyright hidden-xs">
+		<!-- Header end -->
+
+		<div class="page-top"></div>
+
+		<!-- Contacts page -->
+
+		<div class="contacts-page">
+			<div class="container">
+				<div class="contacts-page__left ">
+					<ul class="">
+						<li class="contacts">
+							<a href="#">Контакты</a>
+						</li>
+						<li class="pretension">
+							<a href="#" class="active-section">Работа с претензиями</a>
+							<ul>
+								<li><a href="#">Хабаровск</a></li>
+								<li><a href="#" class="active">Москва</a></li>
+								<li><a href="#">Минск</a></li>
+								<li><a href="#">Китай</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="contacts-page__right">
+					<div class="contacts-page__headliner">
+						Контакты
+					</div>
+					<div class="contacts-page__text">
+						Клиентская служба: <br>
+						<b>8-800-2000-158</b> (звонок по России - бесплатно)
+						<br><br>
+						Адреса и контакты наших представителей в России:
+					</div>
+
+					<div class="tabs">
+
+						<div class="tabs_container">
+							<ul class="tabs__caption">
+						    	<li class="active">Хабаровск</li>
+						    	<li>Москва</li>
+						    	<li>Минск</li>
+						    	<li>Китай</li>
+							</ul>
+						</div>
+
+						<div class="tabs__content active">
+					    	<div class="tabs__city">
+					    		Хабаровск
+					    	</div>
+							<div class="tabs__address">
+					    		<b>Адрес</b><br>
+								111 <br>
+								<b>Склад</b><br>
+								111
+					    	</div>
+					    	<div class="tabs__phone">
+					    		<b>Телефоны 1</b>
+					    		<div class="row">
+					    			<div class="col">
+					    				8-800-2000-158
+					    			</div>
+					    			<div class="col">
+					    				+7 (985) 2442-158
+					    			</div>
+					    		</div>
+					    		<div class="row">
+					    			<div class="col">
+					    				+7 (499) 7590-158
+					    			</div>
+					    			<div class="col">
+					    				+7 (985) 3000-158
+					    			</div>
+					    		</div>
+					    		<div class="row">
+					    			<div class="col">
+					    				+7 (495) 7295-104
+					    			</div>
+					    			<div class="col">
+					    				+7 (916) 11-40-158
+					    			</div>
+					    		</div>
+					    	</div>
+
+					    	<div class="contacts-page__director">
+								<img src="img/layout/director.jpg" alt="">
+								<p>
+									<b>Чернышев Алексей Владимирович</b><br>
+									Директор111<br>
+									<span class="email">moscow@akfa.ru</span>
+								</p>
+							</div>
+
+							<div class="contacts-page__map">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.8976929067057!2d37.64308691562159!3d55.72553010156294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b23d55ce2db%3A0x2b417bd5a6c1b229!2z0KHQktCv0KLQntCT0J7QoCwg0LzQtdC20LTRg9C90LDRgNC-0LTQvdGL0Lkg0LTQtdC70L7QstC-0Lkg0YbQtdC90YLRgA!5e0!3m2!1sru!2sru!4v1452016007648" ></iframe>
+								<a href="#">Посмотреть на большой карте</a>
+							</div>
+
+						</div>
+
+						<div class="tabs__content">
+					   		<div class="tabs__city">
+					    		Москва
+					    	</div>
+					    	<div class="tabs__address">
+					    		<b>Адрес</b><br>
+								115114, г. Москва, БЦ «Святогор-2», ул. Летниковская, д.10, стр. 2; <br>
+								<b>Склад</b><br>
+								город Горки Ленинские, Зеленое шоссе 2, Лигер Логистик, склад 5
+					    	</div>
+					    	<div class="tabs__phone">
+					    		<b>Телефоны</b>
+					    		<div class="row">
+					    			<div class="col">
+					    				8-800-2000-158
+					    			</div>
+					    			<div class="col">
+					    				+7 (985) 2442-158
+					    			</div>
+					    		</div>
+					    		<div class="row">
+					    			<div class="col">
+					    				+7 (499) 7590-158
+					    			</div>
+					    			<div class="col">
+					    				+7 (985) 3000-158
+					    			</div>
+					    		</div>
+					    		<div class="row">
+					    			<div class="col">
+					    				+7 (495) 7295-104
+					    			</div>
+					    			<div class="col">
+					    				+7 (916) 11-40-158
+					    			</div>
+					    		</div>
+					    	</div>
+
+							<div class="contacts-page__director">
+								<img src="img/layout/director.jpg" alt="">
+								<p>
+									<b>Чернышев Алексей Владимирович</b><br>
+									Директор<br>
+									<span class="email">moscow@akfa.ru</span>
+								</p>
+							</div>
+
+							<div class="contacts-page__map">
+								<iframe class="scrolloff" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.8976929067057!2d37.64308691562159!3d55.72553010156294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b23d55ce2db%3A0x2b417bd5a6c1b229!2z0KHQktCv0KLQntCT0J7QoCwg0LzQtdC20LTRg9C90LDRgNC-0LTQvdGL0Lkg0LTQtdC70L7QstC-0Lkg0YbQtdC90YLRgA!5e0!3m2!1sru!2sru!4v1452016007648" ></iframe>
+								<a href="#">Посмотреть на большой карте</a>
+							</div>
+
+						</div>
+
+						<div class="tabs__content">
+					   		<div class="tabs__city">
+					    		Минск
+					    	</div>
+					    	<div class="tabs__address">
+					    		<b>Адрес</b><br>
+								222 <br>
+								<b>Склад</b><br>
+								222
+					    	</div>
+					    	<div class="tabs__phone">
+					    		<b>Телефоны 3</b>
+					    		<div class="row">
+					    			<div class="col">
+					    				8-800-2000-158
+					    			</div>
+					    			<div class="col">
+					    				+7 (985) 2442-158
+					    			</div>
+					    		</div>
+					    		<div class="row">
+					    			<div class="col">
+					    				+7 (499) 7590-158
+					    			</div>
+					    			<div class="col">
+					    				+7 (985) 3000-158
+					    			</div>
+					    		</div>
+					    		<div class="row">
+					    			<div class="col">
+					    				+7 (495) 7295-104
+					    			</div>
+					    			<div class="col">
+					    				+7 (916) 11-40-158
+					    			</div>
+					    		</div>
+					    	</div>
+
+					    	<div class="contacts-page__director">
+								<img src="img/layout/director.jpg" alt="">
+								<p>
+									<b>Чернышев Алексей Владимирович</b><br>
+									Директор111<br>
+									<span class="email">moscow@akfa.ru</span>
+								</p>
+							</div>
+
+							<div class="contacts-page__map">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.8976929067057!2d37.64308691562159!3d55.72553010156294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b23d55ce2db%3A0x2b417bd5a6c1b229!2z0KHQktCv0KLQntCT0J7QoCwg0LzQtdC20LTRg9C90LDRgNC-0LTQvdGL0Lkg0LTQtdC70L7QstC-0Lkg0YbQtdC90YLRgA!5e0!3m2!1sru!2sru!4v1452016007648" ></iframe>
+								<a href="#">Посмотреть на большой карте</a>
+							</div>
+
+						</div>
+
+						<div class="tabs__content">
+					   		<div class="tabs__city">
+					    		Китай
+					    	</div>
+					    	<div class="tabs__address">
+					    		<b>Адрес</b><br>
+								444 <br>
+								<b>Склад</b><br>
+								444
+					    	</div>
+					    	<div class="tabs__phone">
+					    		<b>Телефоны 4</b>
+					    		<div class="row">
+					    			<div class="col">
+					    				8-800-2000-158
+					    			</div>
+					    			<div class="col">
+					    				+7 (985) 2442-158
+					    			</div>
+					    		</div>
+					    		<div class="row">
+					    			<div class="col">
+					    				+7 (499) 7590-158
+					    			</div>
+					    			<div class="col">
+					    				+7 (985) 3000-158
+					    			</div>
+					    		</div>
+					    		<div class="row">
+					    			<div class="col">
+					    				+7 (495) 7295-104
+					    			</div>
+					    			<div class="col">
+					    				+7 (916) 11-40-158
+					    			</div>
+					    		</div>
+					    	</div>
+
+					    	<div class="contacts-page__director">
+								<img src="img/layout/director.jpg" alt="">
+								<p>
+									<b>Чернышев Алексей Владимирович</b><br>
+									Директор333<br>
+									<span class="email">moscow@akfa.ru</span>
+								</p>
+							</div>
+
+							<div class="contacts-page__map">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.8976929067057!2d37.64308691562159!3d55.72553010156294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b23d55ce2db%3A0x2b417bd5a6c1b229!2z0KHQktCv0KLQntCT0J7QoCwg0LzQtdC20LTRg9C90LDRgNC-0LTQvdGL0Lkg0LTQtdC70L7QstC-0Lkg0YbQtdC90YLRgA!5e0!3m2!1sru!2sru!4v1452016007648" ></iframe>
+								<a href="#">Посмотреть на большой карте</a>
+							</div>
+						</div>
+
+						<div class="accordion">
+							<div class="accordion__toggle">
+								Санкт-Петербург <img src="img/layout/down-arrow.png" alt="">
+							</div>
+							<div class="accordion__inner">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, pariatur!
+							</div>
+
+							<div class="accordion__toggle">
+								Пермь <img src="img/layout/down-arrow.png" alt="">
+							</div>
+							<div class="accordion__inner">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, odit?
+							</div>
+
+							<div class="accordion__toggle">
+								Уфа <img src="img/layout/down-arrow.png" alt="">
+							</div>
+							<div class="accordion__inner">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, blanditiis?
+							</div>
+
+							<div class="accordion__toggle">
+								Минск <img src="img/layout/down-arrow.png" alt="">
+							</div>
+							<div class="accordion__inner">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus alias a cupiditate veniam magni soluta minima facilis optio expedita obcaecati?
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- Contacts page end -->
+
+		<!-- Footer -->
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__headliner">
+					Больше чем логистика
+				</div>
+
+				<div class="footer__mobile hidden-sm hidden-lg hidden-md">
+					<div class="footer__phone">
+						<span class="thin">8 800</span> 921 39 90
+						<span class="phone-label">Бесплатно по всей России</span>
+					</div>
+
+					<a href="#" class="footer__order">
+						Оставить заявку
+					</a>
+
+					<div class="footer__copyright">
 						© 2010-2015, ООО “АКФА” <br>
 						<a href="mailto:">info@akfa.ru</a>
 					</div>
-					<div class="footer__address hidden-xs">
+					<div class="footer__address">
 						115114, г. Москва, ул. Летниковская, <br>
 						д.10, стр. 2, БЦ «Святогор-2» <br>
 						<a href="#">Посмотреть на карте</a>
 					</div>
 
-					<div class="footer__phone hidden-xs">
-						<span class="thin">8 800</span> 921 39 90
-						<span class="phone-label">Бесплатно по всей России</span>
-					</div>
-				</div>
-				
-				<div class="footer__row">
-					<div class="footer__designedby">
-						Разработка сайта<br>
-						<a href="#">
-							<img src="img/layout/100up.png" alt="">
-						</a>
-					</div>
-					<div class="footer__address2 hidden-xs">
+					<div class="footer__address2">
 						680022, г. Хабаровск, ул. Нефтяная, д. 1 <br>
 						<a href="#">Посмотреть на карте</a>
 					</div>
-					<div class="footer__search hidden-md hidden-sm hidden-xs">
+
+					<div class="footer__search">
 						<form action="#">
 							<input type="text" placeholder="Поиск">
 							<input type="submit" value="">
 						</form>
 					</div>
 
-					<a href="#" class="footer__order hidden-xs hidden-lg">
+					<div class="footer__designedby">
+						Разработка сайта<br>
+						<a href="#">
+							<img src="img/layout/100up.png" alt="">
+						</a>
+					</div>
+				</div>
+
+				<div class="footer__left">
+					<div class="footer__row">
+						<div class="footer__copyright hidden-xs">
+							© 2010-2015, ООО “АКФА” <br>
+							<a href="mailto:">info@akfa.ru</a>
+						</div>
+						<div class="footer__address hidden-xs">
+							115114, г. Москва, ул. Летниковская, <br>
+							д.10, стр. 2, БЦ «Святогор-2» <br>
+							<a href="#">Посмотреть на карте</a>
+						</div>
+
+						<div class="footer__phone hidden-xs">
+							<span class="thin">8 800</span> 921 39 90
+							<span class="phone-label">Бесплатно по всей России</span>
+						</div>
+					</div>
+					
+					<div class="footer__row">
+						<div class="footer__designedby">
+							Разработка сайта<br>
+							<a href="#">
+								<img src="img/layout/100up.png" alt="">
+							</a>
+						</div>
+						<div class="footer__address2 hidden-xs">
+							680022, г. Хабаровск, ул. Нефтяная, д. 1 <br>
+							<a href="#">Посмотреть на карте</a>
+						</div>
+						<div class="footer__search hidden-md hidden-sm hidden-xs">
+							<form action="#">
+								<input type="text" placeholder="Поиск">
+								<input type="submit" value="">
+							</form>
+						</div>
+
+						<a href="#" class="footer__order hidden-xs hidden-lg">
+							Оставить заявку
+						</a>
+					</div>
+					
+				</div>
+				<div class="footer__right hidden-sm hidden-xs hidden-md">
+
+					<a href="#" class="footer-button ribbon-outset border">
 						Оставить заявку
 					</a>
+
 				</div>
-				
 			</div>
-			<div class="footer__right hidden-sm hidden-xs hidden-md">
+		</footer>
 
-				<a href="#" class="footer-button ribbon-outset border">
-					Оставить заявку
-				</a>
-
-			</div>
-		</div>
-	</footer>
-
-	<!-- Footer end -->
+		<!-- Footer end -->
+	</div>
 
 	<!-- Scripts -->
 
 	<script src="bower/jquery/dist/jquery.min.js"></script>
 	<script src="libs/owl/owl.carousel.min.js"></script>
 	<script src="libs/jquery.formstyler/jquery.formstyler.min.js"></script>
+	<script src="libs/clamp.min.js"></script>
+	<script src="libs/enquire.min.js"></script>
+	<script src="libs/slideout.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/media.js"></script>
 
 	<!-- Scripts end -->
 	

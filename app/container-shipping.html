@@ -16,147 +16,9 @@
 </head>
 <body>
 
-	<!-- Header -->
-
-	<header class="header">
-		<div class="container">
-			<div class="header__top">
-				<div class="header__logo">
-					<img src="img/layout/logo.svg" class="logo" alt="">
-					<div class="header__search hidden-md hidden-lg">
-						<img src="img/layout/header-search.svg" alt="">
-					</div>
-					<a href="#" class="header__profile-link hidden-lg hidden-md"></a>
-					
-				</div>
-				<div class="header__tagline hidden-xs">
-					Больше<br>
-					чем логистика
-				</div>
-				<div class="header__phone-mobile">
-					<div class="header__phone">
-						<span>8 800</span> 2000 158
-					</div>
-					<div class="header__tagline hidden-md hidden-lg">
-						Больше<br>
-						чем логистика
-					</div>
-				</div>
-				<div class="header__phone-text hidden-xs">
-					Бесплатно<br>
-					по всей России
-				</div>
-				<div class="header__search hidden-xs hidden-lg">
-					<img src="img/layout/header-search.svg" alt="">
-				</div>
-				<a href="#" class="header__order-status-link hidden-md hidden-xs">
-					Отслеживание заказа
-				</a>
-				<a href="#" class="header__profile-link hidden-md hidden-xs">
-					Личный кабинет
-				</a>
-				<div class="header__toggle-menu hidden-lg">
-					<div id="toggle" class="toggle">
-						<span></span>
-					</div>
-				</div>
-			</div>
-			<div class="header__bottom">
-				<div class="header__menu-link hidden-md hidden-xs">
-					<div id="toggle-big" class="toggle">
-						<span></span>
-					</div>
-				</div>
-				<div class="header__search hidden-md hidden-xs">
-					<img src="img/layout/header-search.svg" alt="">
-				</div>
-
-				<!-- Search box -->
-
-				<div class="search-box">
-					<div class="search-box__input">
-						<input type="text" placeholder="Введите слово для поиска">
-						<input type="submit" value="">
-					</div>
-					<div class="search-box__result">
-						Результаты поиска
-					</div>
-					<div class="search-box__result">
-						Результаты поиска
-					</div>
-					<div class="search-box__result">
-						Результаты поиска
-					</div>
-					<div class="search-box__button-container">
-						<a href="#" class="search-box__button button-animate-red">
-							Все результаты поиска
-						</a>
-					</div>
-				</div>
-
-				<!-- Search box end -->
-
-				<a href="#" class="header__profile-link hidden-lg hidden-xs">
-					Личный кабинет
-				</a>
-				<a href="#" class="header__order-status-link hidden-lg hidden-xs">
-					Отслеживание заказа
-				</a>
-				
-				<ul class="header__menu">
-					<li><a href="#">
-						Наши продукты
-					</a></li>
-					<li><a href="#">
-						Все услуги
-					</a></li>
-					<li><a href="#">
-						Отраслевые решения
-					</a></li>
-					<li><a href="#">
-						Калькулятор
-					</a></li>
-					<li><a href="#">
-						О компании
-					</a></li>
-					<li><a href="#">
-						Вопросы и ответы
-					</a></li>
-					<li><a href="#">
-						Контакты
-					</a></li>
-				</ul>
-				<div class="header__submit-button">
-					<a href="#" class="button ribbon-outset border">
-						Оставить заявку
-					</a>
-				</div>
-				<div class="header__mobile-status hidden-lg hidden-md">
-					<a href="#" class="header__order-status-link hidden-lg hidden-md">
-						Отслеживание заказа
-					</a>
-				</div>
-
-				<div class="header-lang hidden-xs hidden-md hidden-sm">
-					<a href="#" class="header-lang__item active">
-						ru
-					</a>
-					<a href="#" class="header-lang__item">
-						en
-					</a>
-					<a href="#" class="header-lang__item">
-						ch
-					</a>
-				</div>
-			</div>
-		</div>
-	</header>
-
-	<!-- Header end -->
-
 	<!-- Main toggle menu -->
 
-	<div class="big-menu">
+	<div class="big-menu" id="menu">
 		<div class="container">
 			<div class="big-menu__left">
 				<div class="big-menu__box">
@@ -307,389 +169,532 @@
 					Ответим в течение 5 минут
 				</div>
 				<form action="" class="big-menu__form">
-					
 					<input type="text" placeholder="Имя*">
 					<input type="text" placeholder="Телефон*">
 					<input type="text" placeholder="Город отправления*">
 					<input type="text" placeholder="Город получения*">
 					<textarea placeholder="Примерный объем груза и дополнительная информация"></textarea><br>
 					<input class="button-animate-red" type="submit" value="Отправить заявку">
-
 				</form>
-
 			</div>
-			
 		</div>
 	</div>
 
-	<!-- Mein toggle menu end -->
+	<!-- Main toggle menu end -->
 
-	<div class="page-top"></div>
+	<div id="panel">
 
-	<!-- Delivery page -->
+		<!-- Header -->
 
-	<div class="delivery-page">
-		<div class="container">
-			<div class="left-col">
-				<div class="page-menu">
-					<div class="page-menu__headliner">
-						Услуги
-					</div>
-
-					<div class="page-menu__head hidden-lg hidden-md">
-						Услуги и отраслевые решения
-					</div>
-
-					<ul class="page-menu__menu">
-						<li class="current">
-							<img src="img/layout/page-menu-general-cargo.png" alt="">
-							<a href="#">
-								Доставка сборных грузов
-							</a>
-						</li>
-						<li>
-							<img src="img/layout/page-menu-container-shipping.png" alt="">
-							<a href="#">
-								Контейнерные перевозки
-							</a>
-						</li>
-						<li>
-							<img src="img/layout/page-menu-customs.png" alt="">
-							<a href="#">
-								Таможенное оформление
-							</a>
-						</li>
-
-						<div class="page-menu__small-text">
-							Хранение на складе<br>
-							Грузовые перевозки по России
+		<header class="header">
+			<div class="container">
+				<div class="header__top">
+					<div class="header__logo">
+						<img src="img/layout/logo.svg" class="logo" alt="">
+						<div class="header__search hidden-md hidden-lg">
+							<img src="img/layout/header-search.svg" alt="">
 						</div>
+						<a href="#" class="header__profile-link hidden-lg hidden-md"></a>
+						
+					</div>
+					<div class="header__tagline hidden-xs">
+						Больше<br>
+						чем логистика
+					</div>
+					<div class="header__phone-mobile">
+						<div class="header__phone">
+							<span>8 800</span> 2000 158
+						</div>
+						<div class="header__tagline hidden-md hidden-lg">
+							Больше<br>
+							чем логистика
+						</div>
+					</div>
+					<div class="header__phone-text hidden-xs">
+						Бесплатно<br>
+						по всей России
+					</div>
+					<div class="header__search hidden-xs hidden-lg">
+						<img src="img/layout/header-search.svg" alt="">
+					</div>
+					<a href="#" class="header__order-status-link hidden-md hidden-xs">
+						Отслеживание заказа
+					</a>
+					<a href="#" class="header__profile-link hidden-md hidden-xs">
+						Личный кабинет
+					</a>
+					<div class="header__toggle-menu hidden-lg">
+						<div id="toggle" class="toggle">
+							<span></span>
+						</div>
+					</div>
+				</div>
+				<div class="header__bottom">
+					<div class="header__menu-link hidden-md hidden-xs">
+						<div id="toggle-big" class="toggle">
+							<span></span>
+						</div>
+					</div>
+					<div class="header__search hidden-md hidden-xs">
+						<img src="img/layout/header-search.svg" alt="">
+					</div>
 
+					<!-- Search box -->
+
+					<div class="search-box">
+						<div class="search-box__input">
+							<input type="text" placeholder="Введите слово для поиска">
+							<input type="submit" value="">
+						</div>
+						<div class="search-box__result">
+							Результаты поиска
+						</div>
+						<div class="search-box__result">
+							Результаты поиска
+						</div>
+						<div class="search-box__result">
+							Результаты поиска
+						</div>
+						<div class="search-box__button-container">
+							<a href="#" class="search-box__button button-animate-red">
+								Все результаты поиска
+							</a>
+						</div>
+					</div>
+
+					<!-- Search box end -->
+
+					<a href="#" class="header__profile-link hidden-lg hidden-xs">
+						Личный кабинет
+					</a>
+					<a href="#" class="header__order-status-link hidden-lg hidden-xs">
+						Отслеживание заказа
+					</a>
+					
+					<ul class="header__menu">
+						<li><a href="#">
+							Наши продукты
+						</a></li>
+						<li><a href="#">
+							Все услуги
+						</a></li>
+						<li><a href="#">
+							Отраслевые решения
+						</a></li>
+						<li><a href="#">
+							Калькулятор
+						</a></li>
+						<li><a href="#">
+							О компании
+						</a></li>
+						<li><a href="#">
+							Вопросы и ответы
+						</a></li>
+						<li><a href="#">
+							Контакты
+						</a></li>
+					</ul>
+					<div class="header__submit-button">
+						<a href="#" class="button ribbon-outset border">
+							Оставить заявку
+						</a>
+					</div>
+					<div class="header__mobile-status hidden-lg hidden-md">
+						<a href="#" class="header__order-status-link hidden-lg hidden-md">
+							Отслеживание заказа
+						</a>
+					</div>
+
+					<div class="header-lang hidden-xs hidden-md hidden-sm">
+						<a href="#" class="header-lang__item active">
+							ru
+						</a>
+						<a href="#" class="header-lang__item">
+							en
+						</a>
+						<a href="#" class="header-lang__item">
+							ch
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Header end -->
+
+		<div class="page-top"></div>
+
+		<!-- Delivery page -->
+
+		<div class="delivery-page">
+			<div class="container">
+				<div class="left-col">
+					<div class="page-menu">
 						<div class="page-menu__headliner">
-							Отраслевые <br>
-							решения
+							Услуги
 						</div>
 
-						<li>
-							<img src="img/layout/page-menu-shoes.png" alt="">
+						<div class="page-menu__head hidden-lg hidden-md">
+							Услуги и отраслевые решения
+						</div>
+
+						<ul class="page-menu__menu">
+							<li class="current">
+								<img src="img/layout/page-menu-general-cargo.png" alt="">
+								<a href="#">
+									Доставка сборных грузов
+								</a>
+							</li>
+							<li>
+								<img src="img/layout/page-menu-container-shipping.png" alt="">
+								<a href="#">
+									Контейнерные перевозки
+								</a>
+							</li>
+							<li>
+								<img src="img/layout/page-menu-customs.png" alt="">
+								<a href="#">
+									Таможенное оформление
+								</a>
+							</li>
+
+							<div class="page-menu__small-text">
+								<a href="#">
+									Хранение на складе<br>
+									Грузовые перевозки по России
+								</a>
+							</div>
+
+							<div class="page-menu__headliner">
+								Отраслевые <br>
+								решения
+							</div>
+
+							<li>
+								<img src="img/layout/page-menu-shoes.png" alt="">
+								<a href="#">
+									Обувные компании
+								</a>
+							</li>
+							<li>
+								<img src="img/layout/page-menu-home.png" alt="">
+								<a href="#">
+									Дом, сад, строительство, ремонт
+								</a>
+							</li>
+							<li>
+								<img src="img/layout/page-menu-tc.png" alt="">
+								<a href="#">
+									Для транспортных компаний
+								</a>
+							</li>
+							<li>
+								<img src="img/layout/page-menu-parts.png" alt="">
+								<a href="#">
+									Автозапчасти, шины, диски
+								</a>
+							</li>
+						</ul>
+
+						<a href="#" class="page-button page-menu__button">
+							Обратная связь
+						</a>
+
+						<div class="page-menu__headliner"></div>
+
+						<a href="#" class="page-menu__video-box">
+							<div class="text">
+								<img src="img/layout/video.png" alt=""><br>
+								Ролик о компании
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="content-col">
+					<div class="page-headliner">
+						Контейнерные перевозки
+					</div>
+
+					<ul class="page-vertical-menu">
+						<li class="active">
 							<a href="#">
-								Обувные компании
+								Описание
 							</a>
 						</li>
-						<li>
-							<img src="img/layout/page-menu-home.png" alt="">
-							<a href="#">
-								Дом, сад, строительство, ремонт
-							</a>
-						</li>
-						<li>
-							<img src="img/layout/page-menu-tc.png" alt="">
-							<a href="#">
-								Для транспортных компаний
-							</a>
-						</li>
-						<li>
-							<img src="img/layout/page-menu-parts.png" alt="">
-							<a href="#">
-								Автозапчасти, шины, диски
-							</a>
-						</li>
+				    	<li>
+				    		<a href="#">
+				    			Цены
+				    		</a>
+				    	</li>
+				    	<li>
+				    		<a href="#">
+				    			Рассчитать стоимость
+				    		</a>
+				    	</li>
+				    	<li>
+				    		<a href="#">
+				    			Заказать
+				    		</a>
+				    	</li>
 					</ul>
 
-					<a href="#" class="page-button page-menu__button">
-						Обратная связь
-					</a>
+					<div class="delivery-desc container-shipping-map">
+						<img src="img/content/container-shipping.png"  alt="">
+					</div>
 
-					<div class="page-menu__headliner"></div>
+					<div class="delivery-steps">
+						
+						<div class="delivery-steps__box-headliner">
+							Процес перевозки контейнерных грузов
+						</div>
 
-					<a href="#" class="page-menu__video-box">
+						<div class="delivery-steps__step active step1">
+							<div class="delivery-steps__headliner">
+								<img src="img/layout/container-shipping-icon1-active.png" alt="">
+								Этап 1
+							</div>
+							<div class="delivery-steps__text">
+								Подача <br>
+								контейнера<br>
+								под погрузку
+							</div>
+						</div>
+						<div class="delivery-steps__step step2">
+							<div class="delivery-steps__headliner">
+								<img src="img/layout/container-shipping-icon2.svg" alt="">
+								Этап 2
+							</div>
+							<div class="delivery-steps__text">
+								Доставка груза <br>
+								в РФ морским <br>
+								транспортом
+							</div>
+						</div>
+						<div class="delivery-steps__step step3">
+							<div class="delivery-steps__headliner">
+								<img src="img/layout/delivery-icon3.png" alt="">
+								Этап 3
+							</div>
+							<div class="delivery-steps__text">
+								Таможенное <br>
+								оформление. <br>
+								Низкие цены
+							</div>
+						</div>
+						<div class="delivery-steps__step step4">
+							<div class="delivery-steps__headliner">
+								<img src="img/layout/delivery-icon4.png" alt="">
+								Этап 4
+							</div>
+							<div class="delivery-steps__text">
+								Доставка <br>
+								«До двери»
+							</div>
+						</div>
+					</div>
+
+					<div class="delivery-steps-desc step1 active">
+						<div class="delivery-steps-desc__box">
+							Прием груза с фабрик по упаковочным листам
+						</div>
+						<div class="delivery-steps-desc__box">
+							Доставка груза с фабрики в порт
+						</div>
+						<div class="delivery-steps-desc__box">
+							Проверка количества, упаковка
+						</div>
+						<div class="delivery-steps-desc__box">
+							Подготовка контейнера к отправке
+						</div>
+					</div>
+
+					<div class="delivery-steps-desc step2">
+						<div class="delivery-steps-desc__box">
+							Прием груза с фабрик по упаковочным листам 2
+						</div>
+						<div class="delivery-steps-desc__box">
+							Доставка груза с фабрики в порт 2
+						</div>
+						<div class="delivery-steps-desc__box">
+							Проверка количества, упаковка 2
+						</div>
+						<div class="delivery-steps-desc__box">
+							Подготовка контейнера к отправке 2
+						</div>
+					</div>
+
+					<div class="delivery-steps-desc step3">
+						<div class="delivery-steps-desc__box">
+							Прием груза с фабрик по упаковочным листам 3
+						</div>
+						<div class="delivery-steps-desc__box">
+							Доставка груза с фабрики в порт 3
+						</div>
+						<div class="delivery-steps-desc__box">
+							Проверка количества, упаковка 3
+						</div>
+						<div class="delivery-steps-desc__box">
+							Подготовка контейнера к отправке 3
+						</div>
+					</div>
+
+					<div class="delivery-steps-desc step4">
+						<div class="delivery-steps-desc__box">
+							Прием груза с фабрик по упаковочным листам 4
+						</div>
+						<div class="delivery-steps-desc__box">
+							Доставка груза с фабрики в порт 4
+						</div>
+						<div class="delivery-steps-desc__box">
+							Проверка количества, упаковка 4
+						</div>
+						<div class="delivery-steps-desc__box">
+							Подготовка контейнера к отправке 4
+						</div>
+					</div>
+
+					<div class="page-info">
 						<div class="text">
-							<img src="img/layout/video.png" alt=""><br>
-							Ролик о компании
+							<h3>Дополнительная информация</h3><br>
+
+							Расчет не всегда может быть точным и не содержит информации об упаковке. 
+							<br><br>
+							
+							Для более детальной информации и по вопросу получения скидки оставьте заявку справа или обращайтесь к нашим менеджерам по телефону: 
+							<br><br>
+							
+							8 800 2000 158 (многоканальный)
 						</div>
-					</a>
-				</div>
-			</div>
-			<div class="content-col">
-				<div class="page-headliner">
-					Контейнерные перевозки
-				</div>
-
-				<ul class="page-vertical-menu">
-					<li class="active">
-						<a href="#">
-							Описание
-						</a>
-					</li>
-			    	<li>
-			    		<a href="#">
-			    			Цены
-			    		</a>
-			    	</li>
-			    	<li>
-			    		<a href="#">
-			    			Рассчитать стоимость
-			    		</a>
-			    	</li>
-			    	<li>
-			    		<a href="#">
-			    			Заказать
-			    		</a>
-			    	</li>
-				</ul>
-
-				<div class="delivery-desc container-shipping-map">
-					<img src="img/content/container-shipping.png"  alt="">
-				</div>
-
-				<div class="delivery-steps">
-					
-					<div class="delivery-steps__box-headliner">
-						Процес перевозки контейнерных грузов
-					</div>
-
-					<div class="delivery-steps__step active step1">
-						<div class="delivery-steps__headliner">
-							<img src="img/layout/container-shipping-icon1-active.png" alt="">
-							Этап 1
-						</div>
-						<div class="delivery-steps__text">
-							Подача <br>
-							контейнера<br>
-							под погрузку
-						</div>
-					</div>
-					<div class="delivery-steps__step step2">
-						<div class="delivery-steps__headliner">
-							<img src="img/layout/container-shipping-icon2.svg" alt="">
-							Этап 2
-						</div>
-						<div class="delivery-steps__text">
-							Доставка груза <br>
-							в РФ морским <br>
-							транспортом
-						</div>
-					</div>
-					<div class="delivery-steps__step step3">
-						<div class="delivery-steps__headliner">
-							<img src="img/layout/delivery-icon3.png" alt="">
-							Этап 3
-						</div>
-						<div class="delivery-steps__text">
-							Таможенное <br>
-							оформление. <br>
-							Низкие цены
-						</div>
-					</div>
-					<div class="delivery-steps__step step4">
-						<div class="delivery-steps__headliner">
-							<img src="img/layout/delivery-icon4.png" alt="">
-							Этап 4
-						</div>
-						<div class="delivery-steps__text">
-							Доставка <br>
-							«До двери»
-						</div>
-					</div>
-				</div>
-
-				<div class="delivery-steps-desc step1 active">
-					<div class="delivery-steps-desc__box">
-						Прием груза с фабрик по упаковочным листам
-					</div>
-					<div class="delivery-steps-desc__box">
-						Доставка груза с фабрики в порт
-					</div>
-					<div class="delivery-steps-desc__box">
-						Проверка количества, упаковка
-					</div>
-					<div class="delivery-steps-desc__box">
-						Подготовка контейнера к отправке
-					</div>
-				</div>
-
-				<div class="delivery-steps-desc step2">
-					<div class="delivery-steps-desc__box">
-						Прием груза с фабрик по упаковочным листам 2
-					</div>
-					<div class="delivery-steps-desc__box">
-						Доставка груза с фабрики в порт 2
-					</div>
-					<div class="delivery-steps-desc__box">
-						Проверка количества, упаковка 2
-					</div>
-					<div class="delivery-steps-desc__box">
-						Подготовка контейнера к отправке 2
-					</div>
-				</div>
-
-				<div class="delivery-steps-desc step3">
-					<div class="delivery-steps-desc__box">
-						Прием груза с фабрик по упаковочным листам 3
-					</div>
-					<div class="delivery-steps-desc__box">
-						Доставка груза с фабрики в порт 3
-					</div>
-					<div class="delivery-steps-desc__box">
-						Проверка количества, упаковка 3
-					</div>
-					<div class="delivery-steps-desc__box">
-						Подготовка контейнера к отправке 3
-					</div>
-				</div>
-
-				<div class="delivery-steps-desc step4">
-					<div class="delivery-steps-desc__box">
-						Прием груза с фабрик по упаковочным листам 4
-					</div>
-					<div class="delivery-steps-desc__box">
-						Доставка груза с фабрики в порт 4
-					</div>
-					<div class="delivery-steps-desc__box">
-						Проверка количества, упаковка 4
-					</div>
-					<div class="delivery-steps-desc__box">
-						Подготовка контейнера к отправке 4
-					</div>
-				</div>
-
-				<div class="page-info">
-					<div class="text">
-						<h3>Дополнительная информация</h3><br>
-
-						Расчет не всегда может быть точным и не содержит информации об упаковке. 
-						<br><br>
 						
-						Для более детальной информации и по вопросу получения скидки оставьте заявку справа или обращайтесь к нашим менеджерам по телефону: 
-						<br><br>
-						
-						8 800 2000 158 (многоканальный)
-					</div>
-					
 
-					<div class="page-info__form">
-						<h3>Расчет стоимости доставки</h3>
-						<input type="text" placeholder="Имя*">
-						<input type="text" placeholder="Телефон*">
-						<input type="text" placeholder="Город отправления">
-						<input type="text" placeholder="Город назначения">
-						<input type="submit" value="Отправить заявку" class="button-animate-red">
-					</div>
-				</div>	
+						<div class="page-info__form">
+							<h3>Расчет стоимости доставки</h3>
+							<input type="text" placeholder="Имя*">
+							<input type="text" placeholder="Телефон*">
+							<input type="text" placeholder="Город отправления">
+							<input type="text" placeholder="Город назначения">
+							<input type="submit" value="Отправить заявку" class="button-animate-red">
+						</div>
+					</div>	
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<!-- Delivery page end -->
+		<!-- Delivery page end -->
 
-	<!-- Footer -->
+		<!-- Footer -->
 
-	<footer class="footer">
-		<div class="container">
-			<div class="footer__headliner">
-				Больше чем логистика
-			</div>
-
-			<div class="footer__mobile hidden-sm hidden-lg hidden-md">
-				<div class="footer__phone">
-					<span class="thin">8 800</span> 921 39 90
-					<span class="phone-label">Бесплатно по всей России</span>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__headliner">
+					Больше чем логистика
 				</div>
 
-				<a href="#" class="footer__order">
-					Оставить заявку
-				</a>
+				<div class="footer__mobile hidden-sm hidden-lg hidden-md">
+					<div class="footer__phone">
+						<span class="thin">8 800</span> 921 39 90
+						<span class="phone-label">Бесплатно по всей России</span>
+					</div>
 
-				<div class="footer__copyright">
-					© 2010-2015, ООО “АКФА” <br>
-					<a href="mailto:">info@akfa.ru</a>
-				</div>
-				<div class="footer__address">
-					115114, г. Москва, ул. Летниковская, <br>
-					д.10, стр. 2, БЦ «Святогор-2» <br>
-					<a href="#">Посмотреть на карте</a>
-				</div>
-
-				<div class="footer__address2">
-					680022, г. Хабаровск, ул. Нефтяная, д. 1 <br>
-					<a href="#">Посмотреть на карте</a>
-				</div>
-
-				<div class="footer__search">
-					<form action="#">
-						<input type="text" placeholder="Поиск">
-						<input type="submit" value="">
-					</form>
-				</div>
-
-				<div class="footer__designedby">
-					Разработка сайта<br>
-					<a href="#">
-						<img src="img/layout/100up.png" alt="">
+					<a href="#" class="footer__order">
+						Оставить заявку
 					</a>
-				</div>
-			</div>
 
-			<div class="footer__left">
-				<div class="footer__row">
-					<div class="footer__copyright hidden-xs">
+					<div class="footer__copyright">
 						© 2010-2015, ООО “АКФА” <br>
 						<a href="mailto:">info@akfa.ru</a>
 					</div>
-					<div class="footer__address hidden-xs">
+					<div class="footer__address">
 						115114, г. Москва, ул. Летниковская, <br>
 						д.10, стр. 2, БЦ «Святогор-2» <br>
 						<a href="#">Посмотреть на карте</a>
 					</div>
 
-					<div class="footer__phone hidden-xs">
-						<span class="thin">8 800</span> 921 39 90
-						<span class="phone-label">Бесплатно по всей России</span>
-					</div>
-				</div>
-				
-				<div class="footer__row">
-					<div class="footer__designedby">
-						Разработка сайта<br>
-						<a href="#">
-							<img src="img/layout/100up.png" alt="">
-						</a>
-					</div>
-					<div class="footer__address2 hidden-xs">
+					<div class="footer__address2">
 						680022, г. Хабаровск, ул. Нефтяная, д. 1 <br>
 						<a href="#">Посмотреть на карте</a>
 					</div>
-					<div class="footer__search hidden-md hidden-sm hidden-xs">
+
+					<div class="footer__search">
 						<form action="#">
 							<input type="text" placeholder="Поиск">
 							<input type="submit" value="">
 						</form>
 					</div>
 
-					<a href="#" class="footer__order hidden-xs hidden-lg">
+					<div class="footer__designedby">
+						Разработка сайта<br>
+						<a href="#">
+							<img src="img/layout/100up.png" alt="">
+						</a>
+					</div>
+				</div>
+
+				<div class="footer__left">
+					<div class="footer__row">
+						<div class="footer__copyright hidden-xs">
+							© 2010-2015, ООО “АКФА” <br>
+							<a href="mailto:">info@akfa.ru</a>
+						</div>
+						<div class="footer__address hidden-xs">
+							115114, г. Москва, ул. Летниковская, <br>
+							д.10, стр. 2, БЦ «Святогор-2» <br>
+							<a href="#">Посмотреть на карте</a>
+						</div>
+
+						<div class="footer__phone hidden-xs">
+							<span class="thin">8 800</span> 921 39 90
+							<span class="phone-label">Бесплатно по всей России</span>
+						</div>
+					</div>
+					
+					<div class="footer__row">
+						<div class="footer__designedby">
+							Разработка сайта<br>
+							<a href="#">
+								<img src="img/layout/100up.png" alt="">
+							</a>
+						</div>
+						<div class="footer__address2 hidden-xs">
+							680022, г. Хабаровск, ул. Нефтяная, д. 1 <br>
+							<a href="#">Посмотреть на карте</a>
+						</div>
+						<div class="footer__search hidden-md hidden-sm hidden-xs">
+							<form action="#">
+								<input type="text" placeholder="Поиск">
+								<input type="submit" value="">
+							</form>
+						</div>
+
+						<a href="#" class="footer__order hidden-xs hidden-lg">
+							Оставить заявку
+						</a>
+					</div>
+					
+				</div>
+				<div class="footer__right hidden-sm hidden-xs hidden-md">
+
+					<a href="#" class="footer-button ribbon-outset border">
 						Оставить заявку
 					</a>
+
 				</div>
-				
 			</div>
-			<div class="footer__right hidden-sm hidden-xs hidden-md">
+		</footer>
 
-				<a href="#" class="footer-button ribbon-outset border">
-					Оставить заявку
-				</a>
-
-			</div>
-		</div>
-	</footer>
-
-	<!-- Footer end -->
+		<!-- Footer end -->
+	</div>
 
 	<!-- Scripts -->
 
 	<script src="bower/jquery/dist/jquery.min.js"></script>
 	<script src="libs/owl/owl.carousel.min.js"></script>
 	<script src="libs/jquery.formstyler/jquery.formstyler.min.js"></script>
+	<script src="libs/clamp.min.js"></script>
+	<script src="libs/enquire.min.js"></script>
+	<script src="libs/slideout.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/media.js"></script>
 
 	<!-- Scripts end -->
 	

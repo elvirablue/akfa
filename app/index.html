@@ -16,6 +16,8 @@
 </head>
 <body>
 
+	<!-- Solutions button -->
+
 	<a href="#solutions" id="tosolutions" class="solutions-button hidden-xs hidden-sm hidden-md">
 		<div class="solutions-button__text">
 			<img class="solutions-button__cover" src="img/layout/solutions-button.png" alt="">
@@ -27,151 +29,14 @@
 		</div>
 	</a>
 
-	<!-- Header -->
-
-	<header class="header">
-		<div class="container">
-			<div class="header__top">
-				<div class="header__logo">
-					<img src="img/layout/logo.svg" class="logo" alt="">
-					<div class="header__search hidden-md hidden-lg">
-						<img src="img/layout/header-search.svg" alt="">
-					</div>
-					<a href="#" class="header__profile-link hidden-lg hidden-md"></a>
-					
-				</div>
-				<div class="header__tagline hidden-xs">
-					Больше<br>
-					чем логистика
-				</div>
-				<div class="header__phone-mobile">
-					<div class="header__phone">
-						<span>8 800</span> 2000 158
-					</div>
-					<div class="header__tagline hidden-md hidden-lg">
-						Больше<br>
-						чем логистика
-					</div>
-				</div>
-				<div class="header__phone-text hidden-xs">
-					Бесплатно<br>
-					по всей России
-				</div>
-				<div class="header__search hidden-xs hidden-lg">
-					<img src="img/layout/header-search.svg" alt="">
-				</div>
-				<a href="#" class="header__order-status-link hidden-md hidden-xs">
-					Отслеживание заказа
-				</a>
-				<a href="#" class="header__profile-link hidden-md hidden-xs">
-					Личный кабинет
-				</a>
-				<div class="header__toggle-menu hidden-lg">
-					<div id="toggle" class="toggle">
-						<span></span>
-					</div>
-				</div>
-			</div>
-			<div class="header__bottom">
-				<div class="header__menu-link hidden-md hidden-xs">
-					<div id="toggle-big" class="toggle">
-						<span></span>
-					</div>
-				</div>
-				<div class="header__search hidden-md hidden-xs">
-					<img src="img/layout/header-search.svg" alt="">
-				</div>
-
-				<!-- Search box -->
-
-				<div class="search-box">
-					<div class="search-box__input">
-						<input type="text" placeholder="Введите слово для поиска">
-						<input type="submit" value="">
-					</div>
-					<div class="search-box__result">
-						Результаты поиска
-					</div>
-					<div class="search-box__result">
-						Результаты поиска
-					</div>
-					<div class="search-box__result">
-						Результаты поиска
-					</div>
-					<div class="search-box__button-container">
-						<a href="#" class="search-box__button button-animate-red">
-							Все результаты поиска
-						</a>
-					</div>
-				</div>
-
-				<!-- Search box end -->
-
-				<a href="#" class="header__profile-link hidden-lg hidden-xs">
-					Личный кабинет
-				</a>
-				<a href="#" class="header__order-status-link hidden-lg hidden-xs">
-					Отслеживание заказа
-				</a>
-				
-				<ul class="header__menu">
-					<li><a href="#">
-						Наши продукты
-					</a></li>
-					<li><a href="#">
-						Все услуги
-					</a></li>
-					<li><a href="#">
-						Отраслевые решения
-					</a></li>
-					<li><a href="#">
-						Калькулятор
-					</a></li>
-					<li><a href="#">
-						О компании
-					</a></li>
-					<li><a href="#">
-						Вопросы и ответы
-					</a></li>
-					<li><a href="#">
-						Контакты
-					</a></li>
-				</ul>
-				<div class="header__submit-button">
-					<a href="#" class="button ribbon-outset border">
-						Оставить заявку
-					</a>
-				</div>
-				<div class="header__mobile-status hidden-lg hidden-md">
-					<a href="#" class="header__order-status-link hidden-lg hidden-md">
-						Отслеживание заказа
-					</a>
-				</div>
-
-				<div class="header-lang hidden-xs hidden-md hidden-sm">
-					<a href="#" class="header-lang__item active">
-						ru
-					</a>
-					<a href="#" class="header-lang__item">
-						en
-					</a>
-					<a href="#" class="header-lang__item">
-						ch
-					</a>
-				</div>
-			</div>
-		</div>
-	</header>
-
-	<!-- Header end -->
+	<!-- Soulutions button end -->
 
 	<!-- Main toggle menu -->
 
-	<div class="big-menu">
+	<div class="big-menu" id="menu">
 		<div class="container">
 			<div class="big-menu__left">
 				<div class="big-menu__box">
-
 					<ul class="big-menu__list hidden-sm hidden-md hidden-lg">
 						<li>
 							<a href="#">Наши продукты</a>
@@ -246,7 +111,6 @@
 						</li>
 					</ul>
 				</div>
-
 
 				<div class="big-menu__box">
 					<div class="big-menu__headliner">
@@ -342,363 +206,364 @@
 					Ответим в течение 5 минут
 				</div>
 				<form action="" class="big-menu__form">
-					
 					<input type="text" placeholder="Имя*">
 					<input type="text" placeholder="Телефон*">
 					<input type="text" placeholder="Город отправления*">
 					<input type="text" placeholder="Город получения*">
 					<textarea placeholder="Примерный объем груза и дополнительная информация"></textarea><br>
 					<input class="button-animate-red" type="submit" value="Отправить заявку">
-
 				</form>
-
 			</div>
-			
 		</div>
 	</div>
 
-	<!-- Mein toggle menu end -->
+	<!-- Main toggle menu end -->
 
-	<!-- Slider -->
+	<div id="panel">
 
-	<div class="front-page-slider">
-		<div class="front-page-slider__slide">
-			<div class="front-page-slider__caption">
-				<div class="container">
-					<div class="front-page-slider__head">
-						Собственный <br>
-						логистический комплекс
+		<!-- Header -->
+
+		<header class="header">
+			<div class="container">
+				<div class="header__top">
+					<div class="header__logo">
+						<img src="img/layout/logo.svg" class="logo" alt="">
+						<div class="header__search hidden-md hidden-lg">
+							<img src="img/layout/header-search.svg" alt="">
+						</div>
+						<a href="#" class="header__profile-link hidden-lg hidden-md"></a>
+						
 					</div>
-					<div class="front-page-slider__text">
-						Полноценный терминально-логистический комплекс в Хабаровске<br> (складские помещения, ЖД платформа, головной офис компании и т.д.
+					<div class="header__tagline hidden-xs">
+						Больше<br>
+						чем логистика
 					</div>
-				</div>
-			</div>
-			<img src="img/slider/slide1.jpg" alt="">
-		</div>
-		<div class="front-page-slider__slide">
-			<div class="front-page-slider__caption">
-				<div class="container">
-					<div class="front-page-slider__head">
-						Собственный <br>
-						логистический комплекс 2
+					<div class="header__phone-mobile">
+						<div class="header__phone">
+							<span>8 800</span> 2000 158
+						</div>
+						<div class="header__tagline hidden-md hidden-lg">
+							Больше<br>
+							чем логистика
+						</div>
 					</div>
-					<div class="front-page-slider__text">
-						Полноценный терминально-логистический комплекс в Хабаровске<br> (складские помещения, ЖД платформа, головной офис компании и т.д. 2
+					<div class="header__phone-text hidden-xs">
+						Бесплатно<br>
+						по всей России
 					</div>
-				</div>
-			</div>
-			<img src="img/slider/slide2.jpg" alt="">
-		</div>
-	</div>
-
-	<!-- Slider end -->
-
-	<!-- Products -->
-
-	<div class="products">
-		<div class="container">
-			<div class="products__headliner">
-				Наши продукты
-			</div>
-			<div class="products__box">
-				<div class="products__image">
-					<a href="#">
-						<img src="img/product-icon1.png" alt="">
+					<div class="header__search hidden-xs hidden-lg">
+						<img src="img/layout/header-search.svg" alt="">
+					</div>
+					<a href="#" class="header__order-status-link hidden-md hidden-xs">
+						Отслеживание заказа
 					</a>
+					<a href="#" class="header__profile-link hidden-md hidden-xs">
+						Личный кабинет
+					</a>
+					<div class="header__toggle-menu hidden-lg">
+						<div id="toggle" class="toggle">
+							<span></span>
+						</div>
+					</div>
 				</div>
-				<div class="products__box-headliner">
-					Доставку сборных<br>
-					грузов из Китая
-				</div>
-				<div class="products__text">
-					<ul>
-						<li>
-							<p>
-								Пункты приема груза в четырех основных экономических зонах кита
-							</p>
-							
-						</li>
-						<li>
-							<p>
-								Срок доставки 1 мес
-							</p>
-							
-						</li>
-						<li>
-							<p>
-								от 1 кг до целой машины
-							</p>
-							
-						</li>
-						<li>
-							<p>
-								Лицензия таможенного перевозчика,
-							</p>
-							
-						</li>
+				<div class="header__bottom">
+					<div class="header__menu-link hidden-md hidden-xs">
+						<div id="toggle-big" class="toggle">
+							<span></span>
+						</div>
+					</div>
+					<div class="header__search hidden-md hidden-xs">
+						<img src="img/layout/header-search.svg" alt="">
+					</div>
+
+					<!-- Search box -->
+
+					<div class="search-box">
+						<div class="search-box__input">
+							<input type="text" placeholder="Введите слово для поиска">
+							<input type="submit" value="">
+						</div>
+						<div class="search-box__result">
+							Результаты поиска
+						</div>
+						<div class="search-box__result">
+							Результаты поиска
+						</div>
+						<div class="search-box__result">
+							Результаты поиска
+						</div>
+						<div class="search-box__button-container">
+							<a href="#" class="search-box__button button-animate-red">
+								Все результаты поиска
+							</a>
+						</div>
+					</div>
+
+					<!-- Search box end -->
+
+					<a href="#" class="header__profile-link hidden-lg hidden-xs">
+						Личный кабинет
+					</a>
+					<a href="#" class="header__order-status-link hidden-lg hidden-xs">
+						Отслеживание заказа
+					</a>
+					
+					<ul class="header__menu">
+						<li><a href="#">
+							Наши продукты
+						</a></li>
+						<li><a href="#">
+							Все услуги
+						</a></li>
+						<li><a href="#">
+							Отраслевые решения
+						</a></li>
+						<li><a href="#">
+							Калькулятор
+						</a></li>
+						<li><a href="#">
+							О компании
+						</a></li>
+						<li><a href="#">
+							Вопросы и ответы
+						</a></li>
+						<li><a href="#">
+							Контакты
+						</a></li>
 					</ul>
+					<div class="header__submit-button">
+						<a href="#" class="button ribbon-outset border">
+							Оставить заявку
+						</a>
+					</div>
+					<div class="header__mobile-status hidden-lg hidden-md">
+						<a href="#" class="header__order-status-link hidden-lg hidden-md">
+							Отслеживание заказа
+						</a>
+					</div>
+
+					<div class="header-lang hidden-xs hidden-md hidden-sm">
+						<a href="#" class="header-lang__item active">
+							ru
+						</a>
+						<a href="#" class="header-lang__item">
+							en
+						</a>
+						<a href="#" class="header-lang__item">
+							ch
+						</a>
+					</div>
 				</div>
-				<a href="#" class="products__button button-animate-red">
-					Подробнее
-				</a>
 			</div>
-			<div class="products__box">
-				<div class="products__image">
-					<a href="#">
-						<img src="img/product-icon2.png" alt="">
-					</a>
+		</header>
+
+		<!-- Header end -->
+
+		<!-- Slider -->
+
+		<div class="front-page-slider">
+			<div class="front-page-slider__slide">
+				<div class="front-page-slider__caption">
+					<div class="container">
+						<div class="front-page-slider__head">
+							Собственный <br>
+							логистический комплекс
+						</div>
+						<div class="front-page-slider__text">
+							Полноценный терминально-логистический комплекс в Хабаровске<br> (складские помещения, ЖД платформа, головной офис компании и т.д.
+						</div>
+					</div>
 				</div>
-				<div class="products__box-headliner">
-					Контейнерные<br>
-					перевозки
-				</div>
-				<div class="products__text">
-					<ul>
-						<li>
-							<p>
-								Подача контейнеров по погрузку в КНР в течение 48
-							</p>
-						</li>
-						<li>
-							<p>
-								Склады для консолидации грузов от разных отправителей в Пекине, Иу и Гуанчжоу
-							</p>
-						</li>
-						<li>
-							<p>
-								Экспедирование в порту Владивосток и в порту Посточный
-							</p>
-						</li>
-					</ul>
-				</div>
-				<a href="#" class="products__button button-animate-red">
-					Подробнее
-				</a>
+				<img src="img/slider/slide1.jpg" alt="">
 			</div>
-			<div class="products__box">
-				<div class="products__image">
-					<a href="#">
-						<img src="img/product-icon3.png" alt="">
-					</a>
+			<div class="front-page-slider__slide">
+				<div class="front-page-slider__caption">
+					<div class="container">
+						<div class="front-page-slider__head">
+							Собственный <br>
+							логистический комплекс 2
+						</div>
+						<div class="front-page-slider__text">
+							Полноценный терминально-логистический комплекс в Хабаровске<br> (складские помещения, ЖД платформа, головной офис компании и т.д. 2
+						</div>
+					</div>
 				</div>
-				<div class="products__box-headliner">
-					Таможенное<br>
-					оформление
-				</div>
-				<div class="products__text">
-					<ul>
-						<li>
-							<p>
-								Опыт сопровождения таможенных <br>
-								операций - 20 лет
-							</p>
-							
-						</li>
-						<li>
-							<p>
-								Оформление в любом ЦЭД, а также на любых постах Владивостокской, Хабаровский и Находкинской таможни
-							</p>
-							
-						</li>
-						<li>
-							<p>
-								Лицензия таможенного представителя
-							</p>
-						</li>
-					</ul>
-				</div>
-				<a href="#" class="products__button button-animate-red">
-					Подробнее
-				</a>
+				<img src="img/slider/slide2.jpg" alt="">
 			</div>
 		</div>
-	</div>
 
-	<!-- Products end -->
+		<!-- Slider end -->
 
-	<!-- Solutions -->
+		<!-- Products -->
 
-	<div class="solutions" id="solutions">
-		<div class="container">
-			<div class="solutions__headliner">
-				Отраслевые решения
-			</div>
-			<div class="solutions__carousel">
-				<a href="#" class="solutions__box" style="background: url(img/sol1.jpg) no-repeat center center;">
-					<div class="solutions__label" style="background: rgba(196,32,49,0.7);">
-						<div class="vertical">
-							Обувные ММкомпании
-						</div>
-					</div>
-				</a>
-				<a href="#" class="solutions__box" style="background: url(img/sol2.jpg) no-repeat center center;">
-					<div class="solutions__label" style="background: rgba(250,167,27,0.7);">
-						<div class="vertical">
-							Дом, саД, <br>
-							строительство, ремонт
-						</div>
-					</div>
-				</a>
-				<a href="#" class="solutions__box" style="background: url(img/sol3.jpg) no-repeat center center;">
-					<div class="solutions__label" style="background: rgba(54,138,202,0.7);">
-						<div class="vertical">
-							Для транспортных<br>
-	 						компаний
-						</div>	
-					</div>
-				</a>
-				<a href="#" class="solutions__box" style="background: url(img/sol4.jpg) no-repeat center center;">
-					<div class="solutions__label" style="background: rgba(62,178,73,0.7);">
-						<div class="vertical">
-							Автозапчасти, <br>
-							шины, диски
-						</div>
-					</div>
-				</a>
-			</div>	
-		</div>
-	</div>
-
-	<!-- Solutions end -->
-
-	<!-- Solutions mobile -->
-
-	<!-- <div class="solutions hidden-lg hidden-md">
-		<div class="container">
-			<div class="solutions__headliner">
-				Отраслевые решения
-			</div>
-			<div class="solutions__carousel">
-				<div class="solutions__box" style="background: url(img/sol1.jpg) no-repeat center center;">
-					<div class="solutions__label" style="background: rgba(196,32,49,0.7);">
-						<div class="vertical">
-							Обувные ММкомпании
-						</div>
-					</div>
+		<div class="products">
+			<div class="container">
+				<div class="products__headliner">
+					Наши продукты
 				</div>
-				<div class="solutions__box" style="background: url(img/sol2.jpg) no-repeat center center;">
-					<div class="solutions__label" style="background: rgba(250,167,27,0.7);">
-						<div class="vertical">
-							Дом, саД, <br>
-							строительство, ремонт
-						</div>
+				<div class="products__box">
+					<div class="products__image">
+						<a href="#">
+							<img src="img/product-icon1.png" alt="">
+						</a>
 					</div>
-				</div>
-				<div class="solutions__box" style="background: url(img/sol3.jpg) no-repeat center center;">
-					<div class="solutions__label" style="background: rgba(54,138,202,0.7);">
-						<div class="vertical">
-							Для транспортных<br>
-	 						компаний
-						</div>	
+					<div class="products__box-headliner">
+						Доставку сборных<br>
+						грузов из Китая
 					</div>
-				</div>
-				<div class="solutions__box" style="background: url(img/sol4.jpg) no-repeat center center;">
-					<div class="solutions__label" style="background: rgba(62,178,73,0.7);">
-						<div class="vertical">
-							Автозапчасти, <br>
-							шины, диски
-						</div>
+					<div class="products__text">
+						<ul>
+							<li>
+								<p>
+									Пункты приема груза в четырех основных экономических зонах кита
+								</p>
+							</li>
+							<li>
+								<p>
+									Срок доставки 1 мес
+								</p>
+							</li>
+							<li>
+								<p>
+									от 1 кг до целой машины
+								</p>
+								
+							</li>
+							<li>
+								<p>
+									Лицензия таможенного перевозчика,
+								</p>
+							</li>
+						</ul>
 					</div>
-				</div>
-			</div>			
-		</div>
-	</div> -->
-
-	<!-- Solutions mobile end -->
-
-	<!-- News -->
-
-	<div class="news hidden-xs">
-		<div class="container">
-			<div class="news__headliner">
-				Новости
-			</div>
-			<div class="news__box">
-				<div class="news__image">
-					<img src="img/news1.jpg" alt="">
-				</div>
-				<div class="news__date">
-					01.05.2015
-				</div>
-				<div class="news__head">
-					<a href="#">
-						Обновленный ПРАЙС-ЛИСТ на перевозку обуви/сумок сезона осень-зима 2015 г. от AKFA!
+					<a href="#" class="products__button button-animate-red">
+						Подробнее
 					</a>
 				</div>
-				<div class="news__text">
-					Обращаем ваше внимание на то, что теперь расчет стоимости перевозки складывается из нескольких составляющих
-					<br>
-					1 <br>
-					2 <br>
-					3 <br>
-
-				</div>
-			</div>
-
-			<div class="news__box">
-				<div class="news__image">
-					<img src="img/news1.jpg" alt="">
-				</div>
-				<div class="news__date">
-					01.05.2015
-				</div>
-				<div class="news__head">
-					<a href="#">
-						Обновленный ПРАЙС-ЛИСТ на перевозку обуви/сумок сезона осень-зима 2015 г. от AKFA!
+				<div class="products__box">
+					<div class="products__image">
+						<a href="#">
+							<img src="img/product-icon2.png" alt="">
+						</a>
+					</div>
+					<div class="products__box-headliner">
+						Контейнерные<br>
+						перевозки
+					</div>
+					<div class="products__text">
+						<ul>
+							<li>
+								<p>
+									Подача контейнеров по погрузку в КНР в течение 48
+								</p>
+							</li>
+							<li>
+								<p>
+									Склады для консолидации грузов от разных отправителей в Пекине, Иу и Гуанчжоу
+								</p>
+							</li>
+							<li>
+								<p>
+									Экспедирование в порту Владивосток и в порту Посточный
+								</p>
+							</li>
+						</ul>
+					</div>
+					<a href="#" class="products__button button-animate-red">
+						Подробнее
 					</a>
 				</div>
-				<div class="news__text">
-					Обращаем ваше внимание на то, что теперь расчет стоимости перевозки складывается из нескольких составляющих:
-				</div>
-			</div>
-
-			<div class="news__box">
-				<div class="news__image">
-					<img src="img/news1.jpg" alt="">
-				</div>
-				<div class="news__date">
-					01.05.2015
-				</div>
-				<div class="news__head">
-					<a href="#">
-						Обновленный ПРАЙС-ЛИСТ на перевозку обуви/сумок сезона осень-зима 2015 г. от AKFA!
+				<div class="products__box">
+					<div class="products__image">
+						<a href="#">
+							<img src="img/product-icon3.png" alt="">
+						</a>
+					</div>
+					<div class="products__box-headliner">
+						Таможенное<br>
+						оформление
+					</div>
+					<div class="products__text">
+						<ul>
+							<li>
+								<p>
+									Опыт сопровождения таможенных <br>
+									операций - 20 лет
+								</p>
+							</li>
+							<li>
+								<p>
+									Оформление в любом ЦЭД, а также на любых постах Владивостокской, Хабаровский и Находкинской таможни
+								</p>
+							</li>
+							<li>
+								<p>
+									Лицензия таможенного представителя
+								</p>
+							</li>
+						</ul>
+					</div>
+					<a href="#" class="products__button button-animate-red">
+						Подробнее
 					</a>
-				</div>
-				<div class="news__text">
-					Обращаем ваше внимание на то, что теперь расчет стоимости перевозки складывается из нескольких составляющих:
-				</div>
-			</div>
-
-			<div class="news__box hidden-md">
-				<div class="news__image">
-					<img src="img/news1.jpg" alt="">
-				</div>
-				<div class="news__date">
-					01.05.2015
-				</div>
-				<div class="news__head">
-					<a href="#">
-						Обновленный ПРАЙС-ЛИСТ на перевозку обуви/сумок сезона осень-зима 2015 г. от AKFA!
-					</a>
-				</div>
-				<div class="news__text">
-					Обращаем ваше внимание на то, что теперь расчет стоимости перевозки складывается из нескольких составляющих:
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<!-- News end -->
+		<!-- Products end -->
 
-	<!-- News mobile -->
+		<!-- Solutions -->
 
-	<div class="news hidden-lg hidden-md">
-		<div class="container">
-			<div class="news__headliner">
-				Новости
+		<div class="solutions" id="solutions">
+			<div class="container">
+				<div class="solutions__headliner">
+					Отраслевые решения
+				</div>
+				<div class="solutions__carousel">
+					<a href="#" class="solutions__box" style="background: url(img/sol1.jpg) no-repeat center center;">
+						<div class="solutions__label" style="background: rgba(196,32,49,0.7);">
+							<div class="vertical">
+								Обувные ММкомпании
+							</div>
+						</div>
+					</a>
+					<a href="#" class="solutions__box" style="background: url(img/sol2.jpg) no-repeat center center;">
+						<div class="solutions__label" style="background: rgba(250,167,27,0.7);">
+							<div class="vertical">
+								Дом, саД, <br>
+								строительство, ремонт
+							</div>
+						</div>
+					</a>
+					<a href="#" class="solutions__box" style="background: url(img/sol3.jpg) no-repeat center center;">
+						<div class="solutions__label" style="background: rgba(54,138,202,0.7);">
+							<div class="vertical">
+								Для транспортных<br>
+		 						компаний
+							</div>	
+						</div>
+					</a>
+					<a href="#" class="solutions__box" style="background: url(img/sol4.jpg) no-repeat center center;">
+						<div class="solutions__label" style="background: rgba(62,178,73,0.7);">
+							<div class="vertical">
+								Автозапчасти, <br>
+								шины, диски
+							</div>
+						</div>
+					</a>
+				</div>	
 			</div>
-			<div class="news__carousel">
+		</div>
+
+		<!-- Solutions end -->
+
+		<!-- News -->
+
+		<div class="news hidden-xs">
+			<div class="container">
+				<div class="news__headliner">
+					Новости
+				</div>
 				<div class="news__box">
 					<div class="news__image">
 						<img src="img/news1.jpg" alt="">
@@ -712,24 +577,11 @@
 						</a>
 					</div>
 					<div class="news__text">
-						Обращаем ваше внимание на то, что теперь расчет стоимости перевозки складывается из нескольких составляющих:
-					</div>
-				</div>
-
-				<div class="news__box">
-					<div class="news__image">
-						<img src="img/news1.jpg" alt="">
-					</div>
-					<div class="news__date">
-						01.05.2015
-					</div>
-					<div class="news__head">
-						<a href="#">
-							Обновленный ПРАЙС-ЛИСТ на перевозку обуви/сумок сезона осень-зима 2015 г. от AKFA!
-						</a>
-					</div>
-					<div class="news__text">
-						Обращаем ваше внимание на то, что теперь расчет стоимости перевозки складывается из нескольких составляющих:
+						Обращаем ваше внимание на то, что теперь расчет стоимости перевозки складывается из нескольких составляющих
+						<br>
+						1 <br>
+						2 <br>
+						3 <br>
 					</div>
 				</div>
 
@@ -766,151 +618,250 @@
 						Обращаем ваше внимание на то, что теперь расчет стоимости перевозки складывается из нескольких составляющих:
 					</div>
 				</div>
-			</div>
-		</div>
-	</div>
 
-	<!-- News mobile end -->
-
-	<!-- Clients -->
-
-	<div class="clients">
-		<div class="container">
-			<div class="clients__headliner">
-				Наши клиенты
-			</div>
-
-			<div class="clients__container">
-				<div class="clients__box">
-					<a href="#">
-						<img src="img/clients/auchan.png" alt="">
-					</a>
-				</div>
-
-				<div class="clients__box">
-					<a href="#">
-						<img src="img/clients/fixprice.png" alt="">
-					</a>
-				</div>
-
-				<div class="clients__box">
-					<a href="#">
-						<img src="img/clients/magnit.png" alt="">
-					</a>
-				</div>
-
-				<div class="clients__box">
-					<a href="#">
-						<img src="img/clients/perekrestok.png" alt="">
-					</a>
+				<div class="news__box hidden-md">
+					<div class="news__image">
+						<img src="img/news1.jpg" alt="">
+					</div>
+					<div class="news__date">
+						01.05.2015
+					</div>
+					<div class="news__head">
+						<a href="#">
+							Обновленный ПРАЙС-ЛИСТ на перевозку обуви/сумок сезона осень-зима 2015 г. от AKFA!
+						</a>
+					</div>
+					<div class="news__text">
+						Обращаем ваше внимание на то, что теперь расчет стоимости перевозки складывается из нескольких составляющих:
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<!-- Clients end -->
+		<!-- News end -->
 
-	<!-- Footer -->
+		<!-- News mobile -->
 
-	<footer class="footer">
-		<div class="container">
-			<div class="footer__headliner">
-				Больше чем логистика
+		<div class="news hidden-lg hidden-md">
+			<div class="container">
+				<div class="news__headliner">
+					Новости
+				</div>
+				<div class="news__carousel">
+					<div class="news__box">
+						<div class="news__image">
+							<img src="img/news1.jpg" alt="">
+						</div>
+						<div class="news__date">
+							01.05.2015
+						</div>
+						<div class="news__head">
+							<a href="#">
+								Обновленный ПРАЙС-ЛИСТ на перевозку обуви/сумок сезона осень-зима 2015 г. от AKFA!
+							</a>
+						</div>
+						<div class="news__text">
+							Обращаем ваше внимание на то, что теперь расчет стоимости перевозки складывается из нескольких составляющих:
+						</div>
+					</div>
+
+					<div class="news__box">
+						<div class="news__image">
+							<img src="img/news1.jpg" alt="">
+						</div>
+						<div class="news__date">
+							01.05.2015
+						</div>
+						<div class="news__head">
+							<a href="#">
+								Обновленный ПРАЙС-ЛИСТ на перевозку обуви/сумок сезона осень-зима 2015 г. от AKFA!
+							</a>
+						</div>
+						<div class="news__text">
+							Обращаем ваше внимание на то, что теперь расчет стоимости перевозки складывается из нескольких составляющих:
+						</div>
+					</div>
+
+					<div class="news__box">
+						<div class="news__image">
+							<img src="img/news1.jpg" alt="">
+						</div>
+						<div class="news__date">
+							01.05.2015
+						</div>
+						<div class="news__head">
+							<a href="#">
+								Обновленный ПРАЙС-ЛИСТ на перевозку обуви/сумок сезона осень-зима 2015 г. от AKFA!
+							</a>
+						</div>
+						<div class="news__text">
+							Обращаем ваше внимание на то, что теперь расчет стоимости перевозки складывается из нескольких составляющих:
+						</div>
+					</div>
+
+					<div class="news__box">
+						<div class="news__image">
+							<img src="img/news1.jpg" alt="">
+						</div>
+						<div class="news__date">
+							01.05.2015
+						</div>
+						<div class="news__head">
+							<a href="#">
+								Обновленный ПРАЙС-ЛИСТ на перевозку обуви/сумок сезона осень-зима 2015 г. от AKFA!
+							</a>
+						</div>
+						<div class="news__text">
+							Обращаем ваше внимание на то, что теперь расчет стоимости перевозки складывается из нескольких составляющих:
+						</div>
+					</div>
+				</div>
 			</div>
+		</div>
 
-			<div class="footer__mobile hidden-sm hidden-lg hidden-md">
-				<div class="footer__phone">
-					<span class="thin">8 800</span> 921 39 90
-					<span class="phone-label">Бесплатно по всей России</span>
+		<!-- News mobile end -->
+
+		<!-- Clients -->
+
+		<div class="clients">
+			<div class="container">
+				<div class="clients__headliner">
+					Наши клиенты
 				</div>
 
-				<a href="#" class="footer__order">
-					Оставить заявку
-				</a>
+				<div class="clients__container">
+					<div class="clients__box">
+						<a href="#">
+							<img src="img/clients/auchan.png" alt="">
+						</a>
+					</div>
 
-				<div class="footer__copyright">
-					© 2010-2015, ООО “АКФА” <br>
-					<a href="mailto:">info@akfa.ru</a>
+					<div class="clients__box">
+						<a href="#">
+							<img src="img/clients/fixprice.png" alt="">
+						</a>
+					</div>
+
+					<div class="clients__box">
+						<a href="#">
+							<img src="img/clients/magnit.png" alt="">
+						</a>
+					</div>
+
+					<div class="clients__box">
+						<a href="#">
+							<img src="img/clients/perekrestok.png" alt="">
+						</a>
+					</div>
 				</div>
-				<div class="footer__address">
-					115114, г. Москва, ул. Летниковская, <br>
-					д.10, стр. 2, БЦ «Святогор-2» <br>
-					<a href="#">Посмотреть на карте</a>
+			</div>
+		</div>
+
+		<!-- Clients end -->
+
+		<!-- Footer -->
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__headliner">
+					Больше чем логистика
 				</div>
 
-				<div class="footer__address2">
-					680022, г. Хабаровск, ул. Нефтяная, д. 1 <br>
-					<a href="#">Посмотреть на карте</a>
-				</div>
+				<div class="footer__mobile hidden-sm hidden-lg hidden-md">
+					<div class="footer__phone">
+						<span class="thin">8 800</span> 921 39 90
+						<span class="phone-label">Бесплатно по всей России</span>
+					</div>
 
-				<div class="footer__search">
-					<form action="#">
-						<input type="text" placeholder="Поиск">
-						<input type="submit" value="">
-					</form>
-				</div>
-
-				<div class="footer__designedby">
-					Разработка сайта<br>
-					<a href="#">
-						<img src="img/layout/100up.png" alt="">
+					<a href="#" class="footer__order">
+						Оставить заявку
 					</a>
-				</div>
-			</div>
 
-			<div class="footer__left">
-				<div class="footer__row">
-					<div class="footer__copyright hidden-xs">
+					<div class="footer__copyright">
 						© 2010-2015, ООО “АКФА” <br>
 						<a href="mailto:">info@akfa.ru</a>
 					</div>
-					<div class="footer__address hidden-xs">
+					<div class="footer__address">
 						115114, г. Москва, ул. Летниковская, <br>
 						д.10, стр. 2, БЦ «Святогор-2» <br>
 						<a href="#">Посмотреть на карте</a>
 					</div>
 
-					<div class="footer__phone hidden-xs">
-						<span class="thin">8 800</span> 921 39 90
-						<span class="phone-label">Бесплатно по всей России</span>
-					</div>
-				</div>
-				
-				<div class="footer__row">
-					<div class="footer__designedby">
-						Разработка сайта<br>
-						<a href="#">
-							<img src="img/layout/100up.png" alt="">
-						</a>
-					</div>
-					<div class="footer__address2 hidden-xs">
+					<div class="footer__address2">
 						680022, г. Хабаровск, ул. Нефтяная, д. 1 <br>
 						<a href="#">Посмотреть на карте</a>
 					</div>
-					<div class="footer__search hidden-md hidden-sm hidden-xs">
+
+					<div class="footer__search">
 						<form action="#">
 							<input type="text" placeholder="Поиск">
 							<input type="submit" value="">
 						</form>
 					</div>
 
-					<a href="#" class="footer__order hidden-xs hidden-lg">
+					<div class="footer__designedby">
+						Разработка сайта<br>
+						<a href="#">
+							<img src="img/layout/100up.png" alt="">
+						</a>
+					</div>
+				</div>
+
+				<div class="footer__left">
+					<div class="footer__row">
+						<div class="footer__copyright hidden-xs">
+							© 2010-2015, ООО “АКФА” <br>
+							<a href="mailto:">info@akfa.ru</a>
+						</div>
+						<div class="footer__address hidden-xs">
+							115114, г. Москва, ул. Летниковская, <br>
+							д.10, стр. 2, БЦ «Святогор-2» <br>
+							<a href="#">Посмотреть на карте</a>
+						</div>
+
+						<div class="footer__phone hidden-xs">
+							<span class="thin">8 800</span> 921 39 90
+							<span class="phone-label">Бесплатно по всей России</span>
+						</div>
+					</div>
+					
+					<div class="footer__row">
+						<div class="footer__designedby">
+							Разработка сайта<br>
+							<a href="#">
+								<img src="img/layout/100up.png" alt="">
+							</a>
+						</div>
+						<div class="footer__address2 hidden-xs">
+							680022, г. Хабаровск, ул. Нефтяная, д. 1 <br>
+							<a href="#">Посмотреть на карте</a>
+						</div>
+						<div class="footer__search hidden-md hidden-sm hidden-xs">
+							<form action="#">
+								<input type="text" placeholder="Поиск">
+								<input type="submit" value="">
+							</form>
+						</div>
+
+						<a href="#" class="footer__order hidden-xs hidden-lg">
+							Оставить заявку
+						</a>
+					</div>
+					
+				</div>
+				<div class="footer__right hidden-sm hidden-xs hidden-md">
+
+					<a href="#" class="footer-button ribbon-outset border">
 						Оставить заявку
 					</a>
+
 				</div>
-				
 			</div>
-			<div class="footer__right hidden-sm hidden-xs hidden-md">
+		</footer>
 
-				<a href="#" class="footer-button ribbon-outset border">
-					Оставить заявку
-				</a>
+		<!-- Footer end -->
 
-			</div>
-		</div>
-	</footer>
-
-	<!-- Footer end -->
+	</div>
 
 	<!-- Scripts -->
 
@@ -918,7 +869,10 @@
 	<script src="libs/owl/owl.carousel.min.js"></script>
 	<script src="libs/jquery.formstyler/jquery.formstyler.min.js"></script>
 	<script src="libs/clamp.min.js"></script>
+	<script src="libs/enquire.min.js"></script>
+	<script src="libs/slideout.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/media.js"></script>
 
 	<!-- Scripts end -->
 	
